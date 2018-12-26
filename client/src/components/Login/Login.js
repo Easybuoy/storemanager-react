@@ -8,6 +8,7 @@ class Login extends Component {
             password: '',
             isLoggedIn: 0,
             redirect: false,
+            loginType: '',
         }
         this.onChange = this.onChange.bind(this);
         this.onSubmit = this.onSubmit.bind(this);
@@ -25,6 +26,8 @@ class Login extends Component {
     onSubmit(e) {
         e.preventDefault();
         let status = 0;
+        let loginType = 'admin';
+
         fetch('https://store--manager.herokuapp.com/api/v1/auth/login', {
             method: 'POST',
             headers: {
@@ -38,11 +41,14 @@ class Login extends Component {
         })
         .then(data => {
             const response = data.data;
-            const token = data.data.token;
+            const token = data.data.token; console.log(response)
             switch (status) {
                 case 200:
                 this.setToken(token);
-                this.setState( {redirect: true})
+                if (response.type !== 1) {
+                    loginType = 'subscriber';
+                }
+                this.setState({ redirect: true, loginType })
                     break;
                 case 400:
                   if (response.email && response.password) {
@@ -65,8 +71,12 @@ class Login extends Component {
 
     render() {
         if (this.state.redirect) {
+            const { loginType } = this.state;
         return (
-            <Redirect to="/dashboard" />
+            <Redirect to={{
+                pathname: '/dashboard',
+                state: { loginType }
+            }} />
         );
         }
 
