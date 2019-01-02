@@ -5,7 +5,7 @@ const INITIAL_STATE = {
     user: {}
 };
 
-export default (state = INITIAL_STATE, action) => { console.log(state)
+export default (state = INITIAL_STATE, action) => {
     switch(action.type) {
         case SET_CURRENT_USER:
             return { 
