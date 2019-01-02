@@ -1,15 +1,16 @@
 import React, { Component } from "react";
-import { Redirect } from 'react-router-dom';
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
+
+import { signIn } from '../../actions/authActions';
 class Login extends Component {
     constructor() {
         super();
         this.state = {
             email: '',
             password: '',
-            isLoggedIn: 0,
-            redirect: false,
-            loginType: '',
         }
+
         this.onChange = this.onChange.bind(this);
         this.onSubmit = this.onSubmit.bind(this);
 
@@ -19,64 +20,23 @@ class Login extends Component {
         this.setState({[event.target.name] : event.target.value});
     }
 
-    setToken(token){
-        localStorage.setItem('token', token);
-    }
 
     onSubmit(e) {
         e.preventDefault();
-        let status = 0;
-        let loginType = 'admin';
+        const userData = {
+            email: this.state.email,
+            password: this.state.password 
+        };
 
-        fetch('https://store--manager.herokuapp.com/api/v1/auth/login', {
-            method: 'POST',
-            headers: {
-                'Content-Type' : 'application/json'
-            },
-            body: JSON.stringify({email: this.state.email, password: this.state.password})
-        })
-        .then((res) => {
-            status = res.status;
-            return res.json()
-        })
-        .then(data => {
-            const response = data.data;
-            const token = data.data.token; console.log(response)
-            switch (status) {
-                case 200:
-                this.setToken(token);
-                if (response.type !== 1) {
-                    loginType = 'subscriber';
-                }
-                this.setState({ redirect: true, loginType })
-                    break;
-                case 400:
-                  if (response.email && response.password) {
-                    return alert('Email & Password fields are required');
-                  }
-                  alert(response.email || response.password);
-                  break;
-                case 404:
-                  alert(response.email);
-                  break;
-                case 401:
-                   alert(response.password);
-                    break;
-                default:
-                  return alert('Error loggin in');
-                }
-        })
-        .catch(err => alert('Error Loggin In...Please Try Again'));
+        this.props.signIn(userData);
     }
 
-    render() {
-        if (this.state.redirect) {
-            const { loginType } = this.state;
-        return (
-            <Redirect to={{
-                pathname: '/dashboard',
-                state: { loginType }
-            }} />
+    render() { 
+        const { errors } = this.props;
+
+        if (this.props.auth.isSignedIn ) {
+            return (
+                this.props.history.push('/dashboard')
         );
         }
 
@@ -85,11 +45,13 @@ class Login extends Component {
         <div className="loginbox">
             <img src="https://store--manager.herokuapp.com/assets/uploads/users/default-avatar.png" className="avatar"/>
             <h2 className="text-center">Login to access store manager</h2>
-            <form method="GET" action="./dashboard.html">
-                <p>Username</p>
+            <form>
+                <p>Email</p>
                 <input onChange={this.onChange} type="text" id="loginusername" name="email" placeholder="Enter Email" />
+        <div className="login-error">{errors.email}</div>
                 <p>Password</p>
                 <input onChange= {this.onChange} type="password" id="loginpassword" name="password" placeholder="Enter Password" />
+                <div className="login-error">{errors.password} <br /><br /></div>
                 <input onClick={this.onSubmit} type="submit" name="submit" id="loginsubmit" value="Login" />
             </form>
         </div>
@@ -102,4 +64,15 @@ class Login extends Component {
     }
 }
 
-export default Login;
+Login.propTypes = {
+    signIn: PropTypes.func.isRequired,
+    auth: PropTypes.object.isRequired,
+    errors: PropTypes.object.isRequired,
+}
+
+const mapStateToProps = (state) => ({
+    auth: state.auth,
+    errors: state.errors,
+});
+
+export default connect(mapStateToProps, { signIn })(Login);

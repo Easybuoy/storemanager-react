@@ -9,10 +9,11 @@ class Dashboard extends Component {
 
     }
 
-    componentDidMount(){
-        const loginType = this.props.location.state.loginType;
-        this.setState({ loginType: loginType });
-    }
+    // componentDidMount(){
+    //     console.log(this.props.location)
+    //     const loginType = this.props.location.state.loginType;
+    //     this.setState({ loginType: loginType });
+    // }
 
     render() {
         console.log(this.state)
