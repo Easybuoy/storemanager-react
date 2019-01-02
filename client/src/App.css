@@ -620,7 +620,10 @@ font-weight: 900;
 }
 /* End of Category Filter */
 
-
+.login-error {
+  color: #ff4d4d;
+  margin: 0;
+}
 
 /* Card */
 

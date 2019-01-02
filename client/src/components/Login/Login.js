@@ -10,7 +10,7 @@ class Login extends Component {
             email: '',
             password: '',
         }
-        
+
         this.onChange = this.onChange.bind(this);
         this.onSubmit = this.onSubmit.bind(this);
 
@@ -48,10 +48,10 @@ class Login extends Component {
             <form>
                 <p>Email</p>
                 <input onChange={this.onChange} type="text" id="loginusername" name="email" placeholder="Enter Email" />
-        <div className="tiny">{errors.email}</div>
+        <div className="login-error">{errors.email}</div>
                 <p>Password</p>
                 <input onChange= {this.onChange} type="password" id="loginpassword" name="password" placeholder="Enter Password" />
-                <div className="tiny">{errors.password}</div>
+                <div className="login-error">{errors.password} <br /><br /></div>
                 <input onClick={this.onSubmit} type="submit" name="submit" id="loginsubmit" value="Login" />
             </form>
         </div>
