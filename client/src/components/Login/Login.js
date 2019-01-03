@@ -35,9 +35,7 @@ class Login extends Component {
         const { errors } = this.props;
 
         if (this.props.auth.isSignedIn ) {
-            return (
-                this.props.history.push('/dashboard')
-        );
+            this.props.history.push('/dashboard')
         }
 
         return (

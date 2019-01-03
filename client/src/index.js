@@ -6,7 +6,7 @@ import jwt_decode from 'jwt-decode';
 import store from './store';
 import App from "./App.js";
 import setAuthToken from './utils/setAuthToken';
-import { setCurrentUser } from './actions/authActions';
+import { setCurrentUser, signOut } from './actions/authActions';
 // Check for token
 if (localStorage.token) {
     const { token } = localStorage;
@@ -23,7 +23,7 @@ if (localStorage.token) {
      const currentTime = Date.now() / 1000;
     if (decodedToken.exp < currentTime) {
      // Logout user
-        store.dispatch(logoutUser());
+        store.dispatch(signOut());
     }
 
 }
