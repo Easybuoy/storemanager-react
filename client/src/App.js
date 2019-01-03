@@ -6,6 +6,7 @@ import './App.css';
 import PrivateRoute from './components/Common/PrivateRoute';
 import Login from './components/Login/Login';
 import Dashboard from './components/Dashboard/Dashboard';
+import Footer from './components/Common/Footer';
 
 class App extends Component {
     render() {
@@ -17,6 +18,7 @@ class App extends Component {
                     <PrivateRoute exact path='/dashboard' component={ Dashboard } />
                     <Route path='*' component={() => 'Not found'} />
                     </Switch>
+                    <Footer />
                 </div>
                     
                 

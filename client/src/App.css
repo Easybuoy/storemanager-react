@@ -338,25 +338,16 @@ template {
 
 
 @font-face {
-  font-family: 'k2d_semiboldregular';
-  /* src: url('./fonts/k2d/k2d-webfont.woff2') format('woff2'),
-       url('./fonts/k2d/k2d-webfont.woff') format('woff'); */
+  font-family: 'K2D';
   font-weight: normal;
   font-style: normal;
 
 }
 
 @font-face {
-font-family: 'Poiret One';
+font-family: 'Poiret One', cursive;
 font-style: normal;
 font-weight: 400;
-/* src: url('../fonts/poiretOne/poiret-one-v6-latin-regular.eot'); 
-src: local('Poiret One'), local('PoiretOne-Regular'),
-     url('../fonts/poiretOne/poiret-one-v6-latin-regular.eot?#iefix') format('embedded-opentype'), 
-     url('../fonts/poiretOne/poiret-one-v6-latin-regular.woff2') format('woff2'), 
-     url('../fonts/poiretOne/poiret-one-v6-latin-regular.woff') format('woff'), 
-     url('../fonts/poiretOne/poiret-one-v6-latin-regular.ttf') format('truetype'), 
-     url('../fonts/poiretOne/poiret-one-v6-latin-regular.svg#PoiretOne') format('svg');  */
 }
 
 body{
