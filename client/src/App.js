@@ -1,11 +1,13 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { connect } from 'react-redux';
 
 import './App.css';
 
 import PrivateRoute from './components/Common/PrivateRoute';
 import Login from './components/Login/Login';
 import Dashboard from './components/Dashboard/Dashboard';
+import Navigation from './components/Common/Navigation';
 import Footer from './components/Common/Footer';
 
 class App extends Component {
@@ -13,6 +15,13 @@ class App extends Component {
         return (
             <Router>
                 <div>
+                    {
+                        this.props.auth.isSignedIn === true ? (
+                            <Navigation />
+                            ): (
+                                ''
+                            )
+                    }
                     <Switch>
                     <Route exact path='/' component={ Login } />
                     <PrivateRoute exact path='/dashboard' component={ Dashboard } />
@@ -28,4 +37,8 @@ class App extends Component {
     }
 }
 
-export default App;
+const mapStateToProps = state => ({
+    auth: state.auth,
+});
+
+export default connect(mapStateToProps)(App);

@@ -4,10 +4,9 @@ import jwt_decode from 'jwt-decode';
 import setAuthToken from '../utils/setAuthToken';
 import { GET_ERRORS, SIGN_OUT, SET_CURRENT_USER } from './types';
 
-export const signIn = (userData) => dispatch => { console.log(userData)
+export const signIn = (userData) => dispatch => {
     axios.post('https://store--manager.herokuapp.com/api/v1/auth/login', userData)
     .then(res => {
-        console.log(res.data)
         const { token } = res.data.data;
         // Save to localstorage
         localStorage.setItem('token', token);

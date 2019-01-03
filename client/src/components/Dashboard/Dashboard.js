@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 
 class Dashboard extends Component {
-    constructor() {
-        super();
-        this.state = {
-            loginType: '',
-        }
+    // constructor() {
+    //     super();
+    //     this.state = {
+    //         loginType: '',
+    //     }
 
-    }
+    // }
 
     // componentDidMount(){
     //     console.log(this.props.location)
@@ -16,7 +16,7 @@ class Dashboard extends Component {
     // }
 
     render() {
-        console.log(this.state)
+        // console.log(this.state)
         return (
             // <h1>Dashboard</h1>
             <div id="main">
