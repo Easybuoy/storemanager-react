@@ -56,9 +56,6 @@ class Login extends Component {
             </form>
         </div>
 
-        <footer id="footer" className="footerstickbottom">
-            <p>Store Manager Copyright &copy; 2018</p>
-        </footer>
             </div>
         );
     }
