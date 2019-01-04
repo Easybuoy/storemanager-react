@@ -1,24 +1,10 @@
 import React, { Component } from "react";
+import Products from '../Products/Products';
 
 class Dashboard extends Component {
-    // constructor() {
-    //     super();
-    //     this.state = {
-    //         loginType: '',
-    //     }
-
-    // }
-
-    // componentDidMount(){
-    //     console.log(this.props.location)
-    //     const loginType = this.props.location.state.loginType;
-    //     this.setState({ loginType: loginType });
-    // }
-
+    
     render() {
-        // console.log(this.state)
         return (
-            // <h1>Dashboard</h1>
             <div id="main">
             <section id="categoryfiltersection">
             <div className="container">
@@ -35,25 +21,9 @@ class Dashboard extends Component {
                     </div>
             </div>
             </section>
-<div className="container">
-                        <div className="cardgroup">
 
-                                <div className="card">
-                                        <a href="view_product_details.html"><img src="img/gpixel2.png" className="cardimg" /></a>
-        
-                                <div className="text-center cardbody" >
-                                        <h3 id="productname" data-name="Google Pixel 2">Google Pixel 2</h3>
-                                        <p>The Google Pixel 2 is powered by 1.9GHz octa-core </p>
-                                        <p>Quantity: 3</p>
-                                        <p  id="productamount">Price: $649</p>
-                                        <input type="number" id="number" name="amount" placeholder="Quantity" />
-                                        <button className="button_1">Add To Cart</button>
-                                </div>
-        
-                                </div>
+            <Products />
 
-                                </div>
-                                </div>
             </div>
             
         );

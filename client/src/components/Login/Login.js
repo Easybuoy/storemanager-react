@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
+import { toast } from 'react-toastify';
 
 import { signIn } from '../../actions/authActions';
 class Login extends Component {
@@ -21,7 +22,7 @@ class Login extends Component {
     }
 
 
-    onSubmit(e) {
+    onSubmit(e) {         
         e.preventDefault();
         const userData = {
             email: this.state.email,
@@ -31,7 +32,7 @@ class Login extends Component {
         this.props.signIn(userData);
     }
 
-    render() { 
+    render() {
         const { errors } = this.props;
 
         if (this.props.auth.isSignedIn ) {
@@ -46,10 +47,8 @@ class Login extends Component {
             <form>
                 <p>Email</p>
                 <input onChange={this.onChange} type="text" id="loginusername" name="email" placeholder="Enter Email" />
-        <div className="login-error">{errors.email}</div>
                 <p>Password</p>
                 <input onChange= {this.onChange} type="password" id="loginpassword" name="password" placeholder="Enter Password" />
-                <div className="login-error">{errors.password} <br /><br /></div>
                 <input onClick={this.onSubmit} type="submit" name="submit" id="loginsubmit" value="Login" />
             </form>
         </div>

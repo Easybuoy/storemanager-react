@@ -17,13 +17,3 @@ export default (state = INITIAL_STATE, action) => {
             return state;
     }
 };
-
-
-
-        // case SIGN_IN:
-        // const { loginType } = action;
-        // console.log(loginType)
-        //     return { ...state, isSignedIn: true, loginType: action.payload }
-
-        // case SIGN_OUT:
-        //     return { ...state, isSignedIn: false, user: action.payload } 

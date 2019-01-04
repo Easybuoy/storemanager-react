@@ -8,15 +8,13 @@ import { signOut } from '../../actions/authActions';
 class Navigation extends Component {
     openSlideMenu(){
         document.getElementById('side-menu').style.width = '250px';
-        // document.getElementById('main').style.marginLeft = '250px'
     }
 
     closeSlideMenu(){
         document.getElementById('side-menu').style.width = '0';
-        // document.getElementById('main').style.marginLeft = '0';
     }
 
-  render() { console.log(this.props)
+  render() {
     let userProfilePicture = this.props.auth.user.userImage;
     userProfilePicture = `http://store--manager.herokuapp.com/${userProfilePicture}`;
     let dashboardLinks = (

@@ -1,5 +1,6 @@
 import axios from 'axios';
 import jwt_decode from 'jwt-decode';
+import { toast } from 'react-toastify';
 
 import setAuthToken from '../utils/setAuthToken';
 import { GET_ERRORS, SIGN_OUT, SET_CURRENT_USER } from './types';
@@ -11,13 +12,20 @@ export const signIn = (userData) => dispatch => {
         // Save to localstorage
         localStorage.setItem('token', token);
         // Set token to auth header
-        setAuthToken();
+        setAuthToken(token);
 
         // Decode token
         const decodedToken = jwt_decode(token); 
         dispatch(setCurrentUser(decodedToken));
     })
     .catch(err => {
+        if (err.response.data.data.email) {
+            toast.error(err.response.data.data.email);
+        }
+
+        if (err.response.data.data.password) {
+            toast.error(err.response.data.data.password);
+        }
         dispatch({
             type: GET_ERRORS,
             payload: err.response.data.data
@@ -35,6 +43,7 @@ export const signOut = () => dispatch => {
 
     // Set current user to {}
     dispatch(setCurrentUser({}));
+    toast.success('Signed out sucessfully')
     return {
         type: SIGN_OUT
     };
