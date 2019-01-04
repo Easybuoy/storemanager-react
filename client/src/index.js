@@ -2,6 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { Provider } from 'react-redux';
 import jwt_decode from 'jwt-decode';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.min.css' ;
 
 import store from './store';
 import App from "./App.js";
@@ -32,5 +34,6 @@ if (localStorage.token) {
 ReactDOM.render(
     <Provider store={store}>
         <App />
+        <ToastContainer autoClose= {3000} position="top-right" hideProgressBar={true} />
     </Provider>, 
     document.getElementById("root"));
