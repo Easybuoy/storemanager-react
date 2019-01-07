@@ -2,6 +2,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 import { signOut } from '../../actions/authActions';
 
@@ -20,9 +21,9 @@ class Navigation extends Component {
     let dashboardLinks = (
         <div id="side-menu" className="side-nav">
         <a href="#" className="btn-close" onClick={this.closeSlideMenu}>&times;</a>
-            <li className="current"><a href="dashboard.html">Dashboard</a></li>
-            <li><a href="sales_view.html">View Sales Record</a></li>
-            <li><a href="store_attendant_profile.html">Profile</a></li> 
+            <li className="current"><Link to="/dashboard">Dashboard</Link></li>
+            <li><Link to="/viewsales">View Sales Record</Link></li>
+            <li><Link to="/profile">Profile</Link></li> 
             <li><a onClick={this.props.signOut}>Logout</a></li>
         </div>
     );
@@ -30,12 +31,12 @@ class Navigation extends Component {
         dashboardLinks = (
             <div id="side-menu" className="side-nav">
             <a href="#" className="btn-close" onClick={this.closeSlideMenu}>&times;</a>
-            <li className="current"><a href="admin_dashboard.html">Dashboard</a></li>
-            <li><a href="admin_create_product.html">Create Product</a></li>
-            <li><a href="admin_view_products.html">View Products</a></li>
-            <li><a href="admin_create_sales_attendant.html">Create Sales Attendant</a></li>
-            <li><a href="admin_view_sales.html">View Sales</a></li>
-            <li><a href="admin_view_attendants.html">View Attendants</a></li>
+            <li className="current"><Link to="/dashboard">Dashboard</Link></li>
+            <li><Link to="/createproduct">Create Product</Link></li>
+            <li><Link to="/viewproducts">View Products</Link></li>
+            <li><Link to="/createattendant">Create Sales Attendant</Link></li>
+            <li><Link to="/viewsales">View Sales</Link></li>
+            <li><Link to="/viewattendants">View Attendants</Link></li>
             <li><a onClick={this.props.signOut}>Logout</a></li>
         </div>
         );
