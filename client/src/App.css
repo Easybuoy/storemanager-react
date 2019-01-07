@@ -753,7 +753,7 @@ font-weight: 900;
 
 /* End Of Table Styling */
 .footerstickbottom{
-position: absolute !important;
+position: relative !important;
 bottom:0;
 left: 0;
 }

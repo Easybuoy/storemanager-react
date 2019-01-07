@@ -3,7 +3,7 @@ import jwt_decode from 'jwt-decode';
 import { toast } from 'react-toastify';
 
 import setAuthToken from '../utils/setAuthToken';
-import { GET_ERRORS, SIGN_OUT, SET_CURRENT_USER } from './types';
+import { GET_ERRORS, SIGN_OUT, SET_CURRENT_USER, SET_ERRORS } from './types';
 
 export const signIn = (userData) => dispatch => {
     axios.post('https://store--manager.herokuapp.com/api/v1/auth/login', userData)
@@ -16,6 +16,9 @@ export const signIn = (userData) => dispatch => {
 
         // Decode token
         const decodedToken = jwt_decode(token); 
+        dispatch({
+            type: SET_ERRORS
+        });
         dispatch(setCurrentUser(decodedToken));
     })
     .catch(err => {
