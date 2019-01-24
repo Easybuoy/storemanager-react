@@ -4,7 +4,7 @@
   "description": "React Version Of Store Manager Application",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
+    "test": "jest --watch",
     "coveralls": "jest --coverage",
     "start": "webpack-dev-server --mode development --open --hot",
     "build": "webpack --mode production"

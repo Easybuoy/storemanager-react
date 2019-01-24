@@ -81,15 +81,15 @@ class CreateProduct extends Component {
                 <div className="container">
                     <div id="create_sales_assistant">
                         <h1 className="text-center">Create New Product</h1>
-                        <form method="POST">
+                        <form onSubmit={this.onSubmit}>
                             <h2>Product Name</h2>
-                            <input type="text" id="productname" name="productname" placeholder="Enter Name" onChange={this.onChange} />
+                            <input type="text" id="productname" name="productname" placeholder="Enter Name" onChange={this.onChange} required/>
                             <h2>Product Summary</h2>
-                            <input type="text" id="productdescription" name="productdescription" placeholder="Enter Description" onChange={this.onChange}/>
+                            <input type="text" id="productdescription" name="productdescription" placeholder="Enter Description" onChange={this.onChange} required/>
                             <h2>Product Price</h2>
-                            <input type="number" id="productprice" name="productprice" placeholder="Enter Price" onChange={this.onChange} />
+                            <input type="number" id="productprice" name="productprice" placeholder="Enter Price" onChange={this.onChange} required/>
                             <h2>Product Quantity</h2>
-                            <input type="number" id="productquantity" name="productquantity" placeholder="Enter Quantity" onChange={this.onChange} />
+                            <input type="number" id="productquantity" name="productquantity" placeholder="Enter Quantity" onChange={this.onChange} required/>
                             <img src="" id="showimage" className="text-center" style={{ display: 'none', height: '100px', width: '100px' }} />
                             <h2>Product Image</h2>
                             <input type="file" id="productimage" name="upload" onChange={this.onImageChange} />
@@ -98,7 +98,7 @@ class CreateProduct extends Component {
                             <select id="categoryoption">
                                 <option value="">Select Category</option>
                             </select> <br /> <br />
-                            <input type="submit" name="" className="button_1" id="createproductsubmit" value="Create Product" onClick={this.onSubmit} />
+                            <input type="submit" name="" className="button_1" id="createproductsubmit" value="Create Product"  />
 
                         </form>
                     </div>

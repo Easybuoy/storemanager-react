@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-import { GET_ERRORS, SET_PRODUCTS, SET_PRODUCTS_LOADING, CREATE_PRODUCT, SET_ERRORS } from './types';
+import { GET_ERRORS, SET_PRODUCTS, SET_PRODUCTS_LOADING, CREATE_PRODUCT, SET_ERRORS, DELETE_PRODUCT } from './types';
 
 export const getProducts = () => dispatch => {
     dispatch(setProductsLoading())
@@ -70,3 +70,26 @@ export const setProducts = (products) => {
         payload: products
     }
 }
+
+export const deleteProduct = (id) => dispatch => {
+    dispatch(setProductsLoading())
+    axios.delete(`https://store--manager.herokuapp.com/api/v1/products/${id}`)
+    .then(res => {
+        console.log(res.data)
+        const { data } = res;
+        console.log(data)
+        dispatch({
+            type: DELETE_PRODUCT,
+            payload: data.message
+        });
+        dispatch(getProducts());
+
+    })
+    .catch(err => { 
+        dispatch({
+            type: GET_ERRORS,
+            payload: err.response.data.data || err.response.data.message
+        });
+    });
+    
+};

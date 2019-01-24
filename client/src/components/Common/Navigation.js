@@ -15,7 +15,7 @@ class Navigation extends Component {
         document.getElementById('side-menu').style.width = '0';
     }
 
-  render() {
+  render() { console.log(window.location.pathname)
     let userProfilePicture = this.props.auth.user.userImage;
     userProfilePicture = `http://store--manager.herokuapp.com/${userProfilePicture}`;
     let dashboardLinks = (
