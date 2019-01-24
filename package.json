@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest",
     "test:watch": "jest --watch",
-    "coveralls": "jest --coverage",
+    "coveralls": "jest --coverage && cat coverage/lcov.info | coveralls",
     "start": "webpack-dev-server --mode development --open --hot",
     "build": "webpack --mode production"
   },
@@ -42,6 +42,7 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
+    "coveralls": "^3.0.2",
     "jwt-decode": "^2.2.0",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
