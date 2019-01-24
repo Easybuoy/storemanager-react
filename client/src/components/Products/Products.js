@@ -2,17 +2,22 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux';
 import Loading from '../Common/Loading';
 
-import { getProducts } from '../../actions/productActions';
+import { getProducts, deleteProduct } from '../../actions/productActions';
 import { toast } from 'react-toastify';
 
 class Products extends Component {
 
     componentDidMount(){
-        this.props.getProducts()
+        this.props.getProducts();
+    }
+
+    deleteProduct(id) {
+      console.log(id)
+      this.props.deleteProduct(id);
     }
 
   render() {
-    const { products, loading } = this.props.products;
+    const { products, loading, productDeleted } = this.props.products;
     
     if (Object.keys(this.props.errors).length > 0) {
 
@@ -34,9 +39,47 @@ class Products extends Component {
       )
     }
    
+    if (productDeleted) {
+      toast.success('Product Deleted Successfully');
+    }
 
     if (products) {
-      
+      console.log(this.props.auth.user.type)
+      // If type == 1, its an admin
+      if (this.props.auth.user.type === 1) {
+        return (
+          <div className="container topmargin">
+            <div className="cardgroup">
+            {
+              products.map((product, key) => {
+                const productid = product.id;
+                const productName = product.name;
+                const productDescription = `${product.description.substring(0, 70)}...`;
+                const productPrice = product.price;
+                const productQuantity = product.quantity;
+                const productImage = `https://store--manager.herokuapp.com/${product.product_image}`;
+                return (
+                <div key={key} className="card">
+                  <a href="view_product_details.html"><img src={productImage} className="cardimg" /></a>
+          
+                  <div className="text-center cardbody" >
+                    <h3 id="productname">{productName}</h3>
+                    <p>{productDescription} </p>
+                    <p>Quantity: {productQuantity}</p>
+                    <p  id="productamount">Price: {`$${productPrice}`}</p>
+                    <button className="button_1"><a href="admin_edit_product.html?id=${product.id}">EDIT</a></button>
+                    <button className="button_2" onClick={() => {this.deleteProduct(productid)}}>DELETE</button>
+                </div>
+              </div>
+                );
+              })
+            }
+              
+            </div>
+          </div>
+        )
+      }
+
       return (
         <div className="container">
           <div className="cardgroup">
@@ -78,8 +121,9 @@ class Products extends Component {
 }
 
 const mapStateToProps = state => ({
+    auth: state.auth,
     products: state.products,
     errors: state.errors
 });
 
-export default connect(mapStateToProps, { getProducts })(Products);
+export default connect(mapStateToProps, { getProducts, deleteProduct })(Products);
