@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux';
-import Loading from '../Common/Loading';
+import PropTypes from 'prop-types';
+
+
+import Loading from '../Common/Loading';;
 
 import { getProducts, deleteProduct } from '../../actions/productActions';
 import { toast } from 'react-toastify';
@@ -118,6 +121,14 @@ class Products extends Component {
       </div>
     )
   }
+}
+
+Products.propTypes = {
+  getProducts: PropTypes.func.isRequired,
+  deleteProduct: PropTypes.func.isRequired,
+  auth: PropTypes.object.isRequired,
+  products: PropTypes.object.isRequired,
+  errors: PropTypes.object.isRequired
 }
 
 const mapStateToProps = state => ({
