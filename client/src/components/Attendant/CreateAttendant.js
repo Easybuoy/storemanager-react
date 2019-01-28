@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import { toast } from 'react-toastify';
 
 import { createAttendant } from '../../actions/attendantActions';
+import Loading from '../Common/Loading';
 
 class CreateAttendant extends Component {
 constructor(){
@@ -37,15 +38,22 @@ onSubmit = (e) => {
     type
   };
 
-  console.log(this.props)
   this.props.createAttendant(userData);
 }
 
 
   render() {
     const { errors} = this.props;
-    const { isAttendantCreated } = this.props.attendants;
+    const { isAttendantCreated, loading } = this.props.attendants;
 
+    if (loading) {
+      return (
+          <div>
+          <Loading />
+          </div>
+      )
+  }
+    console.log(errors)
     if (Object.keys(errors).length > 0) {
       if (errors.email) {
         toast.error(errors.email);
