@@ -10,6 +10,7 @@ import Dashboard from './components/Dashboard/Dashboard';
 import Navigation from './components/Common/Navigation';
 import Products from './components/Products/Products';
 import CreateProduct from './components/Products/CreateProduct';
+import CreateAttendant from './components/Attendant/CreateAttendant';
 import Footer from './components/Common/Footer';
 
 class App extends Component {
@@ -29,6 +30,7 @@ class App extends Component {
                     <PrivateRoute exact path='/dashboard' component={ Dashboard } />
                     <PrivateRoute exact path="/viewproducts" component={ Products } />
                     <PrivateRoute exact path="/createproduct" component={ CreateProduct } />
+                    <PrivateRoute exact path="/createattendant" component={ CreateAttendant } />
                     <Route path='*' component={() => 'Not found'} />
                     </Switch>
                     <Footer />
