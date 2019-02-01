@@ -1,4 +1,4 @@
-import { SET_ATTENDANT_CREATED, RESET_ATTENDANT_CREATED, SET_ATTENDANT_LOADING, } from '../actions/types';
+import { SET_ATTENDANT_CREATED, RESET_ATTENDANT_CREATED, SET_ATTENDANT_LOADING, SET_ATTENDANTS, } from '../actions/types';
 
 const INITIAL_STATE = {
     isAttendantCreated: false,
@@ -25,6 +25,12 @@ export default (state = INITIAL_STATE, action) => {
                 ...state,
                 loading: true
             };
+        case SET_ATTENDANTS :
+            return {
+                ...state,
+                attendants: action.payload,
+                loading: false
+            }
         default:
             return state;
     }
