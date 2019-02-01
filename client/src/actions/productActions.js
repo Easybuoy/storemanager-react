@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-import { GET_ERRORS, SET_PRODUCTS, SET_LOADING, CREATE_PRODUCT, SET_ERRORS, DELETE_PRODUCT } from './types';
+import { GET_ERRORS, SET_PRODUCTS, SET_PRODUCT_LOADING, CREATE_PRODUCT, SET_ERRORS, DELETE_PRODUCT } from './types';
 
 export const getProducts = () => dispatch => {
     dispatch(setProductsLoading())
@@ -60,7 +60,7 @@ export const createProduct = (productData) => dispatch => {
 
 export const setProductsLoading = () => {
     return {
-        type: SET_LOADING,
+        type: SET_PRODUCT_LOADING,
     }
 }
 

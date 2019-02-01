@@ -1,4 +1,4 @@
-import { SET_PRODUCTS, SET_LOADING, CREATE_PRODUCT, DELETE_PRODUCT } from '../actions/types';
+import { SET_PRODUCTS, SET_PRODUCT_LOADING, CREATE_PRODUCT, DELETE_PRODUCT } from '../actions/types';
 
 const INITIAL_STATE = {
     loading: false,
@@ -17,7 +17,7 @@ export default (state = INITIAL_STATE, action) => {
                 isProductCreated: false,
                 productDeleted: false
             };
-        case SET_LOADING:
+        case SET_PRODUCT_LOADING:
             return {
                 ...state,
                 loading: true
