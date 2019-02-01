@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-import { GET_ERRORS, SET_ATTENDANT_CREATED, RESET_ATTENDANT_CREATED, SET_ERRORS, SET_LOADING } from './types';
+import { GET_ERRORS, SET_ATTENDANT_CREATED, RESET_ATTENDANT_CREATED, SET_ERRORS, SET_ATTENDANT_LOADING } from './types';
 
 export const createAttendant = (userData) => dispatch => {
     const formData = new FormData();
@@ -12,7 +12,7 @@ export const createAttendant = (userData) => dispatch => {
     axios.post('https://store--manager.herokuapp.com/api/v1/auth/signup', formData)
     .then(res => {
         dispatch({
-            type: SET_LOADING,
+            type: SET_ATTENDANT_LOADING,
         });
         dispatch({
             type: SET_ATTENDANT_CREATED,
