@@ -46,14 +46,6 @@ onSubmit = (e) => {
     const { errors} = this.props;
     const { isAttendantCreated, loading } = this.props.attendants;
 
-    if (loading) {
-      return (
-          <div>
-          <Loading />
-          </div>
-      )
-  }
-    console.log(errors)
     if (Object.keys(errors).length > 0) {
       if (errors.email) {
         toast.error(errors.email);
@@ -63,6 +55,13 @@ onSubmit = (e) => {
         toast.error(errors.password);
       }
     }
+    if (loading) {
+      return (
+          <div>
+          <Loading />
+          </div>
+      )
+  }
 
     if (isAttendantCreated) {
       toast.success(isAttendantCreated);
@@ -101,6 +100,12 @@ onSubmit = (e) => {
     )
   }
 }
+
+CreateAttendant.propTypes = {
+  createAttendant: PropTypes.func.isRequired,
+  attendants: PropTypes.object.isRequired,
+  errors: PropTypes.object.isRequired
+};
 
 const mapStateToProps = state => ({
   attendants: state.attendants,

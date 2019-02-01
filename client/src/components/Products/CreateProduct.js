@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux';
 import { toast } from 'react-toastify';
+import PropTypes from 'prop-types';
 
 import { createProduct } from '../../actions/productActions';
 import Loading from '../Common/Loading';
@@ -108,6 +109,12 @@ class CreateProduct extends Component {
         )
     }
 }
+
+CreateProduct.propTypes = {
+    createProduct: PropTypes.func.isRequired,
+    products: PropTypes.object.isRequired,
+    errors: PropTypes.object.isRequired
+  }
 
 const mapStateToProps = state => ({
     product: state.products,

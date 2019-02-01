@@ -15,8 +15,11 @@ class Products extends Component {
     }
 
     deleteProduct(id) {
-      console.log(id)
-      this.props.deleteProduct(id);
+      if (confirm('Are you sure you want to delete this product?')){
+        console.log(id)
+        this.props.deleteProduct(id);
+      };
+      
     }
 
   render() {
