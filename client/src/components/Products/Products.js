@@ -16,7 +16,6 @@ class Products extends Component {
 
     deleteProduct(id) {
       if (confirm('Are you sure you want to delete this product?')){
-        console.log(id)
         this.props.deleteProduct(id);
       };
       
@@ -50,11 +49,23 @@ class Products extends Component {
     }
 
     if (products) {
-      console.log(this.props.auth.user.type)
       // If type == 1, its an admin
       if (this.props.auth.user.type === 1) {
         return (
-          <div className="container topmargin">
+          <div className="container">
+          <section id="categoryfiltersection">
+            <div className="container">
+                    <div className="categoryfiltercontent">
+                        <select>
+                            <option value="Phones & Tablets">Phones & Tablets</option>
+                            <option value="Computing">Computing</option>
+                            <option value="Gaming">Gaming</option>
+                        </select>
+                        <button className="button_1">Filter</button>
+                       
+                    </div>
+            </div>
+            </section>
             <div className="cardgroup">
             {
               products.map((product, key) => {
@@ -88,6 +99,19 @@ class Products extends Component {
 
       return (
         <div className="container">
+        <section id="categoryfiltersection">
+            <div className="container">
+                    <div className="categoryfiltercontent">
+                        <select>
+                            <option value="Phones & Tablets">Phones & Tablets</option>
+                            <option value="Computing">Computing</option>
+                            <option value="Gaming">Gaming</option>
+                        </select>
+                        <button className="button_1">Filter</button>
+                       
+                    </div>
+            </div>
+            </section>
           <div className="cardgroup">
           {
             products.map((product, key) => {

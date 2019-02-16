@@ -1,28 +1,17 @@
 import React, { Component } from "react";
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
+
 import Products from '../Products/Products';
 
 class Dashboard extends Component {
     
     render() {
-        return (
-            <div id="main">
-            {/* <section id="categoryfiltersection">
-            <div className="container">
-            <h1 className="text-center">Filter By Category</h1> <br />
-
-                    <div className="categoryfiltercontent">
-                        <select>
-                            <option value="Phones & Tablets">Phones & Tablets</option>
-                            <option value="Computing">Computing</option>
-                            <option value="Gaming">Gaming</option>
-                        </select>
-                        <button className="button_1">Filter</button>
-                       
-                    </div>
-            </div>
-            </section> */}
-
-                <section id="topcards">
+        let adminboards = ''; 
+        const { type } = this.props.auth.user;
+        if (type === 1) {
+            adminboards = 
+            <section>
                             <div className="container topcardsgroup">
                             <div className="topcardsbox">
                                 <div className="showcasecard c1">
@@ -53,7 +42,12 @@ class Dashboard extends Component {
                                 </div>
                             </div>
                         </div>
-                        </section>
+                        </section>;
+        }
+        return (
+            <div id="topcards">
+            { adminboards }
+            
 
             <Products />
 
@@ -63,4 +57,12 @@ class Dashboard extends Component {
     }
 }
 
-export default Dashboard;
+Dashboard.propTypes = {
+    auth: PropTypes.object.isRequired
+}
+
+const mapStateToProps = state => ({
+    auth: state.auth
+});
+
+export default connect(mapStateToProps)(Dashboard);

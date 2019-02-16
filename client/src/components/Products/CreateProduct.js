@@ -30,7 +30,6 @@ class CreateProduct extends Component {
     onSubmit = (e) => {
         e.preventDefault();
         const { productname, productdescription, productprice, productquantity, productimage } = this.state;
-        console.log(this.state)
         const productData = {
             name: productname,
             description: productdescription,
@@ -41,7 +40,7 @@ class CreateProduct extends Component {
         this.props.createProduct(productData);
     }
 
-    render() { console.log(this.props)
+    render() {
         const { errors } = this.props;
         const { loading, isProductCreated, } = this.props.product;
         

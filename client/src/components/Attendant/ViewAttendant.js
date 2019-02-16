@@ -10,7 +10,7 @@ class ViewAttendant extends Component {
         this.props.viewAttendants();
     }
 
-    render() { console.log(this.props)
+    render() {
         const { loading, attendants } = this.props.attendants;
 
         if (loading) {
