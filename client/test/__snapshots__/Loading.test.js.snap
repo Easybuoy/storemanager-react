@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Loading /> renders the loading component correctly 1`] = `
+<div
+  style={
+    Object {
+      "height": "18em",
+      "left": "50%",
+      "marginLeft": "-15em",
+      "marginTop": "-9em",
+      "position": "fixed",
+      "top": "50%",
+      "width": "30em",
+    }
+  }
+>
+  <div
+    className="PreLoading-Triple"
+  >
+    <div
+      className="PreLoading-Circle C1"
+      style={
+        Object {
+          "borderColor": "#0099ff",
+          "height": 40,
+          "width": 40,
+        }
+      }
+    >
+      <div
+        className="PreLoading-Circle C2"
+        style={
+          Object {
+            "borderColor": "#0099ff",
+            "height": 30.00750187546887,
+            "width": 30.00750187546887,
+          }
+        }
+      >
+        <div
+          className="PreLoading-Circle C3"
+          style={
+            Object {
+              "borderColor": "#0099ff",
+              "height": 20,
+              "width": 20,
+            }
+          }
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
