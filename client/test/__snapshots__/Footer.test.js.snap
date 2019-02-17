@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Footer /> renders the footer component correctly 1`] = `
+<div>
+  <footer
+    className="footerstickbottom"
+    id="footer"
+  >
+    <p>
+      Store Manager Copyright © 
+      2019
+    </p>
+  </footer>
+</div>
+`;
