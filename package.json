@@ -8,7 +8,8 @@
     "test:watch": "jest --watch",
     "coveralls": "jest --coverage && cat coverage/lcov.info | coveralls",
     "start": "webpack-dev-server --mode development --open --hot",
-    "build": "webpack --mode production && node server.js"
+    "build": "webpack --mode production && node server.js",
+    "update": "jest --updateSnapshot"
   },
   "repository": {
     "type": "git",
