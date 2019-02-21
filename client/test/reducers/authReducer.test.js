@@ -1,7 +1,7 @@
 import authReducer from '../../src/reducers/authReducer';
 import { SET_CURRENT_USER } from '../../src/actions/types';
 
-describe('authActions', () => {
+describe('authReducer', () => {
     it('should return default state', () => {
         const INITIAL_STATE = {
             isSignedIn: false,
