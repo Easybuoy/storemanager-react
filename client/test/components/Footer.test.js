@@ -2,7 +2,7 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import renderer from 'react-test-renderer';
 
-import Footer from '../src/components/Common/Footer';
+import Footer from '../../src/components/Common/Footer';
 
 describe('<Footer />', () => {
     it('should have 1 div', () => {

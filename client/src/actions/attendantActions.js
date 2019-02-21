@@ -40,7 +40,6 @@ export const viewAttendants = () => dispatch => {
     dispatch(setAttendantLoading())
     axios.get('https://store--manager.herokuapp.com/api/v1/auth/attendants')
     .then(res => {
-        console.log(res.data)
         dispatch({
             type: SET_ATTENDANTS,
             payload: res.data.data

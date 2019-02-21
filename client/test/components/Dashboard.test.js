@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import Dashboard from '../src/components/Dashboard/Dashboard';
+import Dashboard from '../../src/components/Dashboard/Dashboard';
 
 describe('<Dashboard />', () => {
     it('renders the Dashboard component correctly', () => {
