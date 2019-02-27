@@ -9,11 +9,4 @@ describe('authActions', () => {
         expect(response.type).toEqual('SET_CURRENT_USER');
         expect(response.payload).toEqual(data);
     });
-
-    it('should signout user', () => {
-        const response = signOut();
-        // console.log(response)
-        // expect(response.type).toEqual('SET_CURRENT_USER');
-        // expect(response.payload).toEqual(data);
-    });
 });
