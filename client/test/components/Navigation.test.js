@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import Navigation from '../src/components/Common/Navigation';
+import Navigation from '../../src/components/Common/Navigation';
 
 describe('<Navigation />', () => {
     it('renders the Navigation component correctly', () => {

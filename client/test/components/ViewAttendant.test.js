@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import ViewAttendant from '../src/components/Attendant/ViewAttendant';
+import ViewAttendant from '../../src/components/Attendant/ViewAttendant';
 
 describe('<ViewAttendant />', () => {
     it('renders the ViewAttendant component correctly', () => {

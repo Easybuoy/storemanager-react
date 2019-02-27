@@ -2,7 +2,7 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import renderer from 'react-test-renderer';
 
-import Loading from '../src/components/Common/Loading';
+import Loading from '../../src/components/Common/Loading';
 
 describe('<Loading />', () => {
     it('should have 1 div', () => {
