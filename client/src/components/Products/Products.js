@@ -162,7 +162,6 @@ class Products extends Component {
                   <p>{productDescription} </p>
                   <p>Quantity: {productQuantity}</p>
                   <p  id="productamount">Price: {`$${productPrice}`}</p>
-                  <input type="number" id="number" name="amount" placeholder="Quantity" />
                   <button className="button_1" onClick={() => {this.addToCart(productId, productImage, productPrice)}}>Add To Cart</button>
               </div>
             </div>

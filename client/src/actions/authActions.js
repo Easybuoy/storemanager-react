@@ -10,7 +10,6 @@ const baseUrl = 'http://localhost:3000';
 
 export const signIn = (userData) => dispatch => {
     axios.post(`${baseUrl}/api/v1/auth/login`, userData)
-    // axios.post('https://store--manager.herokuapp.com/api/v1/auth/login', userData)
     .then(res => {
         const { token } = res.data.data;
         // Save to localstorage
