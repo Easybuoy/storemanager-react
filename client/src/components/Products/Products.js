@@ -11,6 +11,7 @@ import { toast } from 'react-toastify';
 class Products extends Component {
 
     componentDidMount(){
+        this.showCartCount();
         this.props.getProducts();
     }
 
@@ -19,6 +20,37 @@ class Products extends Component {
         this.props.deleteProduct(id);
       };
       
+    }
+
+    addToCart(productId, productImage, productPrice) {
+      const products = {
+      productId,
+      productImage,
+      productPrice
+    };
+
+    const totalcartitems = JSON.parse(localStorage.getItem('products'));
+    // If nothing is in cart add new item
+    if (totalcartitems === null) {
+      const data = [];
+  
+      data.push(products);
+      localStorage.setItem('products', JSON.stringify(data));
+      return this.showCartCount();
+    }
+    // Else push to what is existing in cart.
+    totalcartitems.push(products);
+    localStorage.setItem('products', JSON.stringify(totalcartitems));      
+      this.showCartCount();
+    }
+
+    showCartCount() {
+      let length = 0;
+      const totalcartitem = JSON.parse(localStorage.getItem('products'));
+      if (totalcartitem) {
+      length = totalcartitem.length;
+      }
+      document.getElementById('shoppingcartlabel').innerHTML = length;
     }
 
   render() {
@@ -115,6 +147,7 @@ class Products extends Component {
           <div className="cardgroup">
           {
             products.map((product, key) => {
+              const productId = product.id;
               const productName = product.name;
               const productDescription = `${product.description.substring(0, 70)}...`;
               const productPrice = product.price;
@@ -130,7 +163,7 @@ class Products extends Component {
                   <p>Quantity: {productQuantity}</p>
                   <p  id="productamount">Price: {`$${productPrice}`}</p>
                   <input type="number" id="number" name="amount" placeholder="Quantity" />
-                  <button className="button_1">Add To Cart</button>
+                  <button className="button_1" onClick={() => {this.addToCart(productId, productImage, productPrice)}}>Add To Cart</button>
               </div>
             </div>
               );
