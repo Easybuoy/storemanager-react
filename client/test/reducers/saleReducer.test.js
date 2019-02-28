@@ -1,12 +1,14 @@
 import saleReducer from '../../src/reducers/saleReducer';
 import { SET_SALE_LOADING, CREATE_SALE, RESET_SALE } from '../../src/actions/types';
 
+const INITIAL_STATE = {
+    loading: false,
+    isSaleCreated: false,
+};
+
 describe('saleReducer', () => {
     it('should return default state', () => {
-        const INITIAL_STATE = {
-            loading: false,
-            isSaleCreated: false,
-        };
+        
         const state = saleReducer(undefined, { type: '@@INIT' });
         expect(state).toEqual(INITIAL_STATE);
     });
