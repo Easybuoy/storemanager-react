@@ -111,7 +111,7 @@ class CreateProduct extends Component {
 
 CreateProduct.propTypes = {
     createProduct: PropTypes.func.isRequired,
-    products: PropTypes.object.isRequired,
+    product: PropTypes.object.isRequired,
     errors: PropTypes.object.isRequired
   }
 

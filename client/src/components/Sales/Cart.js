@@ -120,7 +120,9 @@ class Cart extends Component {
 }
 
 Cart.propTypes = {
-
+    sales: PropTypes.object.isRequired,
+    errors: PropTypes.object.isRequired,
+    createSale: PropTypes.func.isRequired
 }
 
 const mapStateToProps = state => ({
