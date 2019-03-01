@@ -57,10 +57,10 @@ class Navigation extends Component {
             </a></span>
 
             <ul>
-                <li><a href="store_attendant_profile.html" style={{ paddingTop : '10px' }}><div><img id="userimg" src={userProfilePicture} /> </div></a></li>
-                <li id="shoppingcart"><a href="#"><label  id="shoppingcartlabel">0</label ><img id="cartimage" src="http://store--manager.herokuapp.com/img/cart.png" /></a></li>
+                <li><Link to="profile" style={{ paddingTop : '10px' }}><div><img id="userimg" src={userProfilePicture} /> </div></Link></li>
+                <li id="shoppingcart"><Link to="/cart"><label  id="shoppingcartlabel">0</label ><img id="cartimage" src="http://store--manager.herokuapp.com/img/cart.png" /></Link></li>
                     <li><a href="#"><div><input className="search" placeholder="Search Products" type="text" /> <i id="searchimg" className="fas fa-search fa-2x"></i> </div></a></li>
-                    <li id="appnameli"><a href="dashboard.html"><h1 id="appname"><span className="highlight">Store</span> Manager</h1></a></li>
+                    <li id="appnameli"><Link to="/dashboard"><h1 id="appname"><span className="highlight">Store</span> Manager</h1></Link></li>
             </ul>
         </nav>
 

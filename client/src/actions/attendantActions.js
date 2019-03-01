@@ -2,6 +2,9 @@ import axios from 'axios';
 
 import { GET_ERRORS, SET_ATTENDANT_CREATED, RESET_ATTENDANT_CREATED, SET_ERRORS, SET_ATTENDANT_LOADING, SET_ATTENDANTS } from './types';
 
+const baseUrl = 'https://store--manager.herokuapp.com';
+// const baseUrl = 'http://localhost:3000';
+
 export const createAttendant = (userData) => dispatch => {
     const formData = new FormData();
     formData.append('userImage', userData.userimage);
@@ -9,7 +12,7 @@ export const createAttendant = (userData) => dispatch => {
     formData.append('email', userData.email);
     formData.append('password', userData.password);
     formData.append('type', userData.type);
-    axios.post('https://store--manager.herokuapp.com/api/v1/auth/signup', formData)
+    axios.post(`${baseUrl}/api/v1/auth/signup`, formData)
     .then(res => {
         dispatch(setAttendantLoading())
 
@@ -38,7 +41,7 @@ export const createAttendant = (userData) => dispatch => {
 
 export const viewAttendants = () => dispatch => {
     dispatch(setAttendantLoading())
-    axios.get('https://store--manager.herokuapp.com/api/v1/auth/attendants')
+    axios.get(`${baseUrl}/api/v1/auth/attendants`)
     .then(res => {
         dispatch({
             type: SET_ATTENDANTS,

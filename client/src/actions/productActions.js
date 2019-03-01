@@ -2,9 +2,12 @@ import axios from 'axios';
 
 import { GET_ERRORS, SET_PRODUCTS, SET_PRODUCT_LOADING, CREATE_PRODUCT, SET_ERRORS, DELETE_PRODUCT } from './types';
 
+const baseUrl = 'https://store--manager.herokuapp.com';
+// const baseUrl = 'http://localhost:3000';
+
 export const getProducts = () => dispatch => {
     dispatch(setProductsLoading())
-    axios.get('https://store--manager.herokuapp.com/api/v1/products/')
+axios.get(`${baseUrl}/api/v1/products/`)
     .then(res => {
         const { data } = res.data;
         dispatch(setProducts(data));
@@ -27,9 +30,8 @@ export const createProduct = (productData) => dispatch => {
     formData.append('description', productData.description);
     formData.append('price', productData.price);
     formData.append('quantity', productData.quantity);
-    axios.post('https://store--manager.herokuapp.com/api/v1/products/', formData)
+    axios.post(`${baseUrl}/api/v1/products/`, formData)
     .then(res => {
-        // dispatch(setProductsLoading())
         dispatch({
             type: SET_ERRORS,
         });
@@ -73,11 +75,9 @@ export const setProducts = (products) => {
 
 export const deleteProduct = (id) => dispatch => {
     dispatch(setProductsLoading())
-    axios.delete(`https://store--manager.herokuapp.com/api/v1/products/${id}`)
+    axios.delete(`${baseUrl}/api/v1/products/${id}`)
     .then(res => {
-        console.log(res.data)
         const { data } = res;
-        console.log(data)
         dispatch({
             type: DELETE_PRODUCT,
             payload: data.message

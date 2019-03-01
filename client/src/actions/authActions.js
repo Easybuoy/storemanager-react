@@ -5,8 +5,11 @@ import { toast } from 'react-toastify';
 import setAuthToken from '../utils/setAuthToken';
 import { GET_ERRORS, SIGN_OUT, SET_CURRENT_USER, SET_ERRORS } from './types';
 
+const baseUrl = 'https://store--manager.herokuapp.com';
+// const baseUrl = 'http://localhost:3000';
+
 export const signIn = (userData) => dispatch => {
-    axios.post('https://store--manager.herokuapp.com/api/v1/auth/login', userData)
+    axios.post(`${baseUrl}/api/v1/auth/login`, userData)
     .then(res => {
         const { token } = res.data.data;
         // Save to localstorage
