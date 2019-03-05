@@ -14,3 +14,4 @@ export const RESET_ATTENDANT_CREATED = 'RESET_ATTENDANT_CREATED';
 export const SET_ATTENDANTS = 'SET_ATTENDANTS';
 export const CREATE_SALE = 'CREATE_SALE';
 export const RESET_SALE = 'RESET_SALE';
+export const SET_SALES = 'SET_SALES';
