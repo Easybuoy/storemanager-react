@@ -2,8 +2,8 @@ import axios from 'axios';
 
 import { GET_ERRORS, SET_PRODUCTS, SET_PRODUCT_LOADING, CREATE_PRODUCT, SET_ERRORS, DELETE_PRODUCT } from './types';
 
-// const baseUrl = 'https://store--manager.herokuapp.com';
-const baseUrl = 'http://localhost:3000';
+const baseUrl = 'https://store--manager.herokuapp.com';
+// const baseUrl = 'http://localhost:3000';
 
 export const getProducts = () => dispatch => {
     dispatch(setProductsLoading())
