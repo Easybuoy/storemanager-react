@@ -13,6 +13,7 @@ import CreateProduct from './components/Products/CreateProduct';
 import CreateAttendant from './components/Attendant/CreateAttendant';
 import ViewAttendant from './components/Attendant/ViewAttendant';
 import Cart from './components/Sales/Cart';
+import ViewSales from './components/Sales/ViewSales';
 import Footer from './components/Common/Footer';
 
 class App extends Component {
@@ -35,6 +36,7 @@ class App extends Component {
                     <PrivateRoute exact path="/createattendant" component={ CreateAttendant } />
                     <PrivateRoute exact path="/viewattendants" component={ ViewAttendant } />
                     <PrivateRoute exact path="/cart" component={ Cart } />
+                    <PrivateRoute exact path="/viewsales" component={ ViewSales } />
                     <Route path='*' component={() => 'Not found'} />
                     </Switch>
                     <Footer />

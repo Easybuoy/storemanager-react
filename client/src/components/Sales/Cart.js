@@ -40,7 +40,6 @@ class Cart extends Component {
     }
 
   render() {
-    console.log(this.props.errors)
     if (Object.keys(this.props.errors).length > 0) {
 
         toast.error(this.props.errors.message);

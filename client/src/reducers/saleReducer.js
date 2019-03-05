@@ -1,8 +1,9 @@
-import { SET_SALE_LOADING, CREATE_SALE, RESET_SALE } from '../actions/types';
+import { SET_SALE_LOADING, CREATE_SALE, RESET_SALE, SET_SALES } from '../actions/types';
 
 const INITIAL_STATE = {
     loading: false,
     isSaleCreated: false,
+    sales: []
 };
 
 export default (state = INITIAL_STATE, action) => {
@@ -23,6 +24,13 @@ export default (state = INITIAL_STATE, action) => {
             return {
                 ...state,
                 loading: true
+            };
+            case SET_SALES:
+            return {
+                ...state,
+                loading: false,
+                isSaleCreated: false,
+                sales: action.payload
             };
         default:
             return state;
