@@ -7,7 +7,7 @@ const baseUrl = 'https://store--manager.herokuapp.com';
 
 export const getProducts = () => dispatch => {
     dispatch(setProductsLoading())
-axios.get(`${baseUrl}/api/v1/products/`)
+return axios.get(`${baseUrl}/api/v1/products/`)
     .then(res => {
         const { data } = res.data;
         dispatch(setProducts(data));
@@ -30,7 +30,7 @@ export const createProduct = (productData) => dispatch => {
     formData.append('description', productData.description);
     formData.append('price', productData.price);
     formData.append('quantity', productData.quantity);
-    axios.post(`${baseUrl}/api/v1/products/`, formData)
+   return axios.post(`${baseUrl}/api/v1/products/`, formData)
     .then(res => {
         dispatch({
             type: SET_ERRORS,
@@ -83,13 +83,14 @@ export const deleteProduct = (id) => dispatch => {
             payload: data.message
         });
         dispatch(getProducts());
-
+        return res;
     })
     .catch(err => { 
         dispatch({
             type: GET_ERRORS,
             payload: err.response.data.data || err.response.data.message
         });
+        return err;
     });
     
 };
