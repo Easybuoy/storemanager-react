@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { toast } from 'react-toastify';
 
 import { signIn } from '../../actions/authActions';
-class Login extends Component {
+export class Login extends Component {
     constructor() {
         super();
         this.state = {
@@ -44,12 +44,12 @@ class Login extends Component {
         <div className="loginbox">
             <img src="https://store--manager.herokuapp.com/assets/uploads/users/default-avatar.png" className="avatar"/>
             <h2 className="text-center">Login to access store manager</h2>
-            <form>
+            <form onSubmit={this.onSubmit}>
                 <p>Email</p>
                 <input onChange={this.onChange} type="text" id="loginusername" name="email" placeholder="Enter Email" />
                 <p>Password</p>
                 <input onChange= {this.onChange} type="password" id="loginpassword" name="password" placeholder="Enter Password" />
-                <input onClick={this.onSubmit} type="submit" name="submit" id="loginsubmit" value="Login" />
+                <input  type="submit" name="submit" id="loginsubmit" value="Login" />
             </form>
         </div>
 

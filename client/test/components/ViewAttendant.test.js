@@ -20,4 +20,20 @@ describe('<ViewAttendant />', () => {
          expect(props.viewAttendants).toBeCalled();
          expect(props.viewAttendants).toHaveReturned();
         });
+
+        // it('should render salesRecord if sales array is not empty', () => {
+        //     props.sales.sales = [{id: 1, name: 'iphone'}];
+        //     const wrapper = shallow(<ViewSales {...props} />)
+
+        //     expect(props.viewSales).toBeCalled();
+        //      expect(props.viewSales).toHaveReturned();
+        //     });
+
+            it('should render Loading component if loading props is true', () => {
+                props.attendants.loading = true;
+                const wrapper = shallow(<ViewAttendant {...props} />)
+    
+                expect(props.viewAttendants).toBeCalled();
+                 expect(props.viewAttendants).toHaveReturned();
+                });
 });

@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
+import { toast } from 'react-toastify';
 
 import { viewSales } from '../../actions/saleActions';
 import Loading from '../Common/Loading';
 
- class ViewSales extends Component {
+ export class ViewSales extends Component {
     componentDidMount(){
          this.props.viewSales();
      }
