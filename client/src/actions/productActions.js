@@ -51,7 +51,7 @@ export const createProduct = (productData) => dispatch => {
         });
         dispatch({
             type: GET_ERRORS,
-            payload: err.response.data
+            payload: err.response.data.data
         })
         dispatch({
             type: SET_ERRORS,

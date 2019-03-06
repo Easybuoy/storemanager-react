@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 import { signOut } from '../../actions/authActions';
 
-class Navigation extends Component {
+export class Navigation extends Component {
     openSlideMenu(){
         document.getElementById('side-menu').style.width = '250px';
     }
@@ -15,7 +15,7 @@ class Navigation extends Component {
         document.getElementById('side-menu').style.width = '0';
     }
 
-  render() { console.log(window.location.pathname)
+  render() {
     let userProfilePicture = this.props.auth.user.userImage;
     userProfilePicture = `http://store--manager.herokuapp.com/${userProfilePicture}`;
     let dashboardLinks = (
@@ -24,7 +24,7 @@ class Navigation extends Component {
             <li className="current"><Link to="/dashboard">Dashboard</Link></li>
             <li><Link to="/viewsales">View Sales Record</Link></li>
             <li><Link to="/profile">Profile</Link></li> 
-            <li><a onClick={this.props.signOut}>Logout</a></li>
+            <li><a id="signout" onClick={this.props.signOut}>Logout</a></li>
         </div>
     );
     if (this.props.auth.user.type === 1) {

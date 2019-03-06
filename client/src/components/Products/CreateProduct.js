@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 import { createProduct } from '../../actions/productActions';
 import Loading from '../Common/Loading';
 
-class CreateProduct extends Component {
+export class CreateProduct extends Component {
     constructor() {
         super();
         this.state = {
@@ -56,19 +56,19 @@ class CreateProduct extends Component {
         }
 
         if (Object.keys(errors).length > 0) {
-            if (errors.data.name) {
+            if (errors.name) {
                 toast.error(errors.data.name);
             }
 
-            if (errors.data.description) {
+            if (errors.description) {
                 toast.error(errors.data.description);
             }
 
-            if (errors.data.price) {
+            if (errors.price) {
                 toast.error(errors.data.price);
             }
 
-            if (errors.data.quantity) {
+            if (errors.quantity) {
                 toast.error(errors.data.quantity);
             }
         }

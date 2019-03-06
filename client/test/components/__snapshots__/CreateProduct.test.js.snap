@@ -3,7 +3,83 @@
 exports[`<CreateProduct /> renders the CreateProduct component correctly 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Connect(CreateProduct) />,
+  Symbol(enzyme.__unrendered__): <CreateProduct
+    createProduct={[MockFunction]}
+    errors={
+      Object {
+        "addMatchers": [Function],
+        "advanceTimersByTime": [Function],
+        "autoMockOff": [Function],
+        "autoMockOn": [Function],
+        "clearAllMocks": [Function],
+        "clearAllTimers": [Function],
+        "deepUnmock": [Function],
+        "disableAutomock": [Function],
+        "doMock": [Function],
+        "dontMock": [Function],
+        "enableAutomock": [Function],
+        "fn": [Function],
+        "genMockFromModule": [Function],
+        "isMockFunction": [Function],
+        "mock": [Function],
+        "requireActual": [Function],
+        "requireMock": [Function],
+        "resetAllMocks": [Function],
+        "resetModuleRegistry": [Function],
+        "resetModules": [Function],
+        "restoreAllMocks": [Function],
+        "retryTimes": [Function],
+        "runAllImmediates": [Function],
+        "runAllTicks": [Function],
+        "runAllTimers": [Function],
+        "runOnlyPendingTimers": [Function],
+        "runTimersToTime": [Function],
+        "setMock": [Function],
+        "setTimeout": [Function],
+        "spyOn": [Function],
+        "unmock": [Function],
+        "useFakeTimers": [Function],
+        "useRealTimers": [Function],
+      }
+    }
+    product={
+      Object {
+        "addMatchers": [Function],
+        "advanceTimersByTime": [Function],
+        "autoMockOff": [Function],
+        "autoMockOn": [Function],
+        "clearAllMocks": [Function],
+        "clearAllTimers": [Function],
+        "deepUnmock": [Function],
+        "disableAutomock": [Function],
+        "doMock": [Function],
+        "dontMock": [Function],
+        "enableAutomock": [Function],
+        "fn": [Function],
+        "genMockFromModule": [Function],
+        "isMockFunction": [Function],
+        "mock": [Function],
+        "requireActual": [Function],
+        "requireMock": [Function],
+        "resetAllMocks": [Function],
+        "resetModuleRegistry": [Function],
+        "resetModules": [Function],
+        "restoreAllMocks": [Function],
+        "retryTimes": [Function],
+        "runAllImmediates": [Function],
+        "runAllTicks": [Function],
+        "runAllTimers": [Function],
+        "runOnlyPendingTimers": [Function],
+        "runTimersToTime": [Function],
+        "setMock": [Function],
+        "setTimeout": [Function],
+        "spyOn": [Function],
+        "unmock": [Function],
+        "useFakeTimers": [Function],
+        "useRealTimers": [Function],
+      }
+    }
+  />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "checkPropTypes": [Function],
@@ -16,59 +92,1355 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "function",
+    "nodeType": "host",
     "props": Object {
-      "children": [Function],
+      "children": <div
+        className="container"
+      >
+        <div
+          id="create_sales_assistant"
+        >
+          <h1
+            className="text-center"
+          >
+            Create New Product
+          </h1>
+          <form
+            onSubmit={[Function]}
+          >
+            <h2>
+              Product Name
+            </h2>
+            <input
+              id="productname"
+              name="productname"
+              onChange={[Function]}
+              placeholder="Enter Name"
+              required={true}
+              type="text"
+            />
+            <h2>
+              Product Summary
+            </h2>
+            <input
+              id="productdescription"
+              name="productdescription"
+              onChange={[Function]}
+              placeholder="Enter Description"
+              required={true}
+              type="text"
+            />
+            <h2>
+              Product Price
+            </h2>
+            <input
+              id="productprice"
+              name="productprice"
+              onChange={[Function]}
+              placeholder="Enter Price"
+              required={true}
+              type="number"
+            />
+            <h2>
+              Product Quantity
+            </h2>
+            <input
+              id="productquantity"
+              name="productquantity"
+              onChange={[Function]}
+              placeholder="Enter Quantity"
+              required={true}
+              type="number"
+            />
+            <img
+              className="text-center"
+              id="showimage"
+              src=""
+              style={
+                Object {
+                  "display": "none",
+                  "height": "100px",
+                  "width": "100px",
+                }
+              }
+            />
+            <h2>
+              Product Image
+            </h2>
+            <input
+              id="productimage"
+              name="upload"
+              onChange={[Function]}
+              type="file"
+            />
+            <h2>
+              Category
+            </h2>
+            <select
+              id="categoryoption"
+            >
+              <option
+                value=""
+              >
+                Select Category
+              </option>
+            </select>
+             
+            <br />
+             
+            <br />
+            <input
+              className="button_1"
+              id="createproductsubmit"
+              name=""
+              type="submit"
+              value="Create Product"
+            />
+          </form>
+        </div>
+      </div>,
+      "className": "topmargin",
+      "id": "main",
     },
     "ref": null,
-    "rendered": [Function],
-    "type": Object {
-      "$$typeof": Symbol(react.context),
-      "_calculateChangedBits": null,
-      "_context": Object {
-        "$$typeof": Symbol(react.context),
-        "Consumer": [Circular],
-        "Provider": Object {
-          "$$typeof": Symbol(react.provider),
-          "_context": [Circular],
-        },
-        "_calculateChangedBits": null,
-        "_currentRenderer": null,
-        "_currentRenderer2": null,
-        "_currentValue": null,
-        "_currentValue2": null,
-        "_threadCount": 0,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          id="create_sales_assistant"
+        >
+          <h1
+            className="text-center"
+          >
+            Create New Product
+          </h1>
+          <form
+            onSubmit={[Function]}
+          >
+            <h2>
+              Product Name
+            </h2>
+            <input
+              id="productname"
+              name="productname"
+              onChange={[Function]}
+              placeholder="Enter Name"
+              required={true}
+              type="text"
+            />
+            <h2>
+              Product Summary
+            </h2>
+            <input
+              id="productdescription"
+              name="productdescription"
+              onChange={[Function]}
+              placeholder="Enter Description"
+              required={true}
+              type="text"
+            />
+            <h2>
+              Product Price
+            </h2>
+            <input
+              id="productprice"
+              name="productprice"
+              onChange={[Function]}
+              placeholder="Enter Price"
+              required={true}
+              type="number"
+            />
+            <h2>
+              Product Quantity
+            </h2>
+            <input
+              id="productquantity"
+              name="productquantity"
+              onChange={[Function]}
+              placeholder="Enter Quantity"
+              required={true}
+              type="number"
+            />
+            <img
+              className="text-center"
+              id="showimage"
+              src=""
+              style={
+                Object {
+                  "display": "none",
+                  "height": "100px",
+                  "width": "100px",
+                }
+              }
+            />
+            <h2>
+              Product Image
+            </h2>
+            <input
+              id="productimage"
+              name="upload"
+              onChange={[Function]}
+              type="file"
+            />
+            <h2>
+              Category
+            </h2>
+            <select
+              id="categoryoption"
+            >
+              <option
+                value=""
+              >
+                Select Category
+              </option>
+            </select>
+             
+            <br />
+             
+            <br />
+            <input
+              className="button_1"
+              id="createproductsubmit"
+              name=""
+              type="submit"
+              value="Create Product"
+            />
+          </form>
+        </div>,
+        "className": "container",
       },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h1
+              className="text-center"
+            >
+              Create New Product
+            </h1>,
+            <form
+              onSubmit={[Function]}
+            >
+              <h2>
+                Product Name
+              </h2>
+              <input
+                id="productname"
+                name="productname"
+                onChange={[Function]}
+                placeholder="Enter Name"
+                required={true}
+                type="text"
+              />
+              <h2>
+                Product Summary
+              </h2>
+              <input
+                id="productdescription"
+                name="productdescription"
+                onChange={[Function]}
+                placeholder="Enter Description"
+                required={true}
+                type="text"
+              />
+              <h2>
+                Product Price
+              </h2>
+              <input
+                id="productprice"
+                name="productprice"
+                onChange={[Function]}
+                placeholder="Enter Price"
+                required={true}
+                type="number"
+              />
+              <h2>
+                Product Quantity
+              </h2>
+              <input
+                id="productquantity"
+                name="productquantity"
+                onChange={[Function]}
+                placeholder="Enter Quantity"
+                required={true}
+                type="number"
+              />
+              <img
+                className="text-center"
+                id="showimage"
+                src=""
+                style={
+                  Object {
+                    "display": "none",
+                    "height": "100px",
+                    "width": "100px",
+                  }
+                }
+              />
+              <h2>
+                Product Image
+              </h2>
+              <input
+                id="productimage"
+                name="upload"
+                onChange={[Function]}
+                type="file"
+              />
+              <h2>
+                Category
+              </h2>
+              <select
+                id="categoryoption"
+              >
+                <option
+                  value=""
+                >
+                  Select Category
+                </option>
+              </select>
+               
+              <br />
+               
+              <br />
+              <input
+                className="button_1"
+                id="createproductsubmit"
+                name=""
+                type="submit"
+                value="Create Product"
+              />
+            </form>,
+          ],
+          "id": "create_sales_assistant",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Create New Product",
+              "className": "text-center",
+            },
+            "ref": null,
+            "rendered": "Create New Product",
+            "type": "h1",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <h2>
+                  Product Name
+                </h2>,
+                <input
+                  id="productname"
+                  name="productname"
+                  onChange={[Function]}
+                  placeholder="Enter Name"
+                  required={true}
+                  type="text"
+                />,
+                <h2>
+                  Product Summary
+                </h2>,
+                <input
+                  id="productdescription"
+                  name="productdescription"
+                  onChange={[Function]}
+                  placeholder="Enter Description"
+                  required={true}
+                  type="text"
+                />,
+                <h2>
+                  Product Price
+                </h2>,
+                <input
+                  id="productprice"
+                  name="productprice"
+                  onChange={[Function]}
+                  placeholder="Enter Price"
+                  required={true}
+                  type="number"
+                />,
+                <h2>
+                  Product Quantity
+                </h2>,
+                <input
+                  id="productquantity"
+                  name="productquantity"
+                  onChange={[Function]}
+                  placeholder="Enter Quantity"
+                  required={true}
+                  type="number"
+                />,
+                <img
+                  className="text-center"
+                  id="showimage"
+                  src=""
+                  style={
+                    Object {
+                      "display": "none",
+                      "height": "100px",
+                      "width": "100px",
+                    }
+                  }
+                />,
+                <h2>
+                  Product Image
+                </h2>,
+                <input
+                  id="productimage"
+                  name="upload"
+                  onChange={[Function]}
+                  type="file"
+                />,
+                <h2>
+                  Category
+                </h2>,
+                <select
+                  id="categoryoption"
+                >
+                  <option
+                    value=""
+                  >
+                    Select Category
+                  </option>
+                </select>,
+                " ",
+                <br />,
+                " ",
+                <br />,
+                <input
+                  className="button_1"
+                  id="createproductsubmit"
+                  name=""
+                  type="submit"
+                  value="Create Product"
+                />,
+              ],
+              "onSubmit": [Function],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Product Name",
+                },
+                "ref": null,
+                "rendered": "Product Name",
+                "type": "h2",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "id": "productname",
+                  "name": "productname",
+                  "onChange": [Function],
+                  "placeholder": "Enter Name",
+                  "required": true,
+                  "type": "text",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Product Summary",
+                },
+                "ref": null,
+                "rendered": "Product Summary",
+                "type": "h2",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "id": "productdescription",
+                  "name": "productdescription",
+                  "onChange": [Function],
+                  "placeholder": "Enter Description",
+                  "required": true,
+                  "type": "text",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Product Price",
+                },
+                "ref": null,
+                "rendered": "Product Price",
+                "type": "h2",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "id": "productprice",
+                  "name": "productprice",
+                  "onChange": [Function],
+                  "placeholder": "Enter Price",
+                  "required": true,
+                  "type": "number",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Product Quantity",
+                },
+                "ref": null,
+                "rendered": "Product Quantity",
+                "type": "h2",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "id": "productquantity",
+                  "name": "productquantity",
+                  "onChange": [Function],
+                  "placeholder": "Enter Quantity",
+                  "required": true,
+                  "type": "number",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "text-center",
+                  "id": "showimage",
+                  "src": "",
+                  "style": Object {
+                    "display": "none",
+                    "height": "100px",
+                    "width": "100px",
+                  },
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "img",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Product Image",
+                },
+                "ref": null,
+                "rendered": "Product Image",
+                "type": "h2",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "id": "productimage",
+                  "name": "upload",
+                  "onChange": [Function],
+                  "type": "file",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Category",
+                },
+                "ref": null,
+                "rendered": "Category",
+                "type": "h2",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <option
+                    value=""
+                  >
+                    Select Category
+                  </option>,
+                  "id": "categoryoption",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Select Category",
+                    "value": "",
+                  },
+                  "ref": null,
+                  "rendered": "Select Category",
+                  "type": "option",
+                },
+                "type": "select",
+              },
+              " ",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": "br",
+              },
+              " ",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": "br",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "button_1",
+                  "id": "createproductsubmit",
+                  "name": "",
+                  "type": "submit",
+                  "value": "Create Product",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+            ],
+            "type": "form",
+          },
+        ],
+        "type": "div",
+      },
+      "type": "div",
     },
+    "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "function",
+      "nodeType": "host",
       "props": Object {
-        "children": [Function],
+        "children": <div
+          className="container"
+        >
+          <div
+            id="create_sales_assistant"
+          >
+            <h1
+              className="text-center"
+            >
+              Create New Product
+            </h1>
+            <form
+              onSubmit={[Function]}
+            >
+              <h2>
+                Product Name
+              </h2>
+              <input
+                id="productname"
+                name="productname"
+                onChange={[Function]}
+                placeholder="Enter Name"
+                required={true}
+                type="text"
+              />
+              <h2>
+                Product Summary
+              </h2>
+              <input
+                id="productdescription"
+                name="productdescription"
+                onChange={[Function]}
+                placeholder="Enter Description"
+                required={true}
+                type="text"
+              />
+              <h2>
+                Product Price
+              </h2>
+              <input
+                id="productprice"
+                name="productprice"
+                onChange={[Function]}
+                placeholder="Enter Price"
+                required={true}
+                type="number"
+              />
+              <h2>
+                Product Quantity
+              </h2>
+              <input
+                id="productquantity"
+                name="productquantity"
+                onChange={[Function]}
+                placeholder="Enter Quantity"
+                required={true}
+                type="number"
+              />
+              <img
+                className="text-center"
+                id="showimage"
+                src=""
+                style={
+                  Object {
+                    "display": "none",
+                    "height": "100px",
+                    "width": "100px",
+                  }
+                }
+              />
+              <h2>
+                Product Image
+              </h2>
+              <input
+                id="productimage"
+                name="upload"
+                onChange={[Function]}
+                type="file"
+              />
+              <h2>
+                Category
+              </h2>
+              <select
+                id="categoryoption"
+              >
+                <option
+                  value=""
+                >
+                  Select Category
+                </option>
+              </select>
+               
+              <br />
+               
+              <br />
+              <input
+                className="button_1"
+                id="createproductsubmit"
+                name=""
+                type="submit"
+                value="Create Product"
+              />
+            </form>
+          </div>
+        </div>,
+        "className": "topmargin",
+        "id": "main",
       },
       "ref": null,
-      "rendered": [Function],
-      "type": Object {
-        "$$typeof": Symbol(react.context),
-        "_calculateChangedBits": null,
-        "_context": Object {
-          "$$typeof": Symbol(react.context),
-          "Consumer": [Circular],
-          "Provider": Object {
-            "$$typeof": Symbol(react.provider),
-            "_context": [Circular],
-          },
-          "_calculateChangedBits": null,
-          "_currentRenderer": null,
-          "_currentRenderer2": null,
-          "_currentValue": null,
-          "_currentValue2": null,
-          "_threadCount": 0,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <div
+            id="create_sales_assistant"
+          >
+            <h1
+              className="text-center"
+            >
+              Create New Product
+            </h1>
+            <form
+              onSubmit={[Function]}
+            >
+              <h2>
+                Product Name
+              </h2>
+              <input
+                id="productname"
+                name="productname"
+                onChange={[Function]}
+                placeholder="Enter Name"
+                required={true}
+                type="text"
+              />
+              <h2>
+                Product Summary
+              </h2>
+              <input
+                id="productdescription"
+                name="productdescription"
+                onChange={[Function]}
+                placeholder="Enter Description"
+                required={true}
+                type="text"
+              />
+              <h2>
+                Product Price
+              </h2>
+              <input
+                id="productprice"
+                name="productprice"
+                onChange={[Function]}
+                placeholder="Enter Price"
+                required={true}
+                type="number"
+              />
+              <h2>
+                Product Quantity
+              </h2>
+              <input
+                id="productquantity"
+                name="productquantity"
+                onChange={[Function]}
+                placeholder="Enter Quantity"
+                required={true}
+                type="number"
+              />
+              <img
+                className="text-center"
+                id="showimage"
+                src=""
+                style={
+                  Object {
+                    "display": "none",
+                    "height": "100px",
+                    "width": "100px",
+                  }
+                }
+              />
+              <h2>
+                Product Image
+              </h2>
+              <input
+                id="productimage"
+                name="upload"
+                onChange={[Function]}
+                type="file"
+              />
+              <h2>
+                Category
+              </h2>
+              <select
+                id="categoryoption"
+              >
+                <option
+                  value=""
+                >
+                  Select Category
+                </option>
+              </select>
+               
+              <br />
+               
+              <br />
+              <input
+                className="button_1"
+                id="createproductsubmit"
+                name=""
+                type="submit"
+                value="Create Product"
+              />
+            </form>
+          </div>,
+          "className": "container",
         },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h1
+                className="text-center"
+              >
+                Create New Product
+              </h1>,
+              <form
+                onSubmit={[Function]}
+              >
+                <h2>
+                  Product Name
+                </h2>
+                <input
+                  id="productname"
+                  name="productname"
+                  onChange={[Function]}
+                  placeholder="Enter Name"
+                  required={true}
+                  type="text"
+                />
+                <h2>
+                  Product Summary
+                </h2>
+                <input
+                  id="productdescription"
+                  name="productdescription"
+                  onChange={[Function]}
+                  placeholder="Enter Description"
+                  required={true}
+                  type="text"
+                />
+                <h2>
+                  Product Price
+                </h2>
+                <input
+                  id="productprice"
+                  name="productprice"
+                  onChange={[Function]}
+                  placeholder="Enter Price"
+                  required={true}
+                  type="number"
+                />
+                <h2>
+                  Product Quantity
+                </h2>
+                <input
+                  id="productquantity"
+                  name="productquantity"
+                  onChange={[Function]}
+                  placeholder="Enter Quantity"
+                  required={true}
+                  type="number"
+                />
+                <img
+                  className="text-center"
+                  id="showimage"
+                  src=""
+                  style={
+                    Object {
+                      "display": "none",
+                      "height": "100px",
+                      "width": "100px",
+                    }
+                  }
+                />
+                <h2>
+                  Product Image
+                </h2>
+                <input
+                  id="productimage"
+                  name="upload"
+                  onChange={[Function]}
+                  type="file"
+                />
+                <h2>
+                  Category
+                </h2>
+                <select
+                  id="categoryoption"
+                >
+                  <option
+                    value=""
+                  >
+                    Select Category
+                  </option>
+                </select>
+                 
+                <br />
+                 
+                <br />
+                <input
+                  className="button_1"
+                  id="createproductsubmit"
+                  name=""
+                  type="submit"
+                  value="Create Product"
+                />
+              </form>,
+            ],
+            "id": "create_sales_assistant",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Create New Product",
+                "className": "text-center",
+              },
+              "ref": null,
+              "rendered": "Create New Product",
+              "type": "h1",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <h2>
+                    Product Name
+                  </h2>,
+                  <input
+                    id="productname"
+                    name="productname"
+                    onChange={[Function]}
+                    placeholder="Enter Name"
+                    required={true}
+                    type="text"
+                  />,
+                  <h2>
+                    Product Summary
+                  </h2>,
+                  <input
+                    id="productdescription"
+                    name="productdescription"
+                    onChange={[Function]}
+                    placeholder="Enter Description"
+                    required={true}
+                    type="text"
+                  />,
+                  <h2>
+                    Product Price
+                  </h2>,
+                  <input
+                    id="productprice"
+                    name="productprice"
+                    onChange={[Function]}
+                    placeholder="Enter Price"
+                    required={true}
+                    type="number"
+                  />,
+                  <h2>
+                    Product Quantity
+                  </h2>,
+                  <input
+                    id="productquantity"
+                    name="productquantity"
+                    onChange={[Function]}
+                    placeholder="Enter Quantity"
+                    required={true}
+                    type="number"
+                  />,
+                  <img
+                    className="text-center"
+                    id="showimage"
+                    src=""
+                    style={
+                      Object {
+                        "display": "none",
+                        "height": "100px",
+                        "width": "100px",
+                      }
+                    }
+                  />,
+                  <h2>
+                    Product Image
+                  </h2>,
+                  <input
+                    id="productimage"
+                    name="upload"
+                    onChange={[Function]}
+                    type="file"
+                  />,
+                  <h2>
+                    Category
+                  </h2>,
+                  <select
+                    id="categoryoption"
+                  >
+                    <option
+                      value=""
+                    >
+                      Select Category
+                    </option>
+                  </select>,
+                  " ",
+                  <br />,
+                  " ",
+                  <br />,
+                  <input
+                    className="button_1"
+                    id="createproductsubmit"
+                    name=""
+                    type="submit"
+                    value="Create Product"
+                  />,
+                ],
+                "onSubmit": [Function],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Product Name",
+                  },
+                  "ref": null,
+                  "rendered": "Product Name",
+                  "type": "h2",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "id": "productname",
+                    "name": "productname",
+                    "onChange": [Function],
+                    "placeholder": "Enter Name",
+                    "required": true,
+                    "type": "text",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Product Summary",
+                  },
+                  "ref": null,
+                  "rendered": "Product Summary",
+                  "type": "h2",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "id": "productdescription",
+                    "name": "productdescription",
+                    "onChange": [Function],
+                    "placeholder": "Enter Description",
+                    "required": true,
+                    "type": "text",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Product Price",
+                  },
+                  "ref": null,
+                  "rendered": "Product Price",
+                  "type": "h2",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "id": "productprice",
+                    "name": "productprice",
+                    "onChange": [Function],
+                    "placeholder": "Enter Price",
+                    "required": true,
+                    "type": "number",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Product Quantity",
+                  },
+                  "ref": null,
+                  "rendered": "Product Quantity",
+                  "type": "h2",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "id": "productquantity",
+                    "name": "productquantity",
+                    "onChange": [Function],
+                    "placeholder": "Enter Quantity",
+                    "required": true,
+                    "type": "number",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "text-center",
+                    "id": "showimage",
+                    "src": "",
+                    "style": Object {
+                      "display": "none",
+                      "height": "100px",
+                      "width": "100px",
+                    },
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "img",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Product Image",
+                  },
+                  "ref": null,
+                  "rendered": "Product Image",
+                  "type": "h2",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "id": "productimage",
+                    "name": "upload",
+                    "onChange": [Function],
+                    "type": "file",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Category",
+                  },
+                  "ref": null,
+                  "rendered": "Category",
+                  "type": "h2",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <option
+                      value=""
+                    >
+                      Select Category
+                    </option>,
+                    "id": "categoryoption",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Select Category",
+                      "value": "",
+                    },
+                    "ref": null,
+                    "rendered": "Select Category",
+                    "type": "option",
+                  },
+                  "type": "select",
+                },
+                " ",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": "br",
+                },
+                " ",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": "br",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "button_1",
+                    "id": "createproductsubmit",
+                    "name": "",
+                    "type": "submit",
+                    "value": "Create Product",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+              ],
+              "type": "form",
+            },
+          ],
+          "type": "div",
+        },
+        "type": "div",
       },
+      "type": "div",
     },
   ],
   Symbol(enzyme.__options__): Object {

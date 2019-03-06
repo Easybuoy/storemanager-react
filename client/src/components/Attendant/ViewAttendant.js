@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import { viewAttendants } from '../../actions/attendantActions';
 import Loading from '../Common/Loading';
 
-class ViewAttendant extends Component {
+export class ViewAttendant extends Component {
     componentDidMount() {
         this.props.viewAttendants();
     }

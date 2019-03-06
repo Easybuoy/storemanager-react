@@ -6,7 +6,7 @@ import { toast } from 'react-toastify';
 
 import Loading from '../Common/Loading';
 import { createSale } from '../../actions/saleActions';
-class Cart extends Component {
+export class Cart extends Component {
     onCheckout = () => {
         if (confirm('Are you sure you want to checkout now?')){
             const totalcartitems = JSON.parse(localStorage.getItem('products'));
@@ -96,7 +96,7 @@ class Cart extends Component {
                                             <td data-label="Item(s)"><img src={item.productImage} className="cardimg"/></td>
                                             <td data-label="Quantity"> <input type="number" id={quantityId} name="quantity" defaultValue="1" placeholder="Quantity" /> </td>
                                             <td data-label="Price">{item.productPrice}</td>
-                                            <td><button onClick={() => {this.removeProductFromCart(item.productId)}} className="button_2">Remove</button></td>
+                                            <td><button id="removeproduct" onClick={() => {this.removeProductFromCart(item.productId)}} className="button_2">Remove</button></td>
                                         </tr>
                                     )
                                 })
