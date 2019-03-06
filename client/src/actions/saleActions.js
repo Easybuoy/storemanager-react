@@ -5,9 +5,9 @@ import { SET_SALE_LOADING, CREATE_SALE, GET_ERRORS, SET_ERRORS, RESET_SALE, SET_
 const baseUrl = 'https://store--manager.herokuapp.com';
 // const baseUrl = 'http://localhost:3000';
 
-export const createSale = (saleData) => dispatch => { console.log(saleData)
+export const createSale = (saleData) => dispatch => { 
     dispatch(setSaleLoading())
-    axios.post(`${baseUrl}/api/v1/sales/`, saleData)
+    return axios.post(`${baseUrl}/api/v1/sales/`, saleData)
     .then(res => {
         // dispatch({
         //     type: SET_ERRORS,
@@ -43,7 +43,7 @@ export const setSaleLoading = () => {
 
 export const viewSales = () => dispatch => {
     dispatch(setSaleLoading())
-    axios.get(`${baseUrl}/api/v1/sales`)
+    return axios.get(`${baseUrl}/api/v1/sales`)
     .then(res => {
         dispatch({
             type: SET_SALES,

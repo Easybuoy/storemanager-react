@@ -75,7 +75,7 @@ export const setProducts = (products) => {
 
 export const deleteProduct = (id) => dispatch => {
     dispatch(setProductsLoading())
-    axios.delete(`${baseUrl}/api/v1/products/${id}`)
+   return axios.delete(`${baseUrl}/api/v1/products/${id}`)
     .then(res => {
         const { data } = res;
         dispatch({
