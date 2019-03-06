@@ -1466,3 +1466,314 @@ ShallowWrapper {
   },
 }
 `;
+
+exports[`<CreateProduct /> should show error message(s) if product is not created 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <CreateProduct
+    createProduct={
+      [MockFunction] {
+        "calls": Array [
+          Array [
+            Object {
+              "description": "",
+              "name": "",
+              "price": "",
+              "productimage": "",
+              "quantity": "",
+            },
+          ],
+          Array [
+            Object {
+              "description": "",
+              "name": "",
+              "price": "",
+              "productimage": "",
+              "quantity": "",
+            },
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      }
+    }
+    errors={
+      Object {
+        "name": "Email field is required",
+      }
+    }
+    product={
+      Object {
+        "addMatchers": [Function],
+        "advanceTimersByTime": [Function],
+        "autoMockOff": [Function],
+        "autoMockOn": [Function],
+        "clearAllMocks": [Function],
+        "clearAllTimers": [Function],
+        "deepUnmock": [Function],
+        "disableAutomock": [Function],
+        "doMock": [Function],
+        "dontMock": [Function],
+        "enableAutomock": [Function],
+        "fn": [Function],
+        "genMockFromModule": [Function],
+        "isMockFunction": [Function],
+        "loading": true,
+        "mock": [Function],
+        "requireActual": [Function],
+        "requireMock": [Function],
+        "resetAllMocks": [Function],
+        "resetModuleRegistry": [Function],
+        "resetModules": [Function],
+        "restoreAllMocks": [Function],
+        "retryTimes": [Function],
+        "runAllImmediates": [Function],
+        "runAllTicks": [Function],
+        "runAllTimers": [Function],
+        "runOnlyPendingTimers": [Function],
+        "runTimersToTime": [Function],
+        "setMock": [Function],
+        "setTimeout": [Function],
+        "spyOn": [Function],
+        "unmock": [Function],
+        "useFakeTimers": [Function],
+        "useRealTimers": [Function],
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <Loading />,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {},
+      "ref": null,
+      "rendered": null,
+      "type": [Function],
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <Loading />,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`<CreateProduct /> should show error message(s) if product is not created 2`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <CreateProduct
+    createProduct={
+      [MockFunction] {
+        "calls": Array [
+          Array [
+            Object {
+              "description": "",
+              "name": "",
+              "price": "",
+              "productimage": "",
+              "quantity": "",
+            },
+          ],
+          Array [
+            Object {
+              "description": "",
+              "name": "",
+              "price": "",
+              "productimage": "",
+              "quantity": "",
+            },
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      }
+    }
+    errors={
+      Object {
+        "name": "Email field is required",
+      }
+    }
+    product={
+      Object {
+        "addMatchers": [Function],
+        "advanceTimersByTime": [Function],
+        "autoMockOff": [Function],
+        "autoMockOn": [Function],
+        "clearAllMocks": [Function],
+        "clearAllTimers": [Function],
+        "deepUnmock": [Function],
+        "disableAutomock": [Function],
+        "doMock": [Function],
+        "dontMock": [Function],
+        "enableAutomock": [Function],
+        "fn": [Function],
+        "genMockFromModule": [Function],
+        "isMockFunction": [Function],
+        "isProductCreated": true,
+        "loading": true,
+        "mock": [Function],
+        "requireActual": [Function],
+        "requireMock": [Function],
+        "resetAllMocks": [Function],
+        "resetModuleRegistry": [Function],
+        "resetModules": [Function],
+        "restoreAllMocks": [Function],
+        "retryTimes": [Function],
+        "runAllImmediates": [Function],
+        "runAllTicks": [Function],
+        "runAllTimers": [Function],
+        "runOnlyPendingTimers": [Function],
+        "runTimersToTime": [Function],
+        "setMock": [Function],
+        "setTimeout": [Function],
+        "spyOn": [Function],
+        "unmock": [Function],
+        "useFakeTimers": [Function],
+        "useRealTimers": [Function],
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <Loading />,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {},
+      "ref": null,
+      "rendered": null,
+      "type": [Function],
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <Loading />,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

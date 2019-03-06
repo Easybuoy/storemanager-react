@@ -65,4 +65,22 @@ describe('<CreateAttendant />', () => {
                    .toEqual(true);
                    expect(wrapper.instance().onSubmit.calledWith(event));
                 });
+
+                it('should render Loading component if loading props is true', () => {
+                  props.attendants.loading = true;
+                  const wrapper = shallow(<CreateAttendant {...props} />)
+      
+                  expect(props.createAttendant).toBeCalled();
+                   expect(props.createAttendant).toHaveReturned();
+                  });
+
+                    it('should show error message(s) if attendant is not created', () => {
+                      props.errors.email = 'Email field is required';
+                      props.errors.password = 'Password field is required';
+
+                      const wrapper = shallow(<CreateAttendant {...props} />)
+          
+                      expect(props.createAttendant).toBeCalled();
+                       expect(props.createAttendant).toHaveReturned();
+                      });
 });

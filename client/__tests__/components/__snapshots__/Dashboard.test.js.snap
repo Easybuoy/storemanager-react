@@ -1,0 +1,1746 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Dashboard /> renders the Dashboard component correctly 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Dashboard
+    auth={
+      Object {
+        "user": Object {
+          "type": 1,
+        },
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <section>
+          <div
+            className="container topcardsgroup"
+          >
+            <div
+              className="topcardsbox"
+            >
+              <div
+                className="showcasecard c1"
+              >
+                <h3
+                  style={
+                    Object {
+                      "marginBottom": "50px",
+                    }
+                  }
+                >
+                  Top Selling Product
+                </h3>
+                <div
+                  style={
+                    Object {
+                      "marginBottom": "50px",
+                    }
+                  }
+                >
+                  <i
+                    className="fas fa-fire fa-4x"
+                  />
+                  <h2
+                    style={
+                      Object {
+                        "marginBottom": "50px",
+                      }
+                    }
+                  >
+                    iPhone Xs
+                  </h2>
+                </div>
+              </div>
+            </div>
+            <div
+              className="topcardsbox"
+            >
+              <div
+                className="showcasecard c1"
+              >
+                <h3
+                  style={
+                    Object {
+                      "marginBottom": "50px",
+                    }
+                  }
+                >
+                  Total Products Sold 
+                </h3>
+                <div
+                  style={
+                    Object {
+                      "marginBottom": "50px",
+                    }
+                  }
+                >
+                  <i
+                    className="fas fa-chart-line fa-4x"
+                  />
+                  <h2
+                    style={
+                      Object {
+                        "marginBottom": "50px",
+                      }
+                    }
+                  >
+                    850
+                  </h2>
+                </div>
+              </div>
+            </div>
+            <div
+              className="topcardsbox"
+            >
+              <div
+                className="showcasecard c1"
+              >
+                <h3
+                  style={
+                    Object {
+                      "marginBottom": "50px",
+                    }
+                  }
+                >
+                  Total Goods Sold Worth
+                </h3>
+                <div
+                  style={
+                    Object {
+                      "marginBottom": "50px",
+                    }
+                  }
+                >
+                  <i
+                    className="fas fa-chart-bar fa-4x"
+                  />
+                  <h2
+                    style={
+                      Object {
+                        "marginBottom": "50px",
+                      }
+                    }
+                  >
+                    $30,322.53
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>,
+        <Connect(Products) />,
+      ],
+      "id": "topcards",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <div
+            className="container topcardsgroup"
+          >
+            <div
+              className="topcardsbox"
+            >
+              <div
+                className="showcasecard c1"
+              >
+                <h3
+                  style={
+                    Object {
+                      "marginBottom": "50px",
+                    }
+                  }
+                >
+                  Top Selling Product
+                </h3>
+                <div
+                  style={
+                    Object {
+                      "marginBottom": "50px",
+                    }
+                  }
+                >
+                  <i
+                    className="fas fa-fire fa-4x"
+                  />
+                  <h2
+                    style={
+                      Object {
+                        "marginBottom": "50px",
+                      }
+                    }
+                  >
+                    iPhone Xs
+                  </h2>
+                </div>
+              </div>
+            </div>
+            <div
+              className="topcardsbox"
+            >
+              <div
+                className="showcasecard c1"
+              >
+                <h3
+                  style={
+                    Object {
+                      "marginBottom": "50px",
+                    }
+                  }
+                >
+                  Total Products Sold 
+                </h3>
+                <div
+                  style={
+                    Object {
+                      "marginBottom": "50px",
+                    }
+                  }
+                >
+                  <i
+                    className="fas fa-chart-line fa-4x"
+                  />
+                  <h2
+                    style={
+                      Object {
+                        "marginBottom": "50px",
+                      }
+                    }
+                  >
+                    850
+                  </h2>
+                </div>
+              </div>
+            </div>
+            <div
+              className="topcardsbox"
+            >
+              <div
+                className="showcasecard c1"
+              >
+                <h3
+                  style={
+                    Object {
+                      "marginBottom": "50px",
+                    }
+                  }
+                >
+                  Total Goods Sold Worth
+                </h3>
+                <div
+                  style={
+                    Object {
+                      "marginBottom": "50px",
+                    }
+                  }
+                >
+                  <i
+                    className="fas fa-chart-bar fa-4x"
+                  />
+                  <h2
+                    style={
+                      Object {
+                        "marginBottom": "50px",
+                      }
+                    }
+                  >
+                    $30,322.53
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="topcardsbox"
+              >
+                <div
+                  className="showcasecard c1"
+                >
+                  <h3
+                    style={
+                      Object {
+                        "marginBottom": "50px",
+                      }
+                    }
+                  >
+                    Top Selling Product
+                  </h3>
+                  <div
+                    style={
+                      Object {
+                        "marginBottom": "50px",
+                      }
+                    }
+                  >
+                    <i
+                      className="fas fa-fire fa-4x"
+                    />
+                    <h2
+                      style={
+                        Object {
+                          "marginBottom": "50px",
+                        }
+                      }
+                    >
+                      iPhone Xs
+                    </h2>
+                  </div>
+                </div>
+              </div>,
+              <div
+                className="topcardsbox"
+              >
+                <div
+                  className="showcasecard c1"
+                >
+                  <h3
+                    style={
+                      Object {
+                        "marginBottom": "50px",
+                      }
+                    }
+                  >
+                    Total Products Sold 
+                  </h3>
+                  <div
+                    style={
+                      Object {
+                        "marginBottom": "50px",
+                      }
+                    }
+                  >
+                    <i
+                      className="fas fa-chart-line fa-4x"
+                    />
+                    <h2
+                      style={
+                        Object {
+                          "marginBottom": "50px",
+                        }
+                      }
+                    >
+                      850
+                    </h2>
+                  </div>
+                </div>
+              </div>,
+              <div
+                className="topcardsbox"
+              >
+                <div
+                  className="showcasecard c1"
+                >
+                  <h3
+                    style={
+                      Object {
+                        "marginBottom": "50px",
+                      }
+                    }
+                  >
+                    Total Goods Sold Worth
+                  </h3>
+                  <div
+                    style={
+                      Object {
+                        "marginBottom": "50px",
+                      }
+                    }
+                  >
+                    <i
+                      className="fas fa-chart-bar fa-4x"
+                    />
+                    <h2
+                      style={
+                        Object {
+                          "marginBottom": "50px",
+                        }
+                      }
+                    >
+                      $30,322.53
+                    </h2>
+                  </div>
+                </div>
+              </div>,
+            ],
+            "className": "container topcardsgroup",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <div
+                  className="showcasecard c1"
+                >
+                  <h3
+                    style={
+                      Object {
+                        "marginBottom": "50px",
+                      }
+                    }
+                  >
+                    Top Selling Product
+                  </h3>
+                  <div
+                    style={
+                      Object {
+                        "marginBottom": "50px",
+                      }
+                    }
+                  >
+                    <i
+                      className="fas fa-fire fa-4x"
+                    />
+                    <h2
+                      style={
+                        Object {
+                          "marginBottom": "50px",
+                        }
+                      }
+                    >
+                      iPhone Xs
+                    </h2>
+                  </div>
+                </div>,
+                "className": "topcardsbox",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <h3
+                      style={
+                        Object {
+                          "marginBottom": "50px",
+                        }
+                      }
+                    >
+                      Top Selling Product
+                    </h3>,
+                    <div
+                      style={
+                        Object {
+                          "marginBottom": "50px",
+                        }
+                      }
+                    >
+                      <i
+                        className="fas fa-fire fa-4x"
+                      />
+                      <h2
+                        style={
+                          Object {
+                            "marginBottom": "50px",
+                          }
+                        }
+                      >
+                        iPhone Xs
+                      </h2>
+                    </div>,
+                  ],
+                  "className": "showcasecard c1",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Top Selling Product",
+                      "style": Object {
+                        "marginBottom": "50px",
+                      },
+                    },
+                    "ref": null,
+                    "rendered": "Top Selling Product",
+                    "type": "h3",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <i
+                          className="fas fa-fire fa-4x"
+                        />,
+                        <h2
+                          style={
+                            Object {
+                              "marginBottom": "50px",
+                            }
+                          }
+                        >
+                          iPhone Xs
+                        </h2>,
+                      ],
+                      "style": Object {
+                        "marginBottom": "50px",
+                      },
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "className": "fas fa-fire fa-4x",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": "i",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "iPhone Xs",
+                          "style": Object {
+                            "marginBottom": "50px",
+                          },
+                        },
+                        "ref": null,
+                        "rendered": "iPhone Xs",
+                        "type": "h2",
+                      },
+                    ],
+                    "type": "div",
+                  },
+                ],
+                "type": "div",
+              },
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <div
+                  className="showcasecard c1"
+                >
+                  <h3
+                    style={
+                      Object {
+                        "marginBottom": "50px",
+                      }
+                    }
+                  >
+                    Total Products Sold 
+                  </h3>
+                  <div
+                    style={
+                      Object {
+                        "marginBottom": "50px",
+                      }
+                    }
+                  >
+                    <i
+                      className="fas fa-chart-line fa-4x"
+                    />
+                    <h2
+                      style={
+                        Object {
+                          "marginBottom": "50px",
+                        }
+                      }
+                    >
+                      850
+                    </h2>
+                  </div>
+                </div>,
+                "className": "topcardsbox",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <h3
+                      style={
+                        Object {
+                          "marginBottom": "50px",
+                        }
+                      }
+                    >
+                      Total Products Sold 
+                    </h3>,
+                    <div
+                      style={
+                        Object {
+                          "marginBottom": "50px",
+                        }
+                      }
+                    >
+                      <i
+                        className="fas fa-chart-line fa-4x"
+                      />
+                      <h2
+                        style={
+                          Object {
+                            "marginBottom": "50px",
+                          }
+                        }
+                      >
+                        850
+                      </h2>
+                    </div>,
+                  ],
+                  "className": "showcasecard c1",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Total Products Sold ",
+                      "style": Object {
+                        "marginBottom": "50px",
+                      },
+                    },
+                    "ref": null,
+                    "rendered": "Total Products Sold ",
+                    "type": "h3",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <i
+                          className="fas fa-chart-line fa-4x"
+                        />,
+                        <h2
+                          style={
+                            Object {
+                              "marginBottom": "50px",
+                            }
+                          }
+                        >
+                          850
+                        </h2>,
+                      ],
+                      "style": Object {
+                        "marginBottom": "50px",
+                      },
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "className": "fas fa-chart-line fa-4x",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": "i",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "850",
+                          "style": Object {
+                            "marginBottom": "50px",
+                          },
+                        },
+                        "ref": null,
+                        "rendered": "850",
+                        "type": "h2",
+                      },
+                    ],
+                    "type": "div",
+                  },
+                ],
+                "type": "div",
+              },
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <div
+                  className="showcasecard c1"
+                >
+                  <h3
+                    style={
+                      Object {
+                        "marginBottom": "50px",
+                      }
+                    }
+                  >
+                    Total Goods Sold Worth
+                  </h3>
+                  <div
+                    style={
+                      Object {
+                        "marginBottom": "50px",
+                      }
+                    }
+                  >
+                    <i
+                      className="fas fa-chart-bar fa-4x"
+                    />
+                    <h2
+                      style={
+                        Object {
+                          "marginBottom": "50px",
+                        }
+                      }
+                    >
+                      $30,322.53
+                    </h2>
+                  </div>
+                </div>,
+                "className": "topcardsbox",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <h3
+                      style={
+                        Object {
+                          "marginBottom": "50px",
+                        }
+                      }
+                    >
+                      Total Goods Sold Worth
+                    </h3>,
+                    <div
+                      style={
+                        Object {
+                          "marginBottom": "50px",
+                        }
+                      }
+                    >
+                      <i
+                        className="fas fa-chart-bar fa-4x"
+                      />
+                      <h2
+                        style={
+                          Object {
+                            "marginBottom": "50px",
+                          }
+                        }
+                      >
+                        $30,322.53
+                      </h2>
+                    </div>,
+                  ],
+                  "className": "showcasecard c1",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Total Goods Sold Worth",
+                      "style": Object {
+                        "marginBottom": "50px",
+                      },
+                    },
+                    "ref": null,
+                    "rendered": "Total Goods Sold Worth",
+                    "type": "h3",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <i
+                          className="fas fa-chart-bar fa-4x"
+                        />,
+                        <h2
+                          style={
+                            Object {
+                              "marginBottom": "50px",
+                            }
+                          }
+                        >
+                          $30,322.53
+                        </h2>,
+                      ],
+                      "style": Object {
+                        "marginBottom": "50px",
+                      },
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "className": "fas fa-chart-bar fa-4x",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": "i",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "$30,322.53",
+                          "style": Object {
+                            "marginBottom": "50px",
+                          },
+                        },
+                        "ref": null,
+                        "rendered": "$30,322.53",
+                        "type": "h2",
+                      },
+                    ],
+                    "type": "div",
+                  },
+                ],
+                "type": "div",
+              },
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+        "type": "section",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <section>
+            <div
+              className="container topcardsgroup"
+            >
+              <div
+                className="topcardsbox"
+              >
+                <div
+                  className="showcasecard c1"
+                >
+                  <h3
+                    style={
+                      Object {
+                        "marginBottom": "50px",
+                      }
+                    }
+                  >
+                    Top Selling Product
+                  </h3>
+                  <div
+                    style={
+                      Object {
+                        "marginBottom": "50px",
+                      }
+                    }
+                  >
+                    <i
+                      className="fas fa-fire fa-4x"
+                    />
+                    <h2
+                      style={
+                        Object {
+                          "marginBottom": "50px",
+                        }
+                      }
+                    >
+                      iPhone Xs
+                    </h2>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="topcardsbox"
+              >
+                <div
+                  className="showcasecard c1"
+                >
+                  <h3
+                    style={
+                      Object {
+                        "marginBottom": "50px",
+                      }
+                    }
+                  >
+                    Total Products Sold 
+                  </h3>
+                  <div
+                    style={
+                      Object {
+                        "marginBottom": "50px",
+                      }
+                    }
+                  >
+                    <i
+                      className="fas fa-chart-line fa-4x"
+                    />
+                    <h2
+                      style={
+                        Object {
+                          "marginBottom": "50px",
+                        }
+                      }
+                    >
+                      850
+                    </h2>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="topcardsbox"
+              >
+                <div
+                  className="showcasecard c1"
+                >
+                  <h3
+                    style={
+                      Object {
+                        "marginBottom": "50px",
+                      }
+                    }
+                  >
+                    Total Goods Sold Worth
+                  </h3>
+                  <div
+                    style={
+                      Object {
+                        "marginBottom": "50px",
+                      }
+                    }
+                  >
+                    <i
+                      className="fas fa-chart-bar fa-4x"
+                    />
+                    <h2
+                      style={
+                        Object {
+                          "marginBottom": "50px",
+                        }
+                      }
+                    >
+                      $30,322.53
+                    </h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>,
+          <Connect(Products) />,
+        ],
+        "id": "topcards",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <div
+              className="container topcardsgroup"
+            >
+              <div
+                className="topcardsbox"
+              >
+                <div
+                  className="showcasecard c1"
+                >
+                  <h3
+                    style={
+                      Object {
+                        "marginBottom": "50px",
+                      }
+                    }
+                  >
+                    Top Selling Product
+                  </h3>
+                  <div
+                    style={
+                      Object {
+                        "marginBottom": "50px",
+                      }
+                    }
+                  >
+                    <i
+                      className="fas fa-fire fa-4x"
+                    />
+                    <h2
+                      style={
+                        Object {
+                          "marginBottom": "50px",
+                        }
+                      }
+                    >
+                      iPhone Xs
+                    </h2>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="topcardsbox"
+              >
+                <div
+                  className="showcasecard c1"
+                >
+                  <h3
+                    style={
+                      Object {
+                        "marginBottom": "50px",
+                      }
+                    }
+                  >
+                    Total Products Sold 
+                  </h3>
+                  <div
+                    style={
+                      Object {
+                        "marginBottom": "50px",
+                      }
+                    }
+                  >
+                    <i
+                      className="fas fa-chart-line fa-4x"
+                    />
+                    <h2
+                      style={
+                        Object {
+                          "marginBottom": "50px",
+                        }
+                      }
+                    >
+                      850
+                    </h2>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="topcardsbox"
+              >
+                <div
+                  className="showcasecard c1"
+                >
+                  <h3
+                    style={
+                      Object {
+                        "marginBottom": "50px",
+                      }
+                    }
+                  >
+                    Total Goods Sold Worth
+                  </h3>
+                  <div
+                    style={
+                      Object {
+                        "marginBottom": "50px",
+                      }
+                    }
+                  >
+                    <i
+                      className="fas fa-chart-bar fa-4x"
+                    />
+                    <h2
+                      style={
+                        Object {
+                          "marginBottom": "50px",
+                        }
+                      }
+                    >
+                      $30,322.53
+                    </h2>
+                  </div>
+                </div>
+              </div>
+            </div>,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <div
+                  className="topcardsbox"
+                >
+                  <div
+                    className="showcasecard c1"
+                  >
+                    <h3
+                      style={
+                        Object {
+                          "marginBottom": "50px",
+                        }
+                      }
+                    >
+                      Top Selling Product
+                    </h3>
+                    <div
+                      style={
+                        Object {
+                          "marginBottom": "50px",
+                        }
+                      }
+                    >
+                      <i
+                        className="fas fa-fire fa-4x"
+                      />
+                      <h2
+                        style={
+                          Object {
+                            "marginBottom": "50px",
+                          }
+                        }
+                      >
+                        iPhone Xs
+                      </h2>
+                    </div>
+                  </div>
+                </div>,
+                <div
+                  className="topcardsbox"
+                >
+                  <div
+                    className="showcasecard c1"
+                  >
+                    <h3
+                      style={
+                        Object {
+                          "marginBottom": "50px",
+                        }
+                      }
+                    >
+                      Total Products Sold 
+                    </h3>
+                    <div
+                      style={
+                        Object {
+                          "marginBottom": "50px",
+                        }
+                      }
+                    >
+                      <i
+                        className="fas fa-chart-line fa-4x"
+                      />
+                      <h2
+                        style={
+                          Object {
+                            "marginBottom": "50px",
+                          }
+                        }
+                      >
+                        850
+                      </h2>
+                    </div>
+                  </div>
+                </div>,
+                <div
+                  className="topcardsbox"
+                >
+                  <div
+                    className="showcasecard c1"
+                  >
+                    <h3
+                      style={
+                        Object {
+                          "marginBottom": "50px",
+                        }
+                      }
+                    >
+                      Total Goods Sold Worth
+                    </h3>
+                    <div
+                      style={
+                        Object {
+                          "marginBottom": "50px",
+                        }
+                      }
+                    >
+                      <i
+                        className="fas fa-chart-bar fa-4x"
+                      />
+                      <h2
+                        style={
+                          Object {
+                            "marginBottom": "50px",
+                          }
+                        }
+                      >
+                        $30,322.53
+                      </h2>
+                    </div>
+                  </div>
+                </div>,
+              ],
+              "className": "container topcardsgroup",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <div
+                    className="showcasecard c1"
+                  >
+                    <h3
+                      style={
+                        Object {
+                          "marginBottom": "50px",
+                        }
+                      }
+                    >
+                      Top Selling Product
+                    </h3>
+                    <div
+                      style={
+                        Object {
+                          "marginBottom": "50px",
+                        }
+                      }
+                    >
+                      <i
+                        className="fas fa-fire fa-4x"
+                      />
+                      <h2
+                        style={
+                          Object {
+                            "marginBottom": "50px",
+                          }
+                        }
+                      >
+                        iPhone Xs
+                      </h2>
+                    </div>
+                  </div>,
+                  "className": "topcardsbox",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <h3
+                        style={
+                          Object {
+                            "marginBottom": "50px",
+                          }
+                        }
+                      >
+                        Top Selling Product
+                      </h3>,
+                      <div
+                        style={
+                          Object {
+                            "marginBottom": "50px",
+                          }
+                        }
+                      >
+                        <i
+                          className="fas fa-fire fa-4x"
+                        />
+                        <h2
+                          style={
+                            Object {
+                              "marginBottom": "50px",
+                            }
+                          }
+                        >
+                          iPhone Xs
+                        </h2>
+                      </div>,
+                    ],
+                    "className": "showcasecard c1",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Top Selling Product",
+                        "style": Object {
+                          "marginBottom": "50px",
+                        },
+                      },
+                      "ref": null,
+                      "rendered": "Top Selling Product",
+                      "type": "h3",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <i
+                            className="fas fa-fire fa-4x"
+                          />,
+                          <h2
+                            style={
+                              Object {
+                                "marginBottom": "50px",
+                              }
+                            }
+                          >
+                            iPhone Xs
+                          </h2>,
+                        ],
+                        "style": Object {
+                          "marginBottom": "50px",
+                        },
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "className": "fas fa-fire fa-4x",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": "i",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "iPhone Xs",
+                            "style": Object {
+                              "marginBottom": "50px",
+                            },
+                          },
+                          "ref": null,
+                          "rendered": "iPhone Xs",
+                          "type": "h2",
+                        },
+                      ],
+                      "type": "div",
+                    },
+                  ],
+                  "type": "div",
+                },
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <div
+                    className="showcasecard c1"
+                  >
+                    <h3
+                      style={
+                        Object {
+                          "marginBottom": "50px",
+                        }
+                      }
+                    >
+                      Total Products Sold 
+                    </h3>
+                    <div
+                      style={
+                        Object {
+                          "marginBottom": "50px",
+                        }
+                      }
+                    >
+                      <i
+                        className="fas fa-chart-line fa-4x"
+                      />
+                      <h2
+                        style={
+                          Object {
+                            "marginBottom": "50px",
+                          }
+                        }
+                      >
+                        850
+                      </h2>
+                    </div>
+                  </div>,
+                  "className": "topcardsbox",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <h3
+                        style={
+                          Object {
+                            "marginBottom": "50px",
+                          }
+                        }
+                      >
+                        Total Products Sold 
+                      </h3>,
+                      <div
+                        style={
+                          Object {
+                            "marginBottom": "50px",
+                          }
+                        }
+                      >
+                        <i
+                          className="fas fa-chart-line fa-4x"
+                        />
+                        <h2
+                          style={
+                            Object {
+                              "marginBottom": "50px",
+                            }
+                          }
+                        >
+                          850
+                        </h2>
+                      </div>,
+                    ],
+                    "className": "showcasecard c1",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Total Products Sold ",
+                        "style": Object {
+                          "marginBottom": "50px",
+                        },
+                      },
+                      "ref": null,
+                      "rendered": "Total Products Sold ",
+                      "type": "h3",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <i
+                            className="fas fa-chart-line fa-4x"
+                          />,
+                          <h2
+                            style={
+                              Object {
+                                "marginBottom": "50px",
+                              }
+                            }
+                          >
+                            850
+                          </h2>,
+                        ],
+                        "style": Object {
+                          "marginBottom": "50px",
+                        },
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "className": "fas fa-chart-line fa-4x",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": "i",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "850",
+                            "style": Object {
+                              "marginBottom": "50px",
+                            },
+                          },
+                          "ref": null,
+                          "rendered": "850",
+                          "type": "h2",
+                        },
+                      ],
+                      "type": "div",
+                    },
+                  ],
+                  "type": "div",
+                },
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <div
+                    className="showcasecard c1"
+                  >
+                    <h3
+                      style={
+                        Object {
+                          "marginBottom": "50px",
+                        }
+                      }
+                    >
+                      Total Goods Sold Worth
+                    </h3>
+                    <div
+                      style={
+                        Object {
+                          "marginBottom": "50px",
+                        }
+                      }
+                    >
+                      <i
+                        className="fas fa-chart-bar fa-4x"
+                      />
+                      <h2
+                        style={
+                          Object {
+                            "marginBottom": "50px",
+                          }
+                        }
+                      >
+                        $30,322.53
+                      </h2>
+                    </div>
+                  </div>,
+                  "className": "topcardsbox",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <h3
+                        style={
+                          Object {
+                            "marginBottom": "50px",
+                          }
+                        }
+                      >
+                        Total Goods Sold Worth
+                      </h3>,
+                      <div
+                        style={
+                          Object {
+                            "marginBottom": "50px",
+                          }
+                        }
+                      >
+                        <i
+                          className="fas fa-chart-bar fa-4x"
+                        />
+                        <h2
+                          style={
+                            Object {
+                              "marginBottom": "50px",
+                            }
+                          }
+                        >
+                          $30,322.53
+                        </h2>
+                      </div>,
+                    ],
+                    "className": "showcasecard c1",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Total Goods Sold Worth",
+                        "style": Object {
+                          "marginBottom": "50px",
+                        },
+                      },
+                      "ref": null,
+                      "rendered": "Total Goods Sold Worth",
+                      "type": "h3",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <i
+                            className="fas fa-chart-bar fa-4x"
+                          />,
+                          <h2
+                            style={
+                              Object {
+                                "marginBottom": "50px",
+                              }
+                            }
+                          >
+                            $30,322.53
+                          </h2>,
+                        ],
+                        "style": Object {
+                          "marginBottom": "50px",
+                        },
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "className": "fas fa-chart-bar fa-4x",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": "i",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "$30,322.53",
+                            "style": Object {
+                              "marginBottom": "50px",
+                            },
+                          },
+                          "ref": null,
+                          "rendered": "$30,322.53",
+                          "type": "h2",
+                        },
+                      ],
+                      "type": "div",
+                    },
+                  ],
+                  "type": "div",
+                },
+                "type": "div",
+              },
+            ],
+            "type": "div",
+          },
+          "type": "section",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

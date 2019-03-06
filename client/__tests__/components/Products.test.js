@@ -41,4 +41,12 @@ describe('<Products />', () => {
     //     //    expect(wrapper.instance().onChange.calledWith(event));
 
     //     });
+
+    it('should render productRecord if sales array is not empty', () => {
+        props.products.products = [{id: 1, name: 'iphone'}];
+        const wrapper = shallow(<Products {...props} />)
+
+        expect(wrapper).toMatchSnapshot();
+        });
+
 });

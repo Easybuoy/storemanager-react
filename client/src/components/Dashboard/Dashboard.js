@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 import Products from '../Products/Products';
 
-class Dashboard extends Component {
+export class Dashboard extends Component {
     
     render() {
         let adminboards = ''; 

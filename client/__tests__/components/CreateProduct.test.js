@@ -64,4 +64,36 @@ describe('<CreateProduct />', () => {
                    .toEqual(true);
                    expect(wrapper.instance().onSubmit.calledWith(event));
                 });
+
+                it('should render Loading component if loading props is true', () => {
+                  props.product.loading = true;
+                  const wrapper = shallow(<CreateProduct {...props} />)
+      
+                  expect(props.createProduct).toBeCalled();
+                   expect(props.createProduct).toHaveReturned();
+                  });
+
+                  it('should show error message(s) if product is not created', () => {
+                    // props.errors.name = 'Email field is required';
+                    // props.errors.description = 'Password field is required';
+                    // props.errors.price = 'Price field is required';
+                    // props.errors.quantity = 'Quantity field is required';
+
+                    props.errors = { name: 'Email field is required'}
+                    const wrapper = shallow(<CreateProduct {...props} />)
+        
+                    // expect(props.createProduct).toBeCalled();
+                    //  expect(props.createProduct).toHaveReturned();
+                    expect(wrapper).toMatchSnapshot();
+
+                    });
+
+                    it('should show error message(s) if product is not created', () => {
+                      props.product.isProductCreated = true;
+                      const wrapper = shallow(<CreateProduct {...props} />)
+                      
+                      expect(wrapper).toMatchSnapshot();
+                      });
+
+                    
 });

@@ -57,19 +57,19 @@ export class CreateProduct extends Component {
 
         if (Object.keys(errors).length > 0) {
             if (errors.name) {
-                toast.error(errors.data.name);
+                toast.error(errors.name);
             }
 
             if (errors.description) {
-                toast.error(errors.data.description);
+                toast.error(errors.description);
             }
 
             if (errors.price) {
-                toast.error(errors.data.price);
+                toast.error(errors.price);
             }
 
             if (errors.quantity) {
-                toast.error(errors.data.quantity);
+                toast.error(errors.quantity);
             }
         }
 

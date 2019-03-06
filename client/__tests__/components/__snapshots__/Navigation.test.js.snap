@@ -1,0 +1,4570 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Navigation /> renders the Navigation component correctly 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Navigation
+    auth={
+      Object {
+        "user": Object {
+          "userImage": "assets/uploads/users/default-avatar.png",
+        },
+      }
+    }
+    signOut={[MockFunction]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <nav
+          className="navbar"
+        >
+          <span
+            className="open-slide"
+          >
+            <a
+              href="#"
+              id="openslidemenu"
+              onClick={[Function]}
+            >
+              <svg
+                height="30"
+                width="30"
+              >
+                <path
+                  d="M0,5 30,5"
+                  stroke="#ffffff"
+                  strokeWidth="5"
+                />
+                <path
+                  d="M0,14 30,14"
+                  stroke="#ffffff"
+                  strokeWidth="5"
+                />
+                <path
+                  d="M0,23 30,23"
+                  stroke="#ffffff"
+                  strokeWidth="5"
+                />
+              </svg>
+            </a>
+          </span>
+          <ul>
+            <li>
+              <Link
+                replace={false}
+                style={
+                  Object {
+                    "paddingTop": "10px",
+                  }
+                }
+                to="profile"
+              >
+                <div>
+                  <img
+                    id="userimg"
+                    src="http://store--manager.herokuapp.com/assets/uploads/users/default-avatar.png"
+                  />
+                   
+                </div>
+              </Link>
+            </li>
+            <li
+              id="shoppingcart"
+            >
+              <Link
+                replace={false}
+                to="/cart"
+              >
+                <label
+                  id="shoppingcartlabel"
+                >
+                  0
+                </label>
+                <img
+                  id="cartimage"
+                  src="http://store--manager.herokuapp.com/img/cart.png"
+                />
+              </Link>
+            </li>
+            <li>
+              <a
+                href="#"
+              >
+                <div>
+                  <input
+                    className="search"
+                    placeholder="Search Products"
+                    type="text"
+                  />
+                   
+                  <i
+                    className="fas fa-search fa-2x"
+                    id="searchimg"
+                  />
+                   
+                </div>
+              </a>
+            </li>
+            <li
+              id="appnameli"
+            >
+              <Link
+                replace={false}
+                to="/dashboard"
+              >
+                <h1
+                  id="appname"
+                >
+                  <span
+                    className="highlight"
+                  >
+                    Store
+                  </span>
+                   Manager
+                </h1>
+              </Link>
+            </li>
+          </ul>
+        </nav>,
+        <div
+          className="side-nav"
+          id="side-menu"
+        >
+          <a
+            className="btn-close"
+            href="#"
+            onClick={[Function]}
+          >
+            ×
+          </a>
+          <li
+            className="current"
+          >
+            <Link
+              replace={false}
+              to="/dashboard"
+            >
+              Dashboard
+            </Link>
+          </li>
+          <li>
+            <Link
+              replace={false}
+              to="/viewsales"
+            >
+              View Sales Record
+            </Link>
+          </li>
+          <li>
+            <Link
+              replace={false}
+              to="/profile"
+            >
+              Profile
+            </Link>
+          </li>
+          <li>
+            <a
+              id="signout"
+              onClick={[MockFunction]}
+            >
+              Logout
+            </a>
+          </li>
+        </div>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <span
+              className="open-slide"
+            >
+              <a
+                href="#"
+                id="openslidemenu"
+                onClick={[Function]}
+              >
+                <svg
+                  height="30"
+                  width="30"
+                >
+                  <path
+                    d="M0,5 30,5"
+                    stroke="#ffffff"
+                    strokeWidth="5"
+                  />
+                  <path
+                    d="M0,14 30,14"
+                    stroke="#ffffff"
+                    strokeWidth="5"
+                  />
+                  <path
+                    d="M0,23 30,23"
+                    stroke="#ffffff"
+                    strokeWidth="5"
+                  />
+                </svg>
+              </a>
+            </span>,
+            <ul>
+              <li>
+                <Link
+                  replace={false}
+                  style={
+                    Object {
+                      "paddingTop": "10px",
+                    }
+                  }
+                  to="profile"
+                >
+                  <div>
+                    <img
+                      id="userimg"
+                      src="http://store--manager.herokuapp.com/assets/uploads/users/default-avatar.png"
+                    />
+                     
+                  </div>
+                </Link>
+              </li>
+              <li
+                id="shoppingcart"
+              >
+                <Link
+                  replace={false}
+                  to="/cart"
+                >
+                  <label
+                    id="shoppingcartlabel"
+                  >
+                    0
+                  </label>
+                  <img
+                    id="cartimage"
+                    src="http://store--manager.herokuapp.com/img/cart.png"
+                  />
+                </Link>
+              </li>
+              <li>
+                <a
+                  href="#"
+                >
+                  <div>
+                    <input
+                      className="search"
+                      placeholder="Search Products"
+                      type="text"
+                    />
+                     
+                    <i
+                      className="fas fa-search fa-2x"
+                      id="searchimg"
+                    />
+                     
+                  </div>
+                </a>
+              </li>
+              <li
+                id="appnameli"
+              >
+                <Link
+                  replace={false}
+                  to="/dashboard"
+                >
+                  <h1
+                    id="appname"
+                  >
+                    <span
+                      className="highlight"
+                    >
+                      Store
+                    </span>
+                     Manager
+                  </h1>
+                </Link>
+              </li>
+            </ul>,
+          ],
+          "className": "navbar",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <a
+                href="#"
+                id="openslidemenu"
+                onClick={[Function]}
+              >
+                <svg
+                  height="30"
+                  width="30"
+                >
+                  <path
+                    d="M0,5 30,5"
+                    stroke="#ffffff"
+                    strokeWidth="5"
+                  />
+                  <path
+                    d="M0,14 30,14"
+                    stroke="#ffffff"
+                    strokeWidth="5"
+                  />
+                  <path
+                    d="M0,23 30,23"
+                    stroke="#ffffff"
+                    strokeWidth="5"
+                  />
+                </svg>
+              </a>,
+              "className": "open-slide",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <svg
+                  height="30"
+                  width="30"
+                >
+                  <path
+                    d="M0,5 30,5"
+                    stroke="#ffffff"
+                    strokeWidth="5"
+                  />
+                  <path
+                    d="M0,14 30,14"
+                    stroke="#ffffff"
+                    strokeWidth="5"
+                  />
+                  <path
+                    d="M0,23 30,23"
+                    stroke="#ffffff"
+                    strokeWidth="5"
+                  />
+                </svg>,
+                "href": "#",
+                "id": "openslidemenu",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <path
+                      d="M0,5 30,5"
+                      stroke="#ffffff"
+                      strokeWidth="5"
+                    />,
+                    <path
+                      d="M0,14 30,14"
+                      stroke="#ffffff"
+                      strokeWidth="5"
+                    />,
+                    <path
+                      d="M0,23 30,23"
+                      stroke="#ffffff"
+                      strokeWidth="5"
+                    />,
+                  ],
+                  "height": "30",
+                  "width": "30",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "d": "M0,5 30,5",
+                      "stroke": "#ffffff",
+                      "strokeWidth": "5",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "path",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "d": "M0,14 30,14",
+                      "stroke": "#ffffff",
+                      "strokeWidth": "5",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "path",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "d": "M0,23 30,23",
+                      "stroke": "#ffffff",
+                      "strokeWidth": "5",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "path",
+                  },
+                ],
+                "type": "svg",
+              },
+              "type": "a",
+            },
+            "type": "span",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <li>
+                  <Link
+                    replace={false}
+                    style={
+                      Object {
+                        "paddingTop": "10px",
+                      }
+                    }
+                    to="profile"
+                  >
+                    <div>
+                      <img
+                        id="userimg"
+                        src="http://store--manager.herokuapp.com/assets/uploads/users/default-avatar.png"
+                      />
+                       
+                    </div>
+                  </Link>
+                </li>,
+                <li
+                  id="shoppingcart"
+                >
+                  <Link
+                    replace={false}
+                    to="/cart"
+                  >
+                    <label
+                      id="shoppingcartlabel"
+                    >
+                      0
+                    </label>
+                    <img
+                      id="cartimage"
+                      src="http://store--manager.herokuapp.com/img/cart.png"
+                    />
+                  </Link>
+                </li>,
+                <li>
+                  <a
+                    href="#"
+                  >
+                    <div>
+                      <input
+                        className="search"
+                        placeholder="Search Products"
+                        type="text"
+                      />
+                       
+                      <i
+                        className="fas fa-search fa-2x"
+                        id="searchimg"
+                      />
+                       
+                    </div>
+                  </a>
+                </li>,
+                <li
+                  id="appnameli"
+                >
+                  <Link
+                    replace={false}
+                    to="/dashboard"
+                  >
+                    <h1
+                      id="appname"
+                    >
+                      <span
+                        className="highlight"
+                      >
+                        Store
+                      </span>
+                       Manager
+                    </h1>
+                  </Link>
+                </li>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <Link
+                    replace={false}
+                    style={
+                      Object {
+                        "paddingTop": "10px",
+                      }
+                    }
+                    to="profile"
+                  >
+                    <div>
+                      <img
+                        id="userimg"
+                        src="http://store--manager.herokuapp.com/assets/uploads/users/default-avatar.png"
+                      />
+                       
+                    </div>
+                  </Link>,
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": <div>
+                      <img
+                        id="userimg"
+                        src="http://store--manager.herokuapp.com/assets/uploads/users/default-avatar.png"
+                      />
+                       
+                    </div>,
+                    "replace": false,
+                    "style": Object {
+                      "paddingTop": "10px",
+                    },
+                    "to": "profile",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <img
+                          id="userimg"
+                          src="http://store--manager.herokuapp.com/assets/uploads/users/default-avatar.png"
+                        />,
+                        " ",
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "id": "userimg",
+                          "src": "http://store--manager.herokuapp.com/assets/uploads/users/default-avatar.png",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": "img",
+                      },
+                      " ",
+                    ],
+                    "type": "div",
+                  },
+                  "type": [Function],
+                },
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <Link
+                    replace={false}
+                    to="/cart"
+                  >
+                    <label
+                      id="shoppingcartlabel"
+                    >
+                      0
+                    </label>
+                    <img
+                      id="cartimage"
+                      src="http://store--manager.herokuapp.com/img/cart.png"
+                    />
+                  </Link>,
+                  "id": "shoppingcart",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": Array [
+                      <label
+                        id="shoppingcartlabel"
+                      >
+                        0
+                      </label>,
+                      <img
+                        id="cartimage"
+                        src="http://store--manager.herokuapp.com/img/cart.png"
+                      />,
+                    ],
+                    "replace": false,
+                    "to": "/cart",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "0",
+                        "id": "shoppingcartlabel",
+                      },
+                      "ref": null,
+                      "rendered": "0",
+                      "type": "label",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "id": "cartimage",
+                        "src": "http://store--manager.herokuapp.com/img/cart.png",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "img",
+                    },
+                  ],
+                  "type": [Function],
+                },
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <a
+                    href="#"
+                  >
+                    <div>
+                      <input
+                        className="search"
+                        placeholder="Search Products"
+                        type="text"
+                      />
+                       
+                      <i
+                        className="fas fa-search fa-2x"
+                        id="searchimg"
+                      />
+                       
+                    </div>
+                  </a>,
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <div>
+                      <input
+                        className="search"
+                        placeholder="Search Products"
+                        type="text"
+                      />
+                       
+                      <i
+                        className="fas fa-search fa-2x"
+                        id="searchimg"
+                      />
+                       
+                    </div>,
+                    "href": "#",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <input
+                          className="search"
+                          placeholder="Search Products"
+                          type="text"
+                        />,
+                        " ",
+                        <i
+                          className="fas fa-search fa-2x"
+                          id="searchimg"
+                        />,
+                        " ",
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "className": "search",
+                          "placeholder": "Search Products",
+                          "type": "text",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": "input",
+                      },
+                      " ",
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "className": "fas fa-search fa-2x",
+                          "id": "searchimg",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": "i",
+                      },
+                      " ",
+                    ],
+                    "type": "div",
+                  },
+                  "type": "a",
+                },
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <Link
+                    replace={false}
+                    to="/dashboard"
+                  >
+                    <h1
+                      id="appname"
+                    >
+                      <span
+                        className="highlight"
+                      >
+                        Store
+                      </span>
+                       Manager
+                    </h1>
+                  </Link>,
+                  "id": "appnameli",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": <h1
+                      id="appname"
+                    >
+                      <span
+                        className="highlight"
+                      >
+                        Store
+                      </span>
+                       Manager
+                    </h1>,
+                    "replace": false,
+                    "to": "/dashboard",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <span
+                          className="highlight"
+                        >
+                          Store
+                        </span>,
+                        " Manager",
+                      ],
+                      "id": "appname",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Store",
+                          "className": "highlight",
+                        },
+                        "ref": null,
+                        "rendered": "Store",
+                        "type": "span",
+                      },
+                      " Manager",
+                    ],
+                    "type": "h1",
+                  },
+                  "type": [Function],
+                },
+                "type": "li",
+              },
+            ],
+            "type": "ul",
+          },
+        ],
+        "type": "nav",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <a
+              className="btn-close"
+              href="#"
+              onClick={[Function]}
+            >
+              ×
+            </a>,
+            <li
+              className="current"
+            >
+              <Link
+                replace={false}
+                to="/dashboard"
+              >
+                Dashboard
+              </Link>
+            </li>,
+            <li>
+              <Link
+                replace={false}
+                to="/viewsales"
+              >
+                View Sales Record
+              </Link>
+            </li>,
+            <li>
+              <Link
+                replace={false}
+                to="/profile"
+              >
+                Profile
+              </Link>
+            </li>,
+            <li>
+              <a
+                id="signout"
+                onClick={[MockFunction]}
+              >
+                Logout
+              </a>
+            </li>,
+          ],
+          "className": "side-nav",
+          "id": "side-menu",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "×",
+              "className": "btn-close",
+              "href": "#",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "×",
+            "type": "a",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <Link
+                replace={false}
+                to="/dashboard"
+              >
+                Dashboard
+              </Link>,
+              "className": "current",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Dashboard",
+                "replace": false,
+                "to": "/dashboard",
+              },
+              "ref": null,
+              "rendered": "Dashboard",
+              "type": [Function],
+            },
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <Link
+                replace={false}
+                to="/viewsales"
+              >
+                View Sales Record
+              </Link>,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "View Sales Record",
+                "replace": false,
+                "to": "/viewsales",
+              },
+              "ref": null,
+              "rendered": "View Sales Record",
+              "type": [Function],
+            },
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <Link
+                replace={false}
+                to="/profile"
+              >
+                Profile
+              </Link>,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Profile",
+                "replace": false,
+                "to": "/profile",
+              },
+              "ref": null,
+              "rendered": "Profile",
+              "type": [Function],
+            },
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <a
+                id="signout"
+                onClick={[MockFunction]}
+              >
+                Logout
+              </a>,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Logout",
+                "id": "signout",
+                "onClick": [MockFunction],
+              },
+              "ref": null,
+              "rendered": "Logout",
+              "type": "a",
+            },
+            "type": "li",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <nav
+            className="navbar"
+          >
+            <span
+              className="open-slide"
+            >
+              <a
+                href="#"
+                id="openslidemenu"
+                onClick={[Function]}
+              >
+                <svg
+                  height="30"
+                  width="30"
+                >
+                  <path
+                    d="M0,5 30,5"
+                    stroke="#ffffff"
+                    strokeWidth="5"
+                  />
+                  <path
+                    d="M0,14 30,14"
+                    stroke="#ffffff"
+                    strokeWidth="5"
+                  />
+                  <path
+                    d="M0,23 30,23"
+                    stroke="#ffffff"
+                    strokeWidth="5"
+                  />
+                </svg>
+              </a>
+            </span>
+            <ul>
+              <li>
+                <Link
+                  replace={false}
+                  style={
+                    Object {
+                      "paddingTop": "10px",
+                    }
+                  }
+                  to="profile"
+                >
+                  <div>
+                    <img
+                      id="userimg"
+                      src="http://store--manager.herokuapp.com/assets/uploads/users/default-avatar.png"
+                    />
+                     
+                  </div>
+                </Link>
+              </li>
+              <li
+                id="shoppingcart"
+              >
+                <Link
+                  replace={false}
+                  to="/cart"
+                >
+                  <label
+                    id="shoppingcartlabel"
+                  >
+                    0
+                  </label>
+                  <img
+                    id="cartimage"
+                    src="http://store--manager.herokuapp.com/img/cart.png"
+                  />
+                </Link>
+              </li>
+              <li>
+                <a
+                  href="#"
+                >
+                  <div>
+                    <input
+                      className="search"
+                      placeholder="Search Products"
+                      type="text"
+                    />
+                     
+                    <i
+                      className="fas fa-search fa-2x"
+                      id="searchimg"
+                    />
+                     
+                  </div>
+                </a>
+              </li>
+              <li
+                id="appnameli"
+              >
+                <Link
+                  replace={false}
+                  to="/dashboard"
+                >
+                  <h1
+                    id="appname"
+                  >
+                    <span
+                      className="highlight"
+                    >
+                      Store
+                    </span>
+                     Manager
+                  </h1>
+                </Link>
+              </li>
+            </ul>
+          </nav>,
+          <div
+            className="side-nav"
+            id="side-menu"
+          >
+            <a
+              className="btn-close"
+              href="#"
+              onClick={[Function]}
+            >
+              ×
+            </a>
+            <li
+              className="current"
+            >
+              <Link
+                replace={false}
+                to="/dashboard"
+              >
+                Dashboard
+              </Link>
+            </li>
+            <li>
+              <Link
+                replace={false}
+                to="/viewsales"
+              >
+                View Sales Record
+              </Link>
+            </li>
+            <li>
+              <Link
+                replace={false}
+                to="/profile"
+              >
+                Profile
+              </Link>
+            </li>
+            <li>
+              <a
+                id="signout"
+                onClick={[MockFunction]}
+              >
+                Logout
+              </a>
+            </li>
+          </div>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <span
+                className="open-slide"
+              >
+                <a
+                  href="#"
+                  id="openslidemenu"
+                  onClick={[Function]}
+                >
+                  <svg
+                    height="30"
+                    width="30"
+                  >
+                    <path
+                      d="M0,5 30,5"
+                      stroke="#ffffff"
+                      strokeWidth="5"
+                    />
+                    <path
+                      d="M0,14 30,14"
+                      stroke="#ffffff"
+                      strokeWidth="5"
+                    />
+                    <path
+                      d="M0,23 30,23"
+                      stroke="#ffffff"
+                      strokeWidth="5"
+                    />
+                  </svg>
+                </a>
+              </span>,
+              <ul>
+                <li>
+                  <Link
+                    replace={false}
+                    style={
+                      Object {
+                        "paddingTop": "10px",
+                      }
+                    }
+                    to="profile"
+                  >
+                    <div>
+                      <img
+                        id="userimg"
+                        src="http://store--manager.herokuapp.com/assets/uploads/users/default-avatar.png"
+                      />
+                       
+                    </div>
+                  </Link>
+                </li>
+                <li
+                  id="shoppingcart"
+                >
+                  <Link
+                    replace={false}
+                    to="/cart"
+                  >
+                    <label
+                      id="shoppingcartlabel"
+                    >
+                      0
+                    </label>
+                    <img
+                      id="cartimage"
+                      src="http://store--manager.herokuapp.com/img/cart.png"
+                    />
+                  </Link>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                  >
+                    <div>
+                      <input
+                        className="search"
+                        placeholder="Search Products"
+                        type="text"
+                      />
+                       
+                      <i
+                        className="fas fa-search fa-2x"
+                        id="searchimg"
+                      />
+                       
+                    </div>
+                  </a>
+                </li>
+                <li
+                  id="appnameli"
+                >
+                  <Link
+                    replace={false}
+                    to="/dashboard"
+                  >
+                    <h1
+                      id="appname"
+                    >
+                      <span
+                        className="highlight"
+                      >
+                        Store
+                      </span>
+                       Manager
+                    </h1>
+                  </Link>
+                </li>
+              </ul>,
+            ],
+            "className": "navbar",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <a
+                  href="#"
+                  id="openslidemenu"
+                  onClick={[Function]}
+                >
+                  <svg
+                    height="30"
+                    width="30"
+                  >
+                    <path
+                      d="M0,5 30,5"
+                      stroke="#ffffff"
+                      strokeWidth="5"
+                    />
+                    <path
+                      d="M0,14 30,14"
+                      stroke="#ffffff"
+                      strokeWidth="5"
+                    />
+                    <path
+                      d="M0,23 30,23"
+                      stroke="#ffffff"
+                      strokeWidth="5"
+                    />
+                  </svg>
+                </a>,
+                "className": "open-slide",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <svg
+                    height="30"
+                    width="30"
+                  >
+                    <path
+                      d="M0,5 30,5"
+                      stroke="#ffffff"
+                      strokeWidth="5"
+                    />
+                    <path
+                      d="M0,14 30,14"
+                      stroke="#ffffff"
+                      strokeWidth="5"
+                    />
+                    <path
+                      d="M0,23 30,23"
+                      stroke="#ffffff"
+                      strokeWidth="5"
+                    />
+                  </svg>,
+                  "href": "#",
+                  "id": "openslidemenu",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <path
+                        d="M0,5 30,5"
+                        stroke="#ffffff"
+                        strokeWidth="5"
+                      />,
+                      <path
+                        d="M0,14 30,14"
+                        stroke="#ffffff"
+                        strokeWidth="5"
+                      />,
+                      <path
+                        d="M0,23 30,23"
+                        stroke="#ffffff"
+                        strokeWidth="5"
+                      />,
+                    ],
+                    "height": "30",
+                    "width": "30",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "d": "M0,5 30,5",
+                        "stroke": "#ffffff",
+                        "strokeWidth": "5",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "path",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "d": "M0,14 30,14",
+                        "stroke": "#ffffff",
+                        "strokeWidth": "5",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "path",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "d": "M0,23 30,23",
+                        "stroke": "#ffffff",
+                        "strokeWidth": "5",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "path",
+                    },
+                  ],
+                  "type": "svg",
+                },
+                "type": "a",
+              },
+              "type": "span",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <li>
+                    <Link
+                      replace={false}
+                      style={
+                        Object {
+                          "paddingTop": "10px",
+                        }
+                      }
+                      to="profile"
+                    >
+                      <div>
+                        <img
+                          id="userimg"
+                          src="http://store--manager.herokuapp.com/assets/uploads/users/default-avatar.png"
+                        />
+                         
+                      </div>
+                    </Link>
+                  </li>,
+                  <li
+                    id="shoppingcart"
+                  >
+                    <Link
+                      replace={false}
+                      to="/cart"
+                    >
+                      <label
+                        id="shoppingcartlabel"
+                      >
+                        0
+                      </label>
+                      <img
+                        id="cartimage"
+                        src="http://store--manager.herokuapp.com/img/cart.png"
+                      />
+                    </Link>
+                  </li>,
+                  <li>
+                    <a
+                      href="#"
+                    >
+                      <div>
+                        <input
+                          className="search"
+                          placeholder="Search Products"
+                          type="text"
+                        />
+                         
+                        <i
+                          className="fas fa-search fa-2x"
+                          id="searchimg"
+                        />
+                         
+                      </div>
+                    </a>
+                  </li>,
+                  <li
+                    id="appnameli"
+                  >
+                    <Link
+                      replace={false}
+                      to="/dashboard"
+                    >
+                      <h1
+                        id="appname"
+                      >
+                        <span
+                          className="highlight"
+                        >
+                          Store
+                        </span>
+                         Manager
+                      </h1>
+                    </Link>
+                  </li>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <Link
+                      replace={false}
+                      style={
+                        Object {
+                          "paddingTop": "10px",
+                        }
+                      }
+                      to="profile"
+                    >
+                      <div>
+                        <img
+                          id="userimg"
+                          src="http://store--manager.herokuapp.com/assets/uploads/users/default-avatar.png"
+                        />
+                         
+                      </div>
+                    </Link>,
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": <div>
+                        <img
+                          id="userimg"
+                          src="http://store--manager.herokuapp.com/assets/uploads/users/default-avatar.png"
+                        />
+                         
+                      </div>,
+                      "replace": false,
+                      "style": Object {
+                        "paddingTop": "10px",
+                      },
+                      "to": "profile",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <img
+                            id="userimg"
+                            src="http://store--manager.herokuapp.com/assets/uploads/users/default-avatar.png"
+                          />,
+                          " ",
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "id": "userimg",
+                            "src": "http://store--manager.herokuapp.com/assets/uploads/users/default-avatar.png",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": "img",
+                        },
+                        " ",
+                      ],
+                      "type": "div",
+                    },
+                    "type": [Function],
+                  },
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <Link
+                      replace={false}
+                      to="/cart"
+                    >
+                      <label
+                        id="shoppingcartlabel"
+                      >
+                        0
+                      </label>
+                      <img
+                        id="cartimage"
+                        src="http://store--manager.herokuapp.com/img/cart.png"
+                      />
+                    </Link>,
+                    "id": "shoppingcart",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": Array [
+                        <label
+                          id="shoppingcartlabel"
+                        >
+                          0
+                        </label>,
+                        <img
+                          id="cartimage"
+                          src="http://store--manager.herokuapp.com/img/cart.png"
+                        />,
+                      ],
+                      "replace": false,
+                      "to": "/cart",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "0",
+                          "id": "shoppingcartlabel",
+                        },
+                        "ref": null,
+                        "rendered": "0",
+                        "type": "label",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "id": "cartimage",
+                          "src": "http://store--manager.herokuapp.com/img/cart.png",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": "img",
+                      },
+                    ],
+                    "type": [Function],
+                  },
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <a
+                      href="#"
+                    >
+                      <div>
+                        <input
+                          className="search"
+                          placeholder="Search Products"
+                          type="text"
+                        />
+                         
+                        <i
+                          className="fas fa-search fa-2x"
+                          id="searchimg"
+                        />
+                         
+                      </div>
+                    </a>,
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": <div>
+                        <input
+                          className="search"
+                          placeholder="Search Products"
+                          type="text"
+                        />
+                         
+                        <i
+                          className="fas fa-search fa-2x"
+                          id="searchimg"
+                        />
+                         
+                      </div>,
+                      "href": "#",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <input
+                            className="search"
+                            placeholder="Search Products"
+                            type="text"
+                          />,
+                          " ",
+                          <i
+                            className="fas fa-search fa-2x"
+                            id="searchimg"
+                          />,
+                          " ",
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "className": "search",
+                            "placeholder": "Search Products",
+                            "type": "text",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": "input",
+                        },
+                        " ",
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "className": "fas fa-search fa-2x",
+                            "id": "searchimg",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": "i",
+                        },
+                        " ",
+                      ],
+                      "type": "div",
+                    },
+                    "type": "a",
+                  },
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <Link
+                      replace={false}
+                      to="/dashboard"
+                    >
+                      <h1
+                        id="appname"
+                      >
+                        <span
+                          className="highlight"
+                        >
+                          Store
+                        </span>
+                         Manager
+                      </h1>
+                    </Link>,
+                    "id": "appnameli",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": <h1
+                        id="appname"
+                      >
+                        <span
+                          className="highlight"
+                        >
+                          Store
+                        </span>
+                         Manager
+                      </h1>,
+                      "replace": false,
+                      "to": "/dashboard",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <span
+                            className="highlight"
+                          >
+                            Store
+                          </span>,
+                          " Manager",
+                        ],
+                        "id": "appname",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "Store",
+                            "className": "highlight",
+                          },
+                          "ref": null,
+                          "rendered": "Store",
+                          "type": "span",
+                        },
+                        " Manager",
+                      ],
+                      "type": "h1",
+                    },
+                    "type": [Function],
+                  },
+                  "type": "li",
+                },
+              ],
+              "type": "ul",
+            },
+          ],
+          "type": "nav",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <a
+                className="btn-close"
+                href="#"
+                onClick={[Function]}
+              >
+                ×
+              </a>,
+              <li
+                className="current"
+              >
+                <Link
+                  replace={false}
+                  to="/dashboard"
+                >
+                  Dashboard
+                </Link>
+              </li>,
+              <li>
+                <Link
+                  replace={false}
+                  to="/viewsales"
+                >
+                  View Sales Record
+                </Link>
+              </li>,
+              <li>
+                <Link
+                  replace={false}
+                  to="/profile"
+                >
+                  Profile
+                </Link>
+              </li>,
+              <li>
+                <a
+                  id="signout"
+                  onClick={[MockFunction]}
+                >
+                  Logout
+                </a>
+              </li>,
+            ],
+            "className": "side-nav",
+            "id": "side-menu",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "×",
+                "className": "btn-close",
+                "href": "#",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "×",
+              "type": "a",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <Link
+                  replace={false}
+                  to="/dashboard"
+                >
+                  Dashboard
+                </Link>,
+                "className": "current",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Dashboard",
+                  "replace": false,
+                  "to": "/dashboard",
+                },
+                "ref": null,
+                "rendered": "Dashboard",
+                "type": [Function],
+              },
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <Link
+                  replace={false}
+                  to="/viewsales"
+                >
+                  View Sales Record
+                </Link>,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "View Sales Record",
+                  "replace": false,
+                  "to": "/viewsales",
+                },
+                "ref": null,
+                "rendered": "View Sales Record",
+                "type": [Function],
+              },
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <Link
+                  replace={false}
+                  to="/profile"
+                >
+                  Profile
+                </Link>,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Profile",
+                  "replace": false,
+                  "to": "/profile",
+                },
+                "ref": null,
+                "rendered": "Profile",
+                "type": [Function],
+              },
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <a
+                  id="signout"
+                  onClick={[MockFunction]}
+                >
+                  Logout
+                </a>,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Logout",
+                  "id": "signout",
+                  "onClick": [MockFunction],
+                },
+                "ref": null,
+                "rendered": "Logout",
+                "type": "a",
+              },
+              "type": "li",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`<Navigation /> should render different dashboardLink if type = 1 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Navigation
+    auth={
+      Object {
+        "user": Object {
+          "type": 1,
+          "userImage": "assets/uploads/users/default-avatar.png",
+        },
+      }
+    }
+    signOut={
+      [MockFunction] {
+        "calls": Array [
+          Array [],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <nav
+          className="navbar"
+        >
+          <span
+            className="open-slide"
+          >
+            <a
+              href="#"
+              id="openslidemenu"
+              onClick={[Function]}
+            >
+              <svg
+                height="30"
+                width="30"
+              >
+                <path
+                  d="M0,5 30,5"
+                  stroke="#ffffff"
+                  strokeWidth="5"
+                />
+                <path
+                  d="M0,14 30,14"
+                  stroke="#ffffff"
+                  strokeWidth="5"
+                />
+                <path
+                  d="M0,23 30,23"
+                  stroke="#ffffff"
+                  strokeWidth="5"
+                />
+              </svg>
+            </a>
+          </span>
+          <ul>
+            <li>
+              <Link
+                replace={false}
+                style={
+                  Object {
+                    "paddingTop": "10px",
+                  }
+                }
+                to="profile"
+              >
+                <div>
+                  <img
+                    id="userimg"
+                    src="http://store--manager.herokuapp.com/assets/uploads/users/default-avatar.png"
+                  />
+                   
+                </div>
+              </Link>
+            </li>
+            <li
+              id="shoppingcart"
+            >
+              <Link
+                replace={false}
+                to="/cart"
+              >
+                <label
+                  id="shoppingcartlabel"
+                >
+                  0
+                </label>
+                <img
+                  id="cartimage"
+                  src="http://store--manager.herokuapp.com/img/cart.png"
+                />
+              </Link>
+            </li>
+            <li>
+              <a
+                href="#"
+              >
+                <div>
+                  <input
+                    className="search"
+                    placeholder="Search Products"
+                    type="text"
+                  />
+                   
+                  <i
+                    className="fas fa-search fa-2x"
+                    id="searchimg"
+                  />
+                   
+                </div>
+              </a>
+            </li>
+            <li
+              id="appnameli"
+            >
+              <Link
+                replace={false}
+                to="/dashboard"
+              >
+                <h1
+                  id="appname"
+                >
+                  <span
+                    className="highlight"
+                  >
+                    Store
+                  </span>
+                   Manager
+                </h1>
+              </Link>
+            </li>
+          </ul>
+        </nav>,
+        <div
+          className="side-nav"
+          id="side-menu"
+        >
+          <a
+            className="btn-close"
+            href="#"
+            onClick={[Function]}
+          >
+            ×
+          </a>
+          <li
+            className="current"
+          >
+            <Link
+              replace={false}
+              to="/dashboard"
+            >
+              Dashboard
+            </Link>
+          </li>
+          <li>
+            <Link
+              replace={false}
+              to="/createproduct"
+            >
+              Create Product
+            </Link>
+          </li>
+          <li>
+            <Link
+              replace={false}
+              to="/viewproducts"
+            >
+              View Products
+            </Link>
+          </li>
+          <li>
+            <Link
+              replace={false}
+              to="/createattendant"
+            >
+              Create Sales Attendant
+            </Link>
+          </li>
+          <li>
+            <Link
+              replace={false}
+              to="/viewsales"
+            >
+              View Sales
+            </Link>
+          </li>
+          <li>
+            <Link
+              replace={false}
+              to="/viewattendants"
+            >
+              View Attendants
+            </Link>
+          </li>
+          <li>
+            <a
+              onClick={
+                [MockFunction] {
+                  "calls": Array [
+                    Array [],
+                  ],
+                  "results": Array [
+                    Object {
+                      "isThrow": false,
+                      "value": undefined,
+                    },
+                  ],
+                }
+              }
+            >
+              Logout
+            </a>
+          </li>
+        </div>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <span
+              className="open-slide"
+            >
+              <a
+                href="#"
+                id="openslidemenu"
+                onClick={[Function]}
+              >
+                <svg
+                  height="30"
+                  width="30"
+                >
+                  <path
+                    d="M0,5 30,5"
+                    stroke="#ffffff"
+                    strokeWidth="5"
+                  />
+                  <path
+                    d="M0,14 30,14"
+                    stroke="#ffffff"
+                    strokeWidth="5"
+                  />
+                  <path
+                    d="M0,23 30,23"
+                    stroke="#ffffff"
+                    strokeWidth="5"
+                  />
+                </svg>
+              </a>
+            </span>,
+            <ul>
+              <li>
+                <Link
+                  replace={false}
+                  style={
+                    Object {
+                      "paddingTop": "10px",
+                    }
+                  }
+                  to="profile"
+                >
+                  <div>
+                    <img
+                      id="userimg"
+                      src="http://store--manager.herokuapp.com/assets/uploads/users/default-avatar.png"
+                    />
+                     
+                  </div>
+                </Link>
+              </li>
+              <li
+                id="shoppingcart"
+              >
+                <Link
+                  replace={false}
+                  to="/cart"
+                >
+                  <label
+                    id="shoppingcartlabel"
+                  >
+                    0
+                  </label>
+                  <img
+                    id="cartimage"
+                    src="http://store--manager.herokuapp.com/img/cart.png"
+                  />
+                </Link>
+              </li>
+              <li>
+                <a
+                  href="#"
+                >
+                  <div>
+                    <input
+                      className="search"
+                      placeholder="Search Products"
+                      type="text"
+                    />
+                     
+                    <i
+                      className="fas fa-search fa-2x"
+                      id="searchimg"
+                    />
+                     
+                  </div>
+                </a>
+              </li>
+              <li
+                id="appnameli"
+              >
+                <Link
+                  replace={false}
+                  to="/dashboard"
+                >
+                  <h1
+                    id="appname"
+                  >
+                    <span
+                      className="highlight"
+                    >
+                      Store
+                    </span>
+                     Manager
+                  </h1>
+                </Link>
+              </li>
+            </ul>,
+          ],
+          "className": "navbar",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <a
+                href="#"
+                id="openslidemenu"
+                onClick={[Function]}
+              >
+                <svg
+                  height="30"
+                  width="30"
+                >
+                  <path
+                    d="M0,5 30,5"
+                    stroke="#ffffff"
+                    strokeWidth="5"
+                  />
+                  <path
+                    d="M0,14 30,14"
+                    stroke="#ffffff"
+                    strokeWidth="5"
+                  />
+                  <path
+                    d="M0,23 30,23"
+                    stroke="#ffffff"
+                    strokeWidth="5"
+                  />
+                </svg>
+              </a>,
+              "className": "open-slide",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <svg
+                  height="30"
+                  width="30"
+                >
+                  <path
+                    d="M0,5 30,5"
+                    stroke="#ffffff"
+                    strokeWidth="5"
+                  />
+                  <path
+                    d="M0,14 30,14"
+                    stroke="#ffffff"
+                    strokeWidth="5"
+                  />
+                  <path
+                    d="M0,23 30,23"
+                    stroke="#ffffff"
+                    strokeWidth="5"
+                  />
+                </svg>,
+                "href": "#",
+                "id": "openslidemenu",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <path
+                      d="M0,5 30,5"
+                      stroke="#ffffff"
+                      strokeWidth="5"
+                    />,
+                    <path
+                      d="M0,14 30,14"
+                      stroke="#ffffff"
+                      strokeWidth="5"
+                    />,
+                    <path
+                      d="M0,23 30,23"
+                      stroke="#ffffff"
+                      strokeWidth="5"
+                    />,
+                  ],
+                  "height": "30",
+                  "width": "30",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "d": "M0,5 30,5",
+                      "stroke": "#ffffff",
+                      "strokeWidth": "5",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "path",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "d": "M0,14 30,14",
+                      "stroke": "#ffffff",
+                      "strokeWidth": "5",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "path",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "d": "M0,23 30,23",
+                      "stroke": "#ffffff",
+                      "strokeWidth": "5",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "path",
+                  },
+                ],
+                "type": "svg",
+              },
+              "type": "a",
+            },
+            "type": "span",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <li>
+                  <Link
+                    replace={false}
+                    style={
+                      Object {
+                        "paddingTop": "10px",
+                      }
+                    }
+                    to="profile"
+                  >
+                    <div>
+                      <img
+                        id="userimg"
+                        src="http://store--manager.herokuapp.com/assets/uploads/users/default-avatar.png"
+                      />
+                       
+                    </div>
+                  </Link>
+                </li>,
+                <li
+                  id="shoppingcart"
+                >
+                  <Link
+                    replace={false}
+                    to="/cart"
+                  >
+                    <label
+                      id="shoppingcartlabel"
+                    >
+                      0
+                    </label>
+                    <img
+                      id="cartimage"
+                      src="http://store--manager.herokuapp.com/img/cart.png"
+                    />
+                  </Link>
+                </li>,
+                <li>
+                  <a
+                    href="#"
+                  >
+                    <div>
+                      <input
+                        className="search"
+                        placeholder="Search Products"
+                        type="text"
+                      />
+                       
+                      <i
+                        className="fas fa-search fa-2x"
+                        id="searchimg"
+                      />
+                       
+                    </div>
+                  </a>
+                </li>,
+                <li
+                  id="appnameli"
+                >
+                  <Link
+                    replace={false}
+                    to="/dashboard"
+                  >
+                    <h1
+                      id="appname"
+                    >
+                      <span
+                        className="highlight"
+                      >
+                        Store
+                      </span>
+                       Manager
+                    </h1>
+                  </Link>
+                </li>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <Link
+                    replace={false}
+                    style={
+                      Object {
+                        "paddingTop": "10px",
+                      }
+                    }
+                    to="profile"
+                  >
+                    <div>
+                      <img
+                        id="userimg"
+                        src="http://store--manager.herokuapp.com/assets/uploads/users/default-avatar.png"
+                      />
+                       
+                    </div>
+                  </Link>,
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": <div>
+                      <img
+                        id="userimg"
+                        src="http://store--manager.herokuapp.com/assets/uploads/users/default-avatar.png"
+                      />
+                       
+                    </div>,
+                    "replace": false,
+                    "style": Object {
+                      "paddingTop": "10px",
+                    },
+                    "to": "profile",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <img
+                          id="userimg"
+                          src="http://store--manager.herokuapp.com/assets/uploads/users/default-avatar.png"
+                        />,
+                        " ",
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "id": "userimg",
+                          "src": "http://store--manager.herokuapp.com/assets/uploads/users/default-avatar.png",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": "img",
+                      },
+                      " ",
+                    ],
+                    "type": "div",
+                  },
+                  "type": [Function],
+                },
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <Link
+                    replace={false}
+                    to="/cart"
+                  >
+                    <label
+                      id="shoppingcartlabel"
+                    >
+                      0
+                    </label>
+                    <img
+                      id="cartimage"
+                      src="http://store--manager.herokuapp.com/img/cart.png"
+                    />
+                  </Link>,
+                  "id": "shoppingcart",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": Array [
+                      <label
+                        id="shoppingcartlabel"
+                      >
+                        0
+                      </label>,
+                      <img
+                        id="cartimage"
+                        src="http://store--manager.herokuapp.com/img/cart.png"
+                      />,
+                    ],
+                    "replace": false,
+                    "to": "/cart",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "0",
+                        "id": "shoppingcartlabel",
+                      },
+                      "ref": null,
+                      "rendered": "0",
+                      "type": "label",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "id": "cartimage",
+                        "src": "http://store--manager.herokuapp.com/img/cart.png",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "img",
+                    },
+                  ],
+                  "type": [Function],
+                },
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <a
+                    href="#"
+                  >
+                    <div>
+                      <input
+                        className="search"
+                        placeholder="Search Products"
+                        type="text"
+                      />
+                       
+                      <i
+                        className="fas fa-search fa-2x"
+                        id="searchimg"
+                      />
+                       
+                    </div>
+                  </a>,
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <div>
+                      <input
+                        className="search"
+                        placeholder="Search Products"
+                        type="text"
+                      />
+                       
+                      <i
+                        className="fas fa-search fa-2x"
+                        id="searchimg"
+                      />
+                       
+                    </div>,
+                    "href": "#",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <input
+                          className="search"
+                          placeholder="Search Products"
+                          type="text"
+                        />,
+                        " ",
+                        <i
+                          className="fas fa-search fa-2x"
+                          id="searchimg"
+                        />,
+                        " ",
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "className": "search",
+                          "placeholder": "Search Products",
+                          "type": "text",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": "input",
+                      },
+                      " ",
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "className": "fas fa-search fa-2x",
+                          "id": "searchimg",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": "i",
+                      },
+                      " ",
+                    ],
+                    "type": "div",
+                  },
+                  "type": "a",
+                },
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <Link
+                    replace={false}
+                    to="/dashboard"
+                  >
+                    <h1
+                      id="appname"
+                    >
+                      <span
+                        className="highlight"
+                      >
+                        Store
+                      </span>
+                       Manager
+                    </h1>
+                  </Link>,
+                  "id": "appnameli",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": <h1
+                      id="appname"
+                    >
+                      <span
+                        className="highlight"
+                      >
+                        Store
+                      </span>
+                       Manager
+                    </h1>,
+                    "replace": false,
+                    "to": "/dashboard",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <span
+                          className="highlight"
+                        >
+                          Store
+                        </span>,
+                        " Manager",
+                      ],
+                      "id": "appname",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Store",
+                          "className": "highlight",
+                        },
+                        "ref": null,
+                        "rendered": "Store",
+                        "type": "span",
+                      },
+                      " Manager",
+                    ],
+                    "type": "h1",
+                  },
+                  "type": [Function],
+                },
+                "type": "li",
+              },
+            ],
+            "type": "ul",
+          },
+        ],
+        "type": "nav",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <a
+              className="btn-close"
+              href="#"
+              onClick={[Function]}
+            >
+              ×
+            </a>,
+            <li
+              className="current"
+            >
+              <Link
+                replace={false}
+                to="/dashboard"
+              >
+                Dashboard
+              </Link>
+            </li>,
+            <li>
+              <Link
+                replace={false}
+                to="/createproduct"
+              >
+                Create Product
+              </Link>
+            </li>,
+            <li>
+              <Link
+                replace={false}
+                to="/viewproducts"
+              >
+                View Products
+              </Link>
+            </li>,
+            <li>
+              <Link
+                replace={false}
+                to="/createattendant"
+              >
+                Create Sales Attendant
+              </Link>
+            </li>,
+            <li>
+              <Link
+                replace={false}
+                to="/viewsales"
+              >
+                View Sales
+              </Link>
+            </li>,
+            <li>
+              <Link
+                replace={false}
+                to="/viewattendants"
+              >
+                View Attendants
+              </Link>
+            </li>,
+            <li>
+              <a
+                onClick={
+                  [MockFunction] {
+                    "calls": Array [
+                      Array [],
+                    ],
+                    "results": Array [
+                      Object {
+                        "isThrow": false,
+                        "value": undefined,
+                      },
+                    ],
+                  }
+                }
+              >
+                Logout
+              </a>
+            </li>,
+          ],
+          "className": "side-nav",
+          "id": "side-menu",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "×",
+              "className": "btn-close",
+              "href": "#",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "×",
+            "type": "a",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <Link
+                replace={false}
+                to="/dashboard"
+              >
+                Dashboard
+              </Link>,
+              "className": "current",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Dashboard",
+                "replace": false,
+                "to": "/dashboard",
+              },
+              "ref": null,
+              "rendered": "Dashboard",
+              "type": [Function],
+            },
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <Link
+                replace={false}
+                to="/createproduct"
+              >
+                Create Product
+              </Link>,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Create Product",
+                "replace": false,
+                "to": "/createproduct",
+              },
+              "ref": null,
+              "rendered": "Create Product",
+              "type": [Function],
+            },
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <Link
+                replace={false}
+                to="/viewproducts"
+              >
+                View Products
+              </Link>,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "View Products",
+                "replace": false,
+                "to": "/viewproducts",
+              },
+              "ref": null,
+              "rendered": "View Products",
+              "type": [Function],
+            },
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <Link
+                replace={false}
+                to="/createattendant"
+              >
+                Create Sales Attendant
+              </Link>,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Create Sales Attendant",
+                "replace": false,
+                "to": "/createattendant",
+              },
+              "ref": null,
+              "rendered": "Create Sales Attendant",
+              "type": [Function],
+            },
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <Link
+                replace={false}
+                to="/viewsales"
+              >
+                View Sales
+              </Link>,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "View Sales",
+                "replace": false,
+                "to": "/viewsales",
+              },
+              "ref": null,
+              "rendered": "View Sales",
+              "type": [Function],
+            },
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <Link
+                replace={false}
+                to="/viewattendants"
+              >
+                View Attendants
+              </Link>,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "View Attendants",
+                "replace": false,
+                "to": "/viewattendants",
+              },
+              "ref": null,
+              "rendered": "View Attendants",
+              "type": [Function],
+            },
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <a
+                onClick={
+                  [MockFunction] {
+                    "calls": Array [
+                      Array [],
+                    ],
+                    "results": Array [
+                      Object {
+                        "isThrow": false,
+                        "value": undefined,
+                      },
+                    ],
+                  }
+                }
+              >
+                Logout
+              </a>,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Logout",
+                "onClick": [MockFunction] {
+                  "calls": Array [
+                    Array [],
+                  ],
+                  "results": Array [
+                    Object {
+                      "isThrow": false,
+                      "value": undefined,
+                    },
+                  ],
+                },
+              },
+              "ref": null,
+              "rendered": "Logout",
+              "type": "a",
+            },
+            "type": "li",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <nav
+            className="navbar"
+          >
+            <span
+              className="open-slide"
+            >
+              <a
+                href="#"
+                id="openslidemenu"
+                onClick={[Function]}
+              >
+                <svg
+                  height="30"
+                  width="30"
+                >
+                  <path
+                    d="M0,5 30,5"
+                    stroke="#ffffff"
+                    strokeWidth="5"
+                  />
+                  <path
+                    d="M0,14 30,14"
+                    stroke="#ffffff"
+                    strokeWidth="5"
+                  />
+                  <path
+                    d="M0,23 30,23"
+                    stroke="#ffffff"
+                    strokeWidth="5"
+                  />
+                </svg>
+              </a>
+            </span>
+            <ul>
+              <li>
+                <Link
+                  replace={false}
+                  style={
+                    Object {
+                      "paddingTop": "10px",
+                    }
+                  }
+                  to="profile"
+                >
+                  <div>
+                    <img
+                      id="userimg"
+                      src="http://store--manager.herokuapp.com/assets/uploads/users/default-avatar.png"
+                    />
+                     
+                  </div>
+                </Link>
+              </li>
+              <li
+                id="shoppingcart"
+              >
+                <Link
+                  replace={false}
+                  to="/cart"
+                >
+                  <label
+                    id="shoppingcartlabel"
+                  >
+                    0
+                  </label>
+                  <img
+                    id="cartimage"
+                    src="http://store--manager.herokuapp.com/img/cart.png"
+                  />
+                </Link>
+              </li>
+              <li>
+                <a
+                  href="#"
+                >
+                  <div>
+                    <input
+                      className="search"
+                      placeholder="Search Products"
+                      type="text"
+                    />
+                     
+                    <i
+                      className="fas fa-search fa-2x"
+                      id="searchimg"
+                    />
+                     
+                  </div>
+                </a>
+              </li>
+              <li
+                id="appnameli"
+              >
+                <Link
+                  replace={false}
+                  to="/dashboard"
+                >
+                  <h1
+                    id="appname"
+                  >
+                    <span
+                      className="highlight"
+                    >
+                      Store
+                    </span>
+                     Manager
+                  </h1>
+                </Link>
+              </li>
+            </ul>
+          </nav>,
+          <div
+            className="side-nav"
+            id="side-menu"
+          >
+            <a
+              className="btn-close"
+              href="#"
+              onClick={[Function]}
+            >
+              ×
+            </a>
+            <li
+              className="current"
+            >
+              <Link
+                replace={false}
+                to="/dashboard"
+              >
+                Dashboard
+              </Link>
+            </li>
+            <li>
+              <Link
+                replace={false}
+                to="/createproduct"
+              >
+                Create Product
+              </Link>
+            </li>
+            <li>
+              <Link
+                replace={false}
+                to="/viewproducts"
+              >
+                View Products
+              </Link>
+            </li>
+            <li>
+              <Link
+                replace={false}
+                to="/createattendant"
+              >
+                Create Sales Attendant
+              </Link>
+            </li>
+            <li>
+              <Link
+                replace={false}
+                to="/viewsales"
+              >
+                View Sales
+              </Link>
+            </li>
+            <li>
+              <Link
+                replace={false}
+                to="/viewattendants"
+              >
+                View Attendants
+              </Link>
+            </li>
+            <li>
+              <a
+                onClick={
+                  [MockFunction] {
+                    "calls": Array [
+                      Array [],
+                    ],
+                    "results": Array [
+                      Object {
+                        "isThrow": false,
+                        "value": undefined,
+                      },
+                    ],
+                  }
+                }
+              >
+                Logout
+              </a>
+            </li>
+          </div>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <span
+                className="open-slide"
+              >
+                <a
+                  href="#"
+                  id="openslidemenu"
+                  onClick={[Function]}
+                >
+                  <svg
+                    height="30"
+                    width="30"
+                  >
+                    <path
+                      d="M0,5 30,5"
+                      stroke="#ffffff"
+                      strokeWidth="5"
+                    />
+                    <path
+                      d="M0,14 30,14"
+                      stroke="#ffffff"
+                      strokeWidth="5"
+                    />
+                    <path
+                      d="M0,23 30,23"
+                      stroke="#ffffff"
+                      strokeWidth="5"
+                    />
+                  </svg>
+                </a>
+              </span>,
+              <ul>
+                <li>
+                  <Link
+                    replace={false}
+                    style={
+                      Object {
+                        "paddingTop": "10px",
+                      }
+                    }
+                    to="profile"
+                  >
+                    <div>
+                      <img
+                        id="userimg"
+                        src="http://store--manager.herokuapp.com/assets/uploads/users/default-avatar.png"
+                      />
+                       
+                    </div>
+                  </Link>
+                </li>
+                <li
+                  id="shoppingcart"
+                >
+                  <Link
+                    replace={false}
+                    to="/cart"
+                  >
+                    <label
+                      id="shoppingcartlabel"
+                    >
+                      0
+                    </label>
+                    <img
+                      id="cartimage"
+                      src="http://store--manager.herokuapp.com/img/cart.png"
+                    />
+                  </Link>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                  >
+                    <div>
+                      <input
+                        className="search"
+                        placeholder="Search Products"
+                        type="text"
+                      />
+                       
+                      <i
+                        className="fas fa-search fa-2x"
+                        id="searchimg"
+                      />
+                       
+                    </div>
+                  </a>
+                </li>
+                <li
+                  id="appnameli"
+                >
+                  <Link
+                    replace={false}
+                    to="/dashboard"
+                  >
+                    <h1
+                      id="appname"
+                    >
+                      <span
+                        className="highlight"
+                      >
+                        Store
+                      </span>
+                       Manager
+                    </h1>
+                  </Link>
+                </li>
+              </ul>,
+            ],
+            "className": "navbar",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <a
+                  href="#"
+                  id="openslidemenu"
+                  onClick={[Function]}
+                >
+                  <svg
+                    height="30"
+                    width="30"
+                  >
+                    <path
+                      d="M0,5 30,5"
+                      stroke="#ffffff"
+                      strokeWidth="5"
+                    />
+                    <path
+                      d="M0,14 30,14"
+                      stroke="#ffffff"
+                      strokeWidth="5"
+                    />
+                    <path
+                      d="M0,23 30,23"
+                      stroke="#ffffff"
+                      strokeWidth="5"
+                    />
+                  </svg>
+                </a>,
+                "className": "open-slide",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <svg
+                    height="30"
+                    width="30"
+                  >
+                    <path
+                      d="M0,5 30,5"
+                      stroke="#ffffff"
+                      strokeWidth="5"
+                    />
+                    <path
+                      d="M0,14 30,14"
+                      stroke="#ffffff"
+                      strokeWidth="5"
+                    />
+                    <path
+                      d="M0,23 30,23"
+                      stroke="#ffffff"
+                      strokeWidth="5"
+                    />
+                  </svg>,
+                  "href": "#",
+                  "id": "openslidemenu",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <path
+                        d="M0,5 30,5"
+                        stroke="#ffffff"
+                        strokeWidth="5"
+                      />,
+                      <path
+                        d="M0,14 30,14"
+                        stroke="#ffffff"
+                        strokeWidth="5"
+                      />,
+                      <path
+                        d="M0,23 30,23"
+                        stroke="#ffffff"
+                        strokeWidth="5"
+                      />,
+                    ],
+                    "height": "30",
+                    "width": "30",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "d": "M0,5 30,5",
+                        "stroke": "#ffffff",
+                        "strokeWidth": "5",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "path",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "d": "M0,14 30,14",
+                        "stroke": "#ffffff",
+                        "strokeWidth": "5",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "path",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "d": "M0,23 30,23",
+                        "stroke": "#ffffff",
+                        "strokeWidth": "5",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "path",
+                    },
+                  ],
+                  "type": "svg",
+                },
+                "type": "a",
+              },
+              "type": "span",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <li>
+                    <Link
+                      replace={false}
+                      style={
+                        Object {
+                          "paddingTop": "10px",
+                        }
+                      }
+                      to="profile"
+                    >
+                      <div>
+                        <img
+                          id="userimg"
+                          src="http://store--manager.herokuapp.com/assets/uploads/users/default-avatar.png"
+                        />
+                         
+                      </div>
+                    </Link>
+                  </li>,
+                  <li
+                    id="shoppingcart"
+                  >
+                    <Link
+                      replace={false}
+                      to="/cart"
+                    >
+                      <label
+                        id="shoppingcartlabel"
+                      >
+                        0
+                      </label>
+                      <img
+                        id="cartimage"
+                        src="http://store--manager.herokuapp.com/img/cart.png"
+                      />
+                    </Link>
+                  </li>,
+                  <li>
+                    <a
+                      href="#"
+                    >
+                      <div>
+                        <input
+                          className="search"
+                          placeholder="Search Products"
+                          type="text"
+                        />
+                         
+                        <i
+                          className="fas fa-search fa-2x"
+                          id="searchimg"
+                        />
+                         
+                      </div>
+                    </a>
+                  </li>,
+                  <li
+                    id="appnameli"
+                  >
+                    <Link
+                      replace={false}
+                      to="/dashboard"
+                    >
+                      <h1
+                        id="appname"
+                      >
+                        <span
+                          className="highlight"
+                        >
+                          Store
+                        </span>
+                         Manager
+                      </h1>
+                    </Link>
+                  </li>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <Link
+                      replace={false}
+                      style={
+                        Object {
+                          "paddingTop": "10px",
+                        }
+                      }
+                      to="profile"
+                    >
+                      <div>
+                        <img
+                          id="userimg"
+                          src="http://store--manager.herokuapp.com/assets/uploads/users/default-avatar.png"
+                        />
+                         
+                      </div>
+                    </Link>,
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": <div>
+                        <img
+                          id="userimg"
+                          src="http://store--manager.herokuapp.com/assets/uploads/users/default-avatar.png"
+                        />
+                         
+                      </div>,
+                      "replace": false,
+                      "style": Object {
+                        "paddingTop": "10px",
+                      },
+                      "to": "profile",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <img
+                            id="userimg"
+                            src="http://store--manager.herokuapp.com/assets/uploads/users/default-avatar.png"
+                          />,
+                          " ",
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "id": "userimg",
+                            "src": "http://store--manager.herokuapp.com/assets/uploads/users/default-avatar.png",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": "img",
+                        },
+                        " ",
+                      ],
+                      "type": "div",
+                    },
+                    "type": [Function],
+                  },
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <Link
+                      replace={false}
+                      to="/cart"
+                    >
+                      <label
+                        id="shoppingcartlabel"
+                      >
+                        0
+                      </label>
+                      <img
+                        id="cartimage"
+                        src="http://store--manager.herokuapp.com/img/cart.png"
+                      />
+                    </Link>,
+                    "id": "shoppingcart",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": Array [
+                        <label
+                          id="shoppingcartlabel"
+                        >
+                          0
+                        </label>,
+                        <img
+                          id="cartimage"
+                          src="http://store--manager.herokuapp.com/img/cart.png"
+                        />,
+                      ],
+                      "replace": false,
+                      "to": "/cart",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "0",
+                          "id": "shoppingcartlabel",
+                        },
+                        "ref": null,
+                        "rendered": "0",
+                        "type": "label",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "id": "cartimage",
+                          "src": "http://store--manager.herokuapp.com/img/cart.png",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": "img",
+                      },
+                    ],
+                    "type": [Function],
+                  },
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <a
+                      href="#"
+                    >
+                      <div>
+                        <input
+                          className="search"
+                          placeholder="Search Products"
+                          type="text"
+                        />
+                         
+                        <i
+                          className="fas fa-search fa-2x"
+                          id="searchimg"
+                        />
+                         
+                      </div>
+                    </a>,
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": <div>
+                        <input
+                          className="search"
+                          placeholder="Search Products"
+                          type="text"
+                        />
+                         
+                        <i
+                          className="fas fa-search fa-2x"
+                          id="searchimg"
+                        />
+                         
+                      </div>,
+                      "href": "#",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <input
+                            className="search"
+                            placeholder="Search Products"
+                            type="text"
+                          />,
+                          " ",
+                          <i
+                            className="fas fa-search fa-2x"
+                            id="searchimg"
+                          />,
+                          " ",
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "className": "search",
+                            "placeholder": "Search Products",
+                            "type": "text",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": "input",
+                        },
+                        " ",
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "className": "fas fa-search fa-2x",
+                            "id": "searchimg",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": "i",
+                        },
+                        " ",
+                      ],
+                      "type": "div",
+                    },
+                    "type": "a",
+                  },
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <Link
+                      replace={false}
+                      to="/dashboard"
+                    >
+                      <h1
+                        id="appname"
+                      >
+                        <span
+                          className="highlight"
+                        >
+                          Store
+                        </span>
+                         Manager
+                      </h1>
+                    </Link>,
+                    "id": "appnameli",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": <h1
+                        id="appname"
+                      >
+                        <span
+                          className="highlight"
+                        >
+                          Store
+                        </span>
+                         Manager
+                      </h1>,
+                      "replace": false,
+                      "to": "/dashboard",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <span
+                            className="highlight"
+                          >
+                            Store
+                          </span>,
+                          " Manager",
+                        ],
+                        "id": "appname",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "Store",
+                            "className": "highlight",
+                          },
+                          "ref": null,
+                          "rendered": "Store",
+                          "type": "span",
+                        },
+                        " Manager",
+                      ],
+                      "type": "h1",
+                    },
+                    "type": [Function],
+                  },
+                  "type": "li",
+                },
+              ],
+              "type": "ul",
+            },
+          ],
+          "type": "nav",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <a
+                className="btn-close"
+                href="#"
+                onClick={[Function]}
+              >
+                ×
+              </a>,
+              <li
+                className="current"
+              >
+                <Link
+                  replace={false}
+                  to="/dashboard"
+                >
+                  Dashboard
+                </Link>
+              </li>,
+              <li>
+                <Link
+                  replace={false}
+                  to="/createproduct"
+                >
+                  Create Product
+                </Link>
+              </li>,
+              <li>
+                <Link
+                  replace={false}
+                  to="/viewproducts"
+                >
+                  View Products
+                </Link>
+              </li>,
+              <li>
+                <Link
+                  replace={false}
+                  to="/createattendant"
+                >
+                  Create Sales Attendant
+                </Link>
+              </li>,
+              <li>
+                <Link
+                  replace={false}
+                  to="/viewsales"
+                >
+                  View Sales
+                </Link>
+              </li>,
+              <li>
+                <Link
+                  replace={false}
+                  to="/viewattendants"
+                >
+                  View Attendants
+                </Link>
+              </li>,
+              <li>
+                <a
+                  onClick={
+                    [MockFunction] {
+                      "calls": Array [
+                        Array [],
+                      ],
+                      "results": Array [
+                        Object {
+                          "isThrow": false,
+                          "value": undefined,
+                        },
+                      ],
+                    }
+                  }
+                >
+                  Logout
+                </a>
+              </li>,
+            ],
+            "className": "side-nav",
+            "id": "side-menu",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "×",
+                "className": "btn-close",
+                "href": "#",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "×",
+              "type": "a",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <Link
+                  replace={false}
+                  to="/dashboard"
+                >
+                  Dashboard
+                </Link>,
+                "className": "current",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Dashboard",
+                  "replace": false,
+                  "to": "/dashboard",
+                },
+                "ref": null,
+                "rendered": "Dashboard",
+                "type": [Function],
+              },
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <Link
+                  replace={false}
+                  to="/createproduct"
+                >
+                  Create Product
+                </Link>,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Create Product",
+                  "replace": false,
+                  "to": "/createproduct",
+                },
+                "ref": null,
+                "rendered": "Create Product",
+                "type": [Function],
+              },
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <Link
+                  replace={false}
+                  to="/viewproducts"
+                >
+                  View Products
+                </Link>,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "View Products",
+                  "replace": false,
+                  "to": "/viewproducts",
+                },
+                "ref": null,
+                "rendered": "View Products",
+                "type": [Function],
+              },
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <Link
+                  replace={false}
+                  to="/createattendant"
+                >
+                  Create Sales Attendant
+                </Link>,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Create Sales Attendant",
+                  "replace": false,
+                  "to": "/createattendant",
+                },
+                "ref": null,
+                "rendered": "Create Sales Attendant",
+                "type": [Function],
+              },
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <Link
+                  replace={false}
+                  to="/viewsales"
+                >
+                  View Sales
+                </Link>,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "View Sales",
+                  "replace": false,
+                  "to": "/viewsales",
+                },
+                "ref": null,
+                "rendered": "View Sales",
+                "type": [Function],
+              },
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <Link
+                  replace={false}
+                  to="/viewattendants"
+                >
+                  View Attendants
+                </Link>,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "View Attendants",
+                  "replace": false,
+                  "to": "/viewattendants",
+                },
+                "ref": null,
+                "rendered": "View Attendants",
+                "type": [Function],
+              },
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <a
+                  onClick={
+                    [MockFunction] {
+                      "calls": Array [
+                        Array [],
+                      ],
+                      "results": Array [
+                        Object {
+                          "isThrow": false,
+                          "value": undefined,
+                        },
+                      ],
+                    }
+                  }
+                >
+                  Logout
+                </a>,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Logout",
+                  "onClick": [MockFunction] {
+                    "calls": Array [
+                      Array [],
+                    ],
+                    "results": Array [
+                      Object {
+                        "isThrow": false,
+                        "value": undefined,
+                      },
+                    ],
+                  },
+                },
+                "ref": null,
+                "rendered": "Logout",
+                "type": "a",
+              },
+              "type": "li",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

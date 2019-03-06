@@ -9,7 +9,7 @@ const baseUrl = 'https://store--manager.herokuapp.com';
 // const baseUrl = 'http://localhost:3000';
 
 export const signIn = (userData) => dispatch => {
-    axios.post(`${baseUrl}/api/v1/auth/login`, userData)
+   return axios.post(`${baseUrl}/api/v1/auth/login`, userData)
     .then(res => {
         const { token } = res.data.data;
         // Save to localstorage
@@ -23,6 +23,7 @@ export const signIn = (userData) => dispatch => {
             type: SET_ERRORS
         });
         dispatch(setCurrentUser(decodedToken));
+        return res;
     })
     .catch(err => {
         if (err.response.data.data.email) {
@@ -36,6 +37,7 @@ export const signIn = (userData) => dispatch => {
             type: GET_ERRORS,
             payload: err.response.data.data
         });
+        return err;
     })
     
 };
