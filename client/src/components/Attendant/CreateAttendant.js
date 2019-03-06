@@ -6,7 +6,7 @@ import { toast } from 'react-toastify';
 import { createAttendant } from '../../actions/attendantActions';
 import Loading from '../Common/Loading';
 
-class CreateAttendant extends Component {
+export class CreateAttendant extends Component {
 constructor(){
   super();
   this.state = {

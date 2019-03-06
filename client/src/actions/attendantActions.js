@@ -12,7 +12,7 @@ export const createAttendant = (userData) => dispatch => {
     formData.append('email', userData.email);
     formData.append('password', userData.password);
     formData.append('type', userData.type);
-    axios.post(`${baseUrl}/api/v1/auth/signup`, formData)
+    return axios.post(`${baseUrl}/api/v1/auth/signup`, formData)
     .then(res => {
         dispatch(setAttendantLoading())
 
@@ -41,7 +41,7 @@ export const createAttendant = (userData) => dispatch => {
 
 export const viewAttendants = () => dispatch => {
     dispatch(setAttendantLoading())
-    axios.get(`${baseUrl}/api/v1/auth/attendants`)
+    return axios.get(`${baseUrl}/api/v1/auth/attendants`)
     .then(res => {
         dispatch({
             type: SET_ATTENDANTS,

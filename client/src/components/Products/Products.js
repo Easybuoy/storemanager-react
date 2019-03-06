@@ -8,7 +8,7 @@ import Loading from '../Common/Loading';;
 import { getProducts, deleteProduct } from '../../actions/productActions';
 import { toast } from 'react-toastify';
 
-class Products extends Component {
+export class Products extends Component {
 
     componentDidMount(){
         this.showCartCount();

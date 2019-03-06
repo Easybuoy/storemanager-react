@@ -1,0 +1,1866 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CreateAttendant /> renders the CreateAttendant component correctly 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <CreateAttendant
+    attendants={
+      Object {
+        "addMatchers": [Function],
+        "advanceTimersByTime": [Function],
+        "autoMockOff": [Function],
+        "autoMockOn": [Function],
+        "clearAllMocks": [Function],
+        "clearAllTimers": [Function],
+        "deepUnmock": [Function],
+        "disableAutomock": [Function],
+        "doMock": [Function],
+        "dontMock": [Function],
+        "enableAutomock": [Function],
+        "fn": [Function],
+        "genMockFromModule": [Function],
+        "isMockFunction": [Function],
+        "mock": [Function],
+        "requireActual": [Function],
+        "requireMock": [Function],
+        "resetAllMocks": [Function],
+        "resetModuleRegistry": [Function],
+        "resetModules": [Function],
+        "restoreAllMocks": [Function],
+        "retryTimes": [Function],
+        "runAllImmediates": [Function],
+        "runAllTicks": [Function],
+        "runAllTimers": [Function],
+        "runOnlyPendingTimers": [Function],
+        "runTimersToTime": [Function],
+        "setMock": [Function],
+        "setTimeout": [Function],
+        "spyOn": [Function],
+        "unmock": [Function],
+        "useFakeTimers": [Function],
+        "useRealTimers": [Function],
+      }
+    }
+    createAttendant={[MockFunction]}
+    errors={
+      Object {
+        "addMatchers": [Function],
+        "advanceTimersByTime": [Function],
+        "autoMockOff": [Function],
+        "autoMockOn": [Function],
+        "clearAllMocks": [Function],
+        "clearAllTimers": [Function],
+        "deepUnmock": [Function],
+        "disableAutomock": [Function],
+        "doMock": [Function],
+        "dontMock": [Function],
+        "enableAutomock": [Function],
+        "fn": [Function],
+        "genMockFromModule": [Function],
+        "isMockFunction": [Function],
+        "mock": [Function],
+        "requireActual": [Function],
+        "requireMock": [Function],
+        "resetAllMocks": [Function],
+        "resetModuleRegistry": [Function],
+        "resetModules": [Function],
+        "restoreAllMocks": [Function],
+        "retryTimes": [Function],
+        "runAllImmediates": [Function],
+        "runAllTicks": [Function],
+        "runAllTimers": [Function],
+        "runOnlyPendingTimers": [Function],
+        "runTimersToTime": [Function],
+        "setMock": [Function],
+        "setTimeout": [Function],
+        "spyOn": [Function],
+        "unmock": [Function],
+        "useFakeTimers": [Function],
+        "useRealTimers": [Function],
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <div
+        className="container"
+      >
+        <section
+          className="topmargin"
+        >
+          <div
+            className="container"
+          >
+            <div
+              id="create_sales_assistant"
+            >
+              <h1
+                className="text-center"
+              >
+                Create Sales Attendant
+              </h1>
+              <form
+                onSubmit={[Function]}
+              >
+                <h2>
+                  Name
+                </h2>
+                <input
+                  id="name"
+                  name="name"
+                  onChange={[Function]}
+                  placeholder="Enter Name"
+                  required={true}
+                  type="text"
+                />
+                <h2>
+                  Email
+                </h2>
+                <input
+                  id="email"
+                  name="email"
+                  onChange={[Function]}
+                  placeholder="Enter Email"
+                  required={true}
+                  type="email"
+                />
+                <h2>
+                  Password
+                </h2>
+                <input
+                  id="password"
+                  name="password"
+                  onChange={[Function]}
+                  placeholder="Enter Password"
+                  required={true}
+                  type="password"
+                />
+                 
+                <br />
+                <h2>
+                  User Image
+                </h2>
+                <input
+                  id="userimage"
+                  name="upload"
+                  onChange={[Function]}
+                  type="file"
+                />
+                <h2>
+                  Type
+                </h2>
+                <select
+                  id="type"
+                  name="type"
+                  onChange={[Function]}
+                  required={true}
+                >
+                  <option
+                    value=""
+                  >
+                    Select Role
+                  </option>
+                  <option
+                    value="1"
+                  >
+                    Admin
+                  </option>
+                  <option
+                    value="2"
+                  >
+                    Attendant
+                  </option>
+                </select>
+                 
+                <br />
+                 
+                <br />
+                <input
+                  className="button_1"
+                  id="createattendant"
+                  name=""
+                  type="submit"
+                  value="Create Sales Assistant"
+                />
+              </form>
+            </div>
+          </div>
+        </section>
+      </div>,
+      "id": "main",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <section
+          className="topmargin"
+        >
+          <div
+            className="container"
+          >
+            <div
+              id="create_sales_assistant"
+            >
+              <h1
+                className="text-center"
+              >
+                Create Sales Attendant
+              </h1>
+              <form
+                onSubmit={[Function]}
+              >
+                <h2>
+                  Name
+                </h2>
+                <input
+                  id="name"
+                  name="name"
+                  onChange={[Function]}
+                  placeholder="Enter Name"
+                  required={true}
+                  type="text"
+                />
+                <h2>
+                  Email
+                </h2>
+                <input
+                  id="email"
+                  name="email"
+                  onChange={[Function]}
+                  placeholder="Enter Email"
+                  required={true}
+                  type="email"
+                />
+                <h2>
+                  Password
+                </h2>
+                <input
+                  id="password"
+                  name="password"
+                  onChange={[Function]}
+                  placeholder="Enter Password"
+                  required={true}
+                  type="password"
+                />
+                 
+                <br />
+                <h2>
+                  User Image
+                </h2>
+                <input
+                  id="userimage"
+                  name="upload"
+                  onChange={[Function]}
+                  type="file"
+                />
+                <h2>
+                  Type
+                </h2>
+                <select
+                  id="type"
+                  name="type"
+                  onChange={[Function]}
+                  required={true}
+                >
+                  <option
+                    value=""
+                  >
+                    Select Role
+                  </option>
+                  <option
+                    value="1"
+                  >
+                    Admin
+                  </option>
+                  <option
+                    value="2"
+                  >
+                    Attendant
+                  </option>
+                </select>
+                 
+                <br />
+                 
+                <br />
+                <input
+                  className="button_1"
+                  id="createattendant"
+                  name=""
+                  type="submit"
+                  value="Create Sales Assistant"
+                />
+              </form>
+            </div>
+          </div>
+        </section>,
+        "className": "container",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <div
+            className="container"
+          >
+            <div
+              id="create_sales_assistant"
+            >
+              <h1
+                className="text-center"
+              >
+                Create Sales Attendant
+              </h1>
+              <form
+                onSubmit={[Function]}
+              >
+                <h2>
+                  Name
+                </h2>
+                <input
+                  id="name"
+                  name="name"
+                  onChange={[Function]}
+                  placeholder="Enter Name"
+                  required={true}
+                  type="text"
+                />
+                <h2>
+                  Email
+                </h2>
+                <input
+                  id="email"
+                  name="email"
+                  onChange={[Function]}
+                  placeholder="Enter Email"
+                  required={true}
+                  type="email"
+                />
+                <h2>
+                  Password
+                </h2>
+                <input
+                  id="password"
+                  name="password"
+                  onChange={[Function]}
+                  placeholder="Enter Password"
+                  required={true}
+                  type="password"
+                />
+                 
+                <br />
+                <h2>
+                  User Image
+                </h2>
+                <input
+                  id="userimage"
+                  name="upload"
+                  onChange={[Function]}
+                  type="file"
+                />
+                <h2>
+                  Type
+                </h2>
+                <select
+                  id="type"
+                  name="type"
+                  onChange={[Function]}
+                  required={true}
+                >
+                  <option
+                    value=""
+                  >
+                    Select Role
+                  </option>
+                  <option
+                    value="1"
+                  >
+                    Admin
+                  </option>
+                  <option
+                    value="2"
+                  >
+                    Attendant
+                  </option>
+                </select>
+                 
+                <br />
+                 
+                <br />
+                <input
+                  className="button_1"
+                  id="createattendant"
+                  name=""
+                  type="submit"
+                  value="Create Sales Assistant"
+                />
+              </form>
+            </div>
+          </div>,
+          "className": "topmargin",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <div
+              id="create_sales_assistant"
+            >
+              <h1
+                className="text-center"
+              >
+                Create Sales Attendant
+              </h1>
+              <form
+                onSubmit={[Function]}
+              >
+                <h2>
+                  Name
+                </h2>
+                <input
+                  id="name"
+                  name="name"
+                  onChange={[Function]}
+                  placeholder="Enter Name"
+                  required={true}
+                  type="text"
+                />
+                <h2>
+                  Email
+                </h2>
+                <input
+                  id="email"
+                  name="email"
+                  onChange={[Function]}
+                  placeholder="Enter Email"
+                  required={true}
+                  type="email"
+                />
+                <h2>
+                  Password
+                </h2>
+                <input
+                  id="password"
+                  name="password"
+                  onChange={[Function]}
+                  placeholder="Enter Password"
+                  required={true}
+                  type="password"
+                />
+                 
+                <br />
+                <h2>
+                  User Image
+                </h2>
+                <input
+                  id="userimage"
+                  name="upload"
+                  onChange={[Function]}
+                  type="file"
+                />
+                <h2>
+                  Type
+                </h2>
+                <select
+                  id="type"
+                  name="type"
+                  onChange={[Function]}
+                  required={true}
+                >
+                  <option
+                    value=""
+                  >
+                    Select Role
+                  </option>
+                  <option
+                    value="1"
+                  >
+                    Admin
+                  </option>
+                  <option
+                    value="2"
+                  >
+                    Attendant
+                  </option>
+                </select>
+                 
+                <br />
+                 
+                <br />
+                <input
+                  className="button_1"
+                  id="createattendant"
+                  name=""
+                  type="submit"
+                  value="Create Sales Assistant"
+                />
+              </form>
+            </div>,
+            "className": "container",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <h1
+                  className="text-center"
+                >
+                  Create Sales Attendant
+                </h1>,
+                <form
+                  onSubmit={[Function]}
+                >
+                  <h2>
+                    Name
+                  </h2>
+                  <input
+                    id="name"
+                    name="name"
+                    onChange={[Function]}
+                    placeholder="Enter Name"
+                    required={true}
+                    type="text"
+                  />
+                  <h2>
+                    Email
+                  </h2>
+                  <input
+                    id="email"
+                    name="email"
+                    onChange={[Function]}
+                    placeholder="Enter Email"
+                    required={true}
+                    type="email"
+                  />
+                  <h2>
+                    Password
+                  </h2>
+                  <input
+                    id="password"
+                    name="password"
+                    onChange={[Function]}
+                    placeholder="Enter Password"
+                    required={true}
+                    type="password"
+                  />
+                   
+                  <br />
+                  <h2>
+                    User Image
+                  </h2>
+                  <input
+                    id="userimage"
+                    name="upload"
+                    onChange={[Function]}
+                    type="file"
+                  />
+                  <h2>
+                    Type
+                  </h2>
+                  <select
+                    id="type"
+                    name="type"
+                    onChange={[Function]}
+                    required={true}
+                  >
+                    <option
+                      value=""
+                    >
+                      Select Role
+                    </option>
+                    <option
+                      value="1"
+                    >
+                      Admin
+                    </option>
+                    <option
+                      value="2"
+                    >
+                      Attendant
+                    </option>
+                  </select>
+                   
+                  <br />
+                   
+                  <br />
+                  <input
+                    className="button_1"
+                    id="createattendant"
+                    name=""
+                    type="submit"
+                    value="Create Sales Assistant"
+                  />
+                </form>,
+              ],
+              "id": "create_sales_assistant",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Create Sales Attendant",
+                  "className": "text-center",
+                },
+                "ref": null,
+                "rendered": "Create Sales Attendant",
+                "type": "h1",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <h2>
+                      Name
+                    </h2>,
+                    <input
+                      id="name"
+                      name="name"
+                      onChange={[Function]}
+                      placeholder="Enter Name"
+                      required={true}
+                      type="text"
+                    />,
+                    <h2>
+                      Email
+                    </h2>,
+                    <input
+                      id="email"
+                      name="email"
+                      onChange={[Function]}
+                      placeholder="Enter Email"
+                      required={true}
+                      type="email"
+                    />,
+                    <h2>
+                      Password
+                    </h2>,
+                    <input
+                      id="password"
+                      name="password"
+                      onChange={[Function]}
+                      placeholder="Enter Password"
+                      required={true}
+                      type="password"
+                    />,
+                    " ",
+                    <br />,
+                    <h2>
+                      User Image
+                    </h2>,
+                    <input
+                      id="userimage"
+                      name="upload"
+                      onChange={[Function]}
+                      type="file"
+                    />,
+                    <h2>
+                      Type
+                    </h2>,
+                    <select
+                      id="type"
+                      name="type"
+                      onChange={[Function]}
+                      required={true}
+                    >
+                      <option
+                        value=""
+                      >
+                        Select Role
+                      </option>
+                      <option
+                        value="1"
+                      >
+                        Admin
+                      </option>
+                      <option
+                        value="2"
+                      >
+                        Attendant
+                      </option>
+                    </select>,
+                    " ",
+                    <br />,
+                    " ",
+                    <br />,
+                    <input
+                      className="button_1"
+                      id="createattendant"
+                      name=""
+                      type="submit"
+                      value="Create Sales Assistant"
+                    />,
+                  ],
+                  "onSubmit": [Function],
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Name",
+                    },
+                    "ref": null,
+                    "rendered": "Name",
+                    "type": "h2",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "id": "name",
+                      "name": "name",
+                      "onChange": [Function],
+                      "placeholder": "Enter Name",
+                      "required": true,
+                      "type": "text",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "input",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Email",
+                    },
+                    "ref": null,
+                    "rendered": "Email",
+                    "type": "h2",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "id": "email",
+                      "name": "email",
+                      "onChange": [Function],
+                      "placeholder": "Enter Email",
+                      "required": true,
+                      "type": "email",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "input",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Password",
+                    },
+                    "ref": null,
+                    "rendered": "Password",
+                    "type": "h2",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "id": "password",
+                      "name": "password",
+                      "onChange": [Function],
+                      "placeholder": "Enter Password",
+                      "required": true,
+                      "type": "password",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "input",
+                  },
+                  " ",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {},
+                    "ref": null,
+                    "rendered": null,
+                    "type": "br",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "User Image",
+                    },
+                    "ref": null,
+                    "rendered": "User Image",
+                    "type": "h2",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "id": "userimage",
+                      "name": "upload",
+                      "onChange": [Function],
+                      "type": "file",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "input",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Type",
+                    },
+                    "ref": null,
+                    "rendered": "Type",
+                    "type": "h2",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <option
+                          value=""
+                        >
+                          Select Role
+                        </option>,
+                        <option
+                          value="1"
+                        >
+                          Admin
+                        </option>,
+                        <option
+                          value="2"
+                        >
+                          Attendant
+                        </option>,
+                      ],
+                      "id": "type",
+                      "name": "type",
+                      "onChange": [Function],
+                      "required": true,
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Select Role",
+                          "value": "",
+                        },
+                        "ref": null,
+                        "rendered": "Select Role",
+                        "type": "option",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Admin",
+                          "value": "1",
+                        },
+                        "ref": null,
+                        "rendered": "Admin",
+                        "type": "option",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Attendant",
+                          "value": "2",
+                        },
+                        "ref": null,
+                        "rendered": "Attendant",
+                        "type": "option",
+                      },
+                    ],
+                    "type": "select",
+                  },
+                  " ",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {},
+                    "ref": null,
+                    "rendered": null,
+                    "type": "br",
+                  },
+                  " ",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {},
+                    "ref": null,
+                    "rendered": null,
+                    "type": "br",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "button_1",
+                      "id": "createattendant",
+                      "name": "",
+                      "type": "submit",
+                      "value": "Create Sales Assistant",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "input",
+                  },
+                ],
+                "type": "form",
+              },
+            ],
+            "type": "div",
+          },
+          "type": "div",
+        },
+        "type": "section",
+      },
+      "type": "div",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          className="container"
+        >
+          <section
+            className="topmargin"
+          >
+            <div
+              className="container"
+            >
+              <div
+                id="create_sales_assistant"
+              >
+                <h1
+                  className="text-center"
+                >
+                  Create Sales Attendant
+                </h1>
+                <form
+                  onSubmit={[Function]}
+                >
+                  <h2>
+                    Name
+                  </h2>
+                  <input
+                    id="name"
+                    name="name"
+                    onChange={[Function]}
+                    placeholder="Enter Name"
+                    required={true}
+                    type="text"
+                  />
+                  <h2>
+                    Email
+                  </h2>
+                  <input
+                    id="email"
+                    name="email"
+                    onChange={[Function]}
+                    placeholder="Enter Email"
+                    required={true}
+                    type="email"
+                  />
+                  <h2>
+                    Password
+                  </h2>
+                  <input
+                    id="password"
+                    name="password"
+                    onChange={[Function]}
+                    placeholder="Enter Password"
+                    required={true}
+                    type="password"
+                  />
+                   
+                  <br />
+                  <h2>
+                    User Image
+                  </h2>
+                  <input
+                    id="userimage"
+                    name="upload"
+                    onChange={[Function]}
+                    type="file"
+                  />
+                  <h2>
+                    Type
+                  </h2>
+                  <select
+                    id="type"
+                    name="type"
+                    onChange={[Function]}
+                    required={true}
+                  >
+                    <option
+                      value=""
+                    >
+                      Select Role
+                    </option>
+                    <option
+                      value="1"
+                    >
+                      Admin
+                    </option>
+                    <option
+                      value="2"
+                    >
+                      Attendant
+                    </option>
+                  </select>
+                   
+                  <br />
+                   
+                  <br />
+                  <input
+                    className="button_1"
+                    id="createattendant"
+                    name=""
+                    type="submit"
+                    value="Create Sales Assistant"
+                  />
+                </form>
+              </div>
+            </div>
+          </section>
+        </div>,
+        "id": "main",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <section
+            className="topmargin"
+          >
+            <div
+              className="container"
+            >
+              <div
+                id="create_sales_assistant"
+              >
+                <h1
+                  className="text-center"
+                >
+                  Create Sales Attendant
+                </h1>
+                <form
+                  onSubmit={[Function]}
+                >
+                  <h2>
+                    Name
+                  </h2>
+                  <input
+                    id="name"
+                    name="name"
+                    onChange={[Function]}
+                    placeholder="Enter Name"
+                    required={true}
+                    type="text"
+                  />
+                  <h2>
+                    Email
+                  </h2>
+                  <input
+                    id="email"
+                    name="email"
+                    onChange={[Function]}
+                    placeholder="Enter Email"
+                    required={true}
+                    type="email"
+                  />
+                  <h2>
+                    Password
+                  </h2>
+                  <input
+                    id="password"
+                    name="password"
+                    onChange={[Function]}
+                    placeholder="Enter Password"
+                    required={true}
+                    type="password"
+                  />
+                   
+                  <br />
+                  <h2>
+                    User Image
+                  </h2>
+                  <input
+                    id="userimage"
+                    name="upload"
+                    onChange={[Function]}
+                    type="file"
+                  />
+                  <h2>
+                    Type
+                  </h2>
+                  <select
+                    id="type"
+                    name="type"
+                    onChange={[Function]}
+                    required={true}
+                  >
+                    <option
+                      value=""
+                    >
+                      Select Role
+                    </option>
+                    <option
+                      value="1"
+                    >
+                      Admin
+                    </option>
+                    <option
+                      value="2"
+                    >
+                      Attendant
+                    </option>
+                  </select>
+                   
+                  <br />
+                   
+                  <br />
+                  <input
+                    className="button_1"
+                    id="createattendant"
+                    name=""
+                    type="submit"
+                    value="Create Sales Assistant"
+                  />
+                </form>
+              </div>
+            </div>
+          </section>,
+          "className": "container",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <div
+              className="container"
+            >
+              <div
+                id="create_sales_assistant"
+              >
+                <h1
+                  className="text-center"
+                >
+                  Create Sales Attendant
+                </h1>
+                <form
+                  onSubmit={[Function]}
+                >
+                  <h2>
+                    Name
+                  </h2>
+                  <input
+                    id="name"
+                    name="name"
+                    onChange={[Function]}
+                    placeholder="Enter Name"
+                    required={true}
+                    type="text"
+                  />
+                  <h2>
+                    Email
+                  </h2>
+                  <input
+                    id="email"
+                    name="email"
+                    onChange={[Function]}
+                    placeholder="Enter Email"
+                    required={true}
+                    type="email"
+                  />
+                  <h2>
+                    Password
+                  </h2>
+                  <input
+                    id="password"
+                    name="password"
+                    onChange={[Function]}
+                    placeholder="Enter Password"
+                    required={true}
+                    type="password"
+                  />
+                   
+                  <br />
+                  <h2>
+                    User Image
+                  </h2>
+                  <input
+                    id="userimage"
+                    name="upload"
+                    onChange={[Function]}
+                    type="file"
+                  />
+                  <h2>
+                    Type
+                  </h2>
+                  <select
+                    id="type"
+                    name="type"
+                    onChange={[Function]}
+                    required={true}
+                  >
+                    <option
+                      value=""
+                    >
+                      Select Role
+                    </option>
+                    <option
+                      value="1"
+                    >
+                      Admin
+                    </option>
+                    <option
+                      value="2"
+                    >
+                      Attendant
+                    </option>
+                  </select>
+                   
+                  <br />
+                   
+                  <br />
+                  <input
+                    className="button_1"
+                    id="createattendant"
+                    name=""
+                    type="submit"
+                    value="Create Sales Assistant"
+                  />
+                </form>
+              </div>
+            </div>,
+            "className": "topmargin",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <div
+                id="create_sales_assistant"
+              >
+                <h1
+                  className="text-center"
+                >
+                  Create Sales Attendant
+                </h1>
+                <form
+                  onSubmit={[Function]}
+                >
+                  <h2>
+                    Name
+                  </h2>
+                  <input
+                    id="name"
+                    name="name"
+                    onChange={[Function]}
+                    placeholder="Enter Name"
+                    required={true}
+                    type="text"
+                  />
+                  <h2>
+                    Email
+                  </h2>
+                  <input
+                    id="email"
+                    name="email"
+                    onChange={[Function]}
+                    placeholder="Enter Email"
+                    required={true}
+                    type="email"
+                  />
+                  <h2>
+                    Password
+                  </h2>
+                  <input
+                    id="password"
+                    name="password"
+                    onChange={[Function]}
+                    placeholder="Enter Password"
+                    required={true}
+                    type="password"
+                  />
+                   
+                  <br />
+                  <h2>
+                    User Image
+                  </h2>
+                  <input
+                    id="userimage"
+                    name="upload"
+                    onChange={[Function]}
+                    type="file"
+                  />
+                  <h2>
+                    Type
+                  </h2>
+                  <select
+                    id="type"
+                    name="type"
+                    onChange={[Function]}
+                    required={true}
+                  >
+                    <option
+                      value=""
+                    >
+                      Select Role
+                    </option>
+                    <option
+                      value="1"
+                    >
+                      Admin
+                    </option>
+                    <option
+                      value="2"
+                    >
+                      Attendant
+                    </option>
+                  </select>
+                   
+                  <br />
+                   
+                  <br />
+                  <input
+                    className="button_1"
+                    id="createattendant"
+                    name=""
+                    type="submit"
+                    value="Create Sales Assistant"
+                  />
+                </form>
+              </div>,
+              "className": "container",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <h1
+                    className="text-center"
+                  >
+                    Create Sales Attendant
+                  </h1>,
+                  <form
+                    onSubmit={[Function]}
+                  >
+                    <h2>
+                      Name
+                    </h2>
+                    <input
+                      id="name"
+                      name="name"
+                      onChange={[Function]}
+                      placeholder="Enter Name"
+                      required={true}
+                      type="text"
+                    />
+                    <h2>
+                      Email
+                    </h2>
+                    <input
+                      id="email"
+                      name="email"
+                      onChange={[Function]}
+                      placeholder="Enter Email"
+                      required={true}
+                      type="email"
+                    />
+                    <h2>
+                      Password
+                    </h2>
+                    <input
+                      id="password"
+                      name="password"
+                      onChange={[Function]}
+                      placeholder="Enter Password"
+                      required={true}
+                      type="password"
+                    />
+                     
+                    <br />
+                    <h2>
+                      User Image
+                    </h2>
+                    <input
+                      id="userimage"
+                      name="upload"
+                      onChange={[Function]}
+                      type="file"
+                    />
+                    <h2>
+                      Type
+                    </h2>
+                    <select
+                      id="type"
+                      name="type"
+                      onChange={[Function]}
+                      required={true}
+                    >
+                      <option
+                        value=""
+                      >
+                        Select Role
+                      </option>
+                      <option
+                        value="1"
+                      >
+                        Admin
+                      </option>
+                      <option
+                        value="2"
+                      >
+                        Attendant
+                      </option>
+                    </select>
+                     
+                    <br />
+                     
+                    <br />
+                    <input
+                      className="button_1"
+                      id="createattendant"
+                      name=""
+                      type="submit"
+                      value="Create Sales Assistant"
+                    />
+                  </form>,
+                ],
+                "id": "create_sales_assistant",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Create Sales Attendant",
+                    "className": "text-center",
+                  },
+                  "ref": null,
+                  "rendered": "Create Sales Attendant",
+                  "type": "h1",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <h2>
+                        Name
+                      </h2>,
+                      <input
+                        id="name"
+                        name="name"
+                        onChange={[Function]}
+                        placeholder="Enter Name"
+                        required={true}
+                        type="text"
+                      />,
+                      <h2>
+                        Email
+                      </h2>,
+                      <input
+                        id="email"
+                        name="email"
+                        onChange={[Function]}
+                        placeholder="Enter Email"
+                        required={true}
+                        type="email"
+                      />,
+                      <h2>
+                        Password
+                      </h2>,
+                      <input
+                        id="password"
+                        name="password"
+                        onChange={[Function]}
+                        placeholder="Enter Password"
+                        required={true}
+                        type="password"
+                      />,
+                      " ",
+                      <br />,
+                      <h2>
+                        User Image
+                      </h2>,
+                      <input
+                        id="userimage"
+                        name="upload"
+                        onChange={[Function]}
+                        type="file"
+                      />,
+                      <h2>
+                        Type
+                      </h2>,
+                      <select
+                        id="type"
+                        name="type"
+                        onChange={[Function]}
+                        required={true}
+                      >
+                        <option
+                          value=""
+                        >
+                          Select Role
+                        </option>
+                        <option
+                          value="1"
+                        >
+                          Admin
+                        </option>
+                        <option
+                          value="2"
+                        >
+                          Attendant
+                        </option>
+                      </select>,
+                      " ",
+                      <br />,
+                      " ",
+                      <br />,
+                      <input
+                        className="button_1"
+                        id="createattendant"
+                        name=""
+                        type="submit"
+                        value="Create Sales Assistant"
+                      />,
+                    ],
+                    "onSubmit": [Function],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Name",
+                      },
+                      "ref": null,
+                      "rendered": "Name",
+                      "type": "h2",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "id": "name",
+                        "name": "name",
+                        "onChange": [Function],
+                        "placeholder": "Enter Name",
+                        "required": true,
+                        "type": "text",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "input",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Email",
+                      },
+                      "ref": null,
+                      "rendered": "Email",
+                      "type": "h2",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "id": "email",
+                        "name": "email",
+                        "onChange": [Function],
+                        "placeholder": "Enter Email",
+                        "required": true,
+                        "type": "email",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "input",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Password",
+                      },
+                      "ref": null,
+                      "rendered": "Password",
+                      "type": "h2",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "id": "password",
+                        "name": "password",
+                        "onChange": [Function],
+                        "placeholder": "Enter Password",
+                        "required": true,
+                        "type": "password",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "input",
+                    },
+                    " ",
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {},
+                      "ref": null,
+                      "rendered": null,
+                      "type": "br",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "User Image",
+                      },
+                      "ref": null,
+                      "rendered": "User Image",
+                      "type": "h2",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "id": "userimage",
+                        "name": "upload",
+                        "onChange": [Function],
+                        "type": "file",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "input",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Type",
+                      },
+                      "ref": null,
+                      "rendered": "Type",
+                      "type": "h2",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <option
+                            value=""
+                          >
+                            Select Role
+                          </option>,
+                          <option
+                            value="1"
+                          >
+                            Admin
+                          </option>,
+                          <option
+                            value="2"
+                          >
+                            Attendant
+                          </option>,
+                        ],
+                        "id": "type",
+                        "name": "type",
+                        "onChange": [Function],
+                        "required": true,
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "Select Role",
+                            "value": "",
+                          },
+                          "ref": null,
+                          "rendered": "Select Role",
+                          "type": "option",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "Admin",
+                            "value": "1",
+                          },
+                          "ref": null,
+                          "rendered": "Admin",
+                          "type": "option",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "Attendant",
+                            "value": "2",
+                          },
+                          "ref": null,
+                          "rendered": "Attendant",
+                          "type": "option",
+                        },
+                      ],
+                      "type": "select",
+                    },
+                    " ",
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {},
+                      "ref": null,
+                      "rendered": null,
+                      "type": "br",
+                    },
+                    " ",
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {},
+                      "ref": null,
+                      "rendered": null,
+                      "type": "br",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "className": "button_1",
+                        "id": "createattendant",
+                        "name": "",
+                        "type": "submit",
+                        "value": "Create Sales Assistant",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "input",
+                    },
+                  ],
+                  "type": "form",
+                },
+              ],
+              "type": "div",
+            },
+            "type": "div",
+          },
+          "type": "section",
+        },
+        "type": "div",
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
