@@ -11,6 +11,7 @@ export class ViewAttendant extends Component {
     }
 
     render() {
+        const { errors } = this.props;
         const { loading, attendants } = this.props.attendants;
 
         if (loading) {
@@ -79,7 +80,8 @@ ViewAttendant.propTypes = {
 }
 
 const mapStateToProps = state => ({
-    attendants: state.attendants
+    attendants: state.attendants,
+    errors: state.errors
 });
 
 export default  connect(mapStateToProps, { viewAttendants })(ViewAttendant);

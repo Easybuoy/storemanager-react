@@ -21,9 +21,14 @@ export const createSale = (saleData) => dispatch => {
 
     })
     .catch(err => {
+        let error = {};
+        if (err.message === 'Network Error') {
+            error.message = err.message;
+        }
+
         dispatch({
             type: GET_ERRORS,
-            payload: err.response.data
+            payload: error.message || err.response.data
         })
         dispatch({
             type: SET_ERRORS,
@@ -51,9 +56,14 @@ export const viewSales = () => dispatch => {
         })
     })
     .catch(err => {
+        let error = {};
+        if (err.message === 'Network Error') {
+            error.message = err.message;
+        }
+
         dispatch({
             type: GET_ERRORS,
-            payload: err.response.data
+            payload: error.message || err.response.data
         })
         dispatch({
             type: SET_ERRORS,

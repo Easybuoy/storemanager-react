@@ -27,9 +27,14 @@ export const createAttendant = (userData) => dispatch => {
 
     })
     .catch(err => {
+        let error = {};
+        if (err.message === 'Network Error') {
+            error.message = err.message;
+        }
+
         dispatch({
             type: GET_ERRORS,
-            payload: err.response.data.data || err.response.data.message
+            payload: error.message || err.response.data.data || err.response.data.message
         });
         dispatch({
             type: SET_ERRORS,
@@ -49,9 +54,14 @@ export const viewAttendants = () => dispatch => {
         })
     })
     .catch(err => {
+        let error = {};
+        if (err.message === 'Network Error') {
+            error.message = err.message;
+        }
+
         dispatch({
             type: GET_ERRORS,
-            payload: err.response.data.data || err.response.data.message
+            payload: error.message || err.response.data.data || err.response.data.message
         });
         dispatch({
             type: SET_ERRORS,
