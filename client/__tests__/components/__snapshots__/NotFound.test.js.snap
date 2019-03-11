@@ -20,13 +20,8 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <img
+          className="notfound"
           src="test-file-stub"
-          style={
-            Object {
-              "margin": "",
-              "width": "81%",
-            }
-          }
         />,
         <div
           className="text-center"
@@ -52,11 +47,8 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
+          "className": "notfound",
           "src": "test-file-stub",
-          "style": Object {
-            "margin": "",
-            "width": "81%",
-          },
         },
         "ref": null,
         "rendered": null,
@@ -121,13 +113,8 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <img
+            className="notfound"
             src="test-file-stub"
-            style={
-              Object {
-                "margin": "",
-                "width": "81%",
-              }
-            }
           />,
           <div
             className="text-center"
@@ -153,11 +140,8 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
+            "className": "notfound",
             "src": "test-file-stub",
-            "style": Object {
-              "margin": "",
-              "width": "81%",
-            },
           },
           "ref": null,
           "rendered": null,
