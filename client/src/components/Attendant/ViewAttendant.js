@@ -12,15 +12,8 @@ export class ViewAttendant extends Component {
 
     render() {
         const { errors } = this.props;
-        const { loading, attendants } = this.props.attendants;
+        const { attendants } = this.props.attendants;
 
-        if (loading) {
-            return (
-                <div>
-                    <Loading />
-                </div>
-            )
-        }
 
         if (attendants) {
             return (
@@ -53,24 +46,12 @@ export class ViewAttendant extends Component {
             </div>
             )
         }
+        
         return (
-            <div id="main" className="topmargin">
-            <h1 className="text-center">Sale Attendants</h1>
-              <div className="card">
-                <a><img src="${attendant_image}" className="cardimg" /></a>
-                            
-              <div className="text-center cardbody" >
-                <h3 id="productname">Name: }</h3>
-                <p>Email: </p>
-                <p>Attendance: -</p>
-                <p>Product Sold: -</p>
-                <button className="button_3" >Promote</button>
-                <button className="button_2" >Delete</button>
-              </div>
-                            
-              </div>
+            <div>
+                <Loading />
             </div>
-          )
+        )
     }
 }
 

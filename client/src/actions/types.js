@@ -15,3 +15,5 @@ export const SET_ATTENDANTS = 'SET_ATTENDANTS';
 export const CREATE_SALE = 'CREATE_SALE';
 export const RESET_SALE = 'RESET_SALE';
 export const SET_SALES = 'SET_SALES';
+export const GET_PROFILE = 'GET_PROFILE';
+export const SET_PROFILE_LOADING = 'SET_PROFILE_LOADING';
