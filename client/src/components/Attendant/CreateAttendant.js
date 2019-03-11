@@ -54,7 +54,12 @@ onSubmit = (e) => {
       if (errors.password) {
         toast.error(errors.password);
       }
+
+      if (errors.message) {
+        toast.error(errors.message);
+      }
     }
+    
     if (loading) {
       return (
           <div>

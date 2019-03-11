@@ -32,6 +32,22 @@ describe('<Cart />', () => {
            .toEqual(true);
         });
 
+        it('should render salesRecord if sales is created', () => {
+          props.sales.isSaleCreated = [{id: 1, name: 'iphone'}];
+          const wrapper = shallow(<Cart {...props} />)
+
+          expect(wrapper).toMatchSnapshot();
+
+          });
+
+          it('should render salesRecord if sales is created', () => {
+            props.sales.loading = true;
+            const wrapper = shallow(<Cart {...props} />)
+  
+            expect(wrapper).toMatchSnapshot();
+  
+            });
+
         it('renders the Cart component correctly', () => {
             const wrapper = shallow(<Cart {...props} />);
             expect(wrapper).toMatchSnapshot();

@@ -26,6 +26,10 @@ export const signIn = (userData) => dispatch => {
         return res;
     })
     .catch(err => {
+        if (err.message === 'Network Error') {
+            toast.error(err.message);
+        }
+
         if (err.response.data.data.email) {
             toast.error(err.response.data.data.email);
         }

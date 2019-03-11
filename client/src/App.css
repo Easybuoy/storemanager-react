@@ -1092,6 +1092,10 @@ text-shadow: 0 0 20px #0099ff,
 0 0 20px #0099ff;
 }
 
+.notfound {
+  width: 81%;
+}
+
 @media (max-width: 1020px) {
 .loginbox{
   width: 75%;

@@ -58,7 +58,7 @@ export class Products extends Component {
     
     if (Object.keys(this.props.errors).length > 0) {
 
-      toast.error(this.props.errors.message)
+      toast.error(this.props.errors.message || this.props.errors)
       return (
         <div>
           <h1 className="text-center">

@@ -13,10 +13,14 @@ return axios.get(`${baseUrl}/api/v1/products/`)
         dispatch(setProducts(data));
 
     })
-    .catch(err => { 
+    .catch(err => {
+        let error = {};
+        if (err.message === 'Network Error') {
+            error.message = err.message;
+        }
         dispatch({
             type: GET_ERRORS,
-            payload: err.response.data.data || err.response.data.message
+            payload: error.message || err.response.data.data || err.response.data.message
         });
     });
     
@@ -45,13 +49,18 @@ export const createProduct = (productData) => dispatch => {
 
     })
     .catch(err => {
+        let error = {};
+        if (err.message === 'Network Error') {
+            error.message = err.message;
+        }
+
         dispatch({
             type: SET_PRODUCTS,
             payload: []
         });
         dispatch({
             type: GET_ERRORS,
-            payload: err.response.data.data
+            payload: error.message || err.response.data.data
         })
         dispatch({
             type: SET_ERRORS,
@@ -86,9 +95,14 @@ export const deleteProduct = (id) => dispatch => {
         return res;
     })
     .catch(err => { 
+        let error = {};
+        if (err.message === 'Network Error') {
+            error.message = err.message;
+        }
+
         dispatch({
             type: GET_ERRORS,
-            payload: err.response.data.data || err.response.data.message
+            payload: error.message || err.response.data.data || err.response.data.message
         });
         return err;
     });

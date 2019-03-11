@@ -82,9 +82,9 @@ describe('<CreateProduct />', () => {
                     props.errors = { name: 'Email field is required'}
                     const wrapper = shallow(<CreateProduct {...props} />)
         
-                    // expect(props.createProduct).toBeCalled();
-                    //  expect(props.createProduct).toHaveReturned();
-                    expect(wrapper).toMatchSnapshot();
+                    expect(props.createProduct).toBeCalled();
+                     expect(props.createProduct).toHaveReturned();
+                    // expect(wrapper).toMatchSnapshot();
 
                     });
 
@@ -92,8 +92,9 @@ describe('<CreateProduct />', () => {
                       props.product.isProductCreated = true;
                       const wrapper = shallow(<CreateProduct {...props} />)
                       
-                      expect(wrapper).toMatchSnapshot();
-                      });
+                      expect(props.createProduct).toBeCalled();
+                      expect(props.createProduct).toHaveReturned();
+                     });
 
                     
 });

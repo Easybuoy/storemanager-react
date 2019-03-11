@@ -71,6 +71,10 @@ export class CreateProduct extends Component {
             if (errors.quantity) {
                 toast.error(errors.quantity);
             }
+
+            if (errors.message) {
+                toast.error(errors.message);
+            }
         }
 
         
