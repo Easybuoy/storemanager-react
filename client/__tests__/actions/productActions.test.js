@@ -166,7 +166,7 @@ describe('productActions', () => {
     });
   });
 
-  it(`dispatches SET_PRODUCTS, GET_ERRORS, SET_ERRORS when request fails`, (done) => {
+  it(`dispatches SET_PRODUCTS_LOADING, GET_ERRORS, SET_ERRORS when request fails`, (done) => {
     moxios.wait(() => {
       const request = moxios.requests.mostRecent();
       request.respondWith({
@@ -189,5 +189,4 @@ describe('productActions', () => {
       done();
     });
   });
-
 });

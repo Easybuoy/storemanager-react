@@ -1,10 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<ViewAttendant /> renders the ViewAttendant component correctly 1`] = `
+exports[`<Profile /> renders the Profile component correctly 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <ViewAttendant
-    attendants={
+  Symbol(enzyme.__unrendered__): <Profile
+    errors={
       Object {
         "addMatchers": [Function],
         "advanceTimersByTime": [Function],
@@ -41,7 +41,44 @@ ShallowWrapper {
         "useRealTimers": [Function],
       }
     }
-    viewAttendants={
+    profile={
+      Object {
+        "addMatchers": [Function],
+        "advanceTimersByTime": [Function],
+        "autoMockOff": [Function],
+        "autoMockOn": [Function],
+        "clearAllMocks": [Function],
+        "clearAllTimers": [Function],
+        "deepUnmock": [Function],
+        "disableAutomock": [Function],
+        "doMock": [Function],
+        "dontMock": [Function],
+        "enableAutomock": [Function],
+        "fn": [Function],
+        "genMockFromModule": [Function],
+        "isMockFunction": [Function],
+        "mock": [Function],
+        "requireActual": [Function],
+        "requireMock": [Function],
+        "resetAllMocks": [Function],
+        "resetModuleRegistry": [Function],
+        "resetModules": [Function],
+        "restoreAllMocks": [Function],
+        "retryTimes": [Function],
+        "runAllImmediates": [Function],
+        "runAllTicks": [Function],
+        "runAllTimers": [Function],
+        "runOnlyPendingTimers": [Function],
+        "runTimersToTime": [Function],
+        "setMock": [Function],
+        "setTimeout": [Function],
+        "spyOn": [Function],
+        "unmock": [Function],
+        "useFakeTimers": [Function],
+        "useRealTimers": [Function],
+      }
+    }
+    viewProfile={
       [MockFunction] {
         "calls": Array [
           Array [],

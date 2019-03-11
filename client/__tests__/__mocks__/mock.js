@@ -6,4 +6,6 @@ export default {
     createAttendantMock: { message: 'Attendant created successfully' },
     viewAttendantsMock: [{name: 'Ezekiel Ekunola', userimage: '', email: 'ezekiel@gmail.com', password: '123456', type: 1}],
     viewSalesMock: [{name: 'Ezekiel Ekunola', userimage: '', email: 'ezekiel@gmail.com', password: '123456', type: 1}],
+    viewProfileMock: { name: 'Ezekiel Ekunola', userimage: '', email: 'ezekiel@gmail.com', type: 1, status: 1},
+    getNetworkErrorMock: { message: 'Network Error' }
 }

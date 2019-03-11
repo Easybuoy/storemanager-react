@@ -74,9 +74,18 @@ describe('<CreateAttendant />', () => {
                    expect(props.createAttendant).toHaveReturned();
                   });
 
+                  it('should render alert if isAttendantCreated props is true', () => {
+                    props.attendants.isAttendantCreated = 'Attendant created successfully';
+                    const wrapper = shallow(<CreateAttendant {...props} />)
+        
+                    expect(props.createAttendant).toBeCalled();
+                     expect(props.createAttendant).toHaveReturned();
+                    });
+
                     it('should show error message(s) if attendant is not created', () => {
                       props.errors.email = 'Email field is required';
                       props.errors.password = 'Password field is required';
+                      props.errors.message = 'Password field is required';
 
                       const wrapper = shallow(<CreateAttendant {...props} />)
           

@@ -25,7 +25,7 @@ export const signIn = (userData) => dispatch => {
         dispatch(setCurrentUser(decodedToken));
         return res;
     })
-    .catch(err => {
+    .catch(err => { 
         if (err.message === 'Network Error') {
             toast.error(err.message);
         }

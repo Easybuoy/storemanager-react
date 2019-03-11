@@ -16,6 +16,7 @@ import Cart from './components/Sales/Cart';
 import ViewSales from './components/Sales/ViewSales';
 import Footer from './components/Common/Footer';
 import NotFound from './components/Common/NotFound';
+import Profile from './components/Profile/Profile';
 
 class App extends Component {
     render() {
@@ -38,6 +39,7 @@ class App extends Component {
                     <PrivateRoute exact path="/viewattendants" component={ ViewAttendant } />
                     <PrivateRoute exact path="/cart" component={ Cart } />
                     <PrivateRoute exact path="/viewsales" component={ ViewSales } />
+                    <PrivateRoute exact path="/profile" component = { Profile } />
                     <Route path='*' component={ NotFound } />
                     </Switch>
                     <Footer />
