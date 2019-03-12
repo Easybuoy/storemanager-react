@@ -7,8 +7,8 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "coveralls": "jest --coverage && cat coverage/lcov.info | coveralls",
-    "start": "webpack-dev-server --mode development --open --hot",
-    "build": "webpack --mode production && node server.js",
+    "start": "webpack-dev-server --open --hot --config ./webpack/webpack.dev.js",
+    "build": "webpack --config ./webpack/webpack.prod.js && node server.js",
     "update": "jest --updateSnapshot"
   },
   "repository": {
@@ -59,6 +59,7 @@
     "style-loader": "^0.23.1",
     "url-loader": "^1.1.2",
     "webpack": "^4.27.1",
-    "webpack-cli": "^3.1.2"
+    "webpack-cli": "^3.1.2",
+    "webpack-merge": "^4.2.1"
   }
 }
