@@ -5,8 +5,8 @@ import { toast } from 'react-toastify';
 import setAuthToken from '../utils/setAuthToken';
 import { GET_ERRORS, SIGN_OUT, SET_CURRENT_USER, SET_ERRORS } from './types';
 
-// const baseUrl = 'https://store--manager.herokuapp.com';
-const baseUrl = 'http://localhost:3000';
+const baseUrl = 'https://store--manager.herokuapp.com';
+// const baseUrl = 'http://localhost:3000';
 
 export const signIn = (userData) => dispatch => {
    return axios.post(`${baseUrl}/api/v1/auth/login`, userData)

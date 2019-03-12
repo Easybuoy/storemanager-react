@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 module.exports = {
   entry: "./client/src/index.js",
   output: {
-    path: path.join(__dirname, "/dist"),
+    path: path.join(__dirname, "../dist"),
     filename: "index-bundle.js",
     publicPath: "/",
   },
@@ -24,9 +24,6 @@ module.exports = {
         use: ["url-loader?limit=100000"]
       }
     ]
-  },
-  devServer: {
-    historyApiFallback: true,
   },
   plugins: [
     new HtmlWebpackPlugin({
