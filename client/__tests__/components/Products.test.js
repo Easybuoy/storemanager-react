@@ -14,7 +14,7 @@ describe('<Products />', () => {
       };
 
     it('renders the Products component correctly', () => {
-        const wrapper = shallow(<Products />);
+        const wrapper = shallow(<Products {...props}/>);
         expect(wrapper).toMatchSnapshot();
     });
 
@@ -48,5 +48,4 @@ describe('<Products />', () => {
 
         expect(wrapper).toMatchSnapshot();
         });
-
 });

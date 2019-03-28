@@ -106,7 +106,7 @@ export class Cart extends Component {
 
                         <div className="container">
                             <div className="text-center">
-                                    <h2 id="totalcartamount">Total: $0</h2>
+                                    {/* <h2 id="totalcartamount">Total: $0</h2> */}
                               <button className="button_1"><Link to="/dashboard">Continue Shopping</Link></button>
                               <button className="button_3" onClick={this.onCheckout}>Checkout</button>
                             </div>

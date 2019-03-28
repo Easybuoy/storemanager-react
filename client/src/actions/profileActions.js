@@ -14,7 +14,7 @@ export const setProfileLoading = () => {
 export const viewProfile = () => dispatch => {
     dispatch(setProfileLoading())
     return axios.get(`${baseUrl}/api/v1/auth/current`)
-    .then(res => {
+    .then(res => { 
         dispatch({
             type: GET_PROFILE,
             payload: res.data.data
@@ -28,7 +28,7 @@ export const viewProfile = () => dispatch => {
 
         dispatch({
             type: GET_ERRORS,
-            payload: error.message || err.response.data
+            payload: error || err.response.data
         })
         dispatch({
             type: SET_ERRORS,

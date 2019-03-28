@@ -49,7 +49,7 @@ describe('profileActions', () => {
       const request = moxios.requests.mostRecent();
       request.respondWith({
         status: 400,
-        response: {data: mock.getErrorsMock},
+        response: {data: {}},
       });
     });
     const expectedActions = [
@@ -58,7 +58,7 @@ describe('profileActions', () => {
       },
       {
           type: GET_ERRORS,
-          payload: {data: mock.getErrorsMock}
+          payload: {}
       },
       {
         type: SET_ERRORS,
@@ -70,120 +70,4 @@ describe('profileActions', () => {
       done();
     });
   });
-
-//   it(`dispatches SET_PRODUCTS_LOADING, SET_ERRORS, CREATE_PRODUCT and SET_PRODUCTS when request is successful`, (done) => {
-//     moxios.wait(() => {
-//       const request = moxios.requests.mostRecent();
-//       request.respondWith({
-//         status: 200,
-//         response: {data: mock.getProductsMock},
-//       });
-//     });
-//     const expectedActions = [
-//       {
-//         type: SET_PRODUCT_LOADING,
-//       },
-//       {
-//           type: SET_ERRORS,
-//       },
-//       {
-//         type: CREATE_PRODUCT,
-//     },
-//       {
-//         type: SET_PRODUCTS,
-//         payload: []
-//     }
-//     ];
-//     const store = mockStore({});
-//     const data = {name: 'iPhone 6', productimage: '', description: 'Good phone', price: 5000}
-//     return store.dispatch(createProduct(data)).then(() => {
-//       expect(store.getActions()).toEqual(expectedActions);
-//       done();
-//     });
-//   });
-
-//   it(`dispatches SET_PRODUCTS, GET_ERRORS, SET_ERRORS when request fails`, (done) => {
-//     moxios.wait(() => {
-//       const request = moxios.requests.mostRecent();
-//       request.respondWith({
-//         status: 400,
-//         response: {data: mock.getErrorsMock},
-//       });
-//     });
-//     const expectedActions = [
-//         {
-//             type: SET_PRODUCT_LOADING
-//         },
-//         {
-//             type: SET_PRODUCTS,
-//             payload: []
-//         },
-//       {
-//         type: GET_ERRORS,
-//         payload: mock.getErrorsMock
-//       },
-//       {
-//           type: SET_ERRORS,
-//       },
-     
-//     ];
-//     const store = mockStore({});
-//     const data = {name: 'iPhone 6', productimage: '', description: 'Good phone', price: 5000}
-//     return store.dispatch(createProduct(data)).then(() => {
-//       expect(store.getActions()).toEqual(expectedActions);
-//       done();
-//     });
-//   });
-
-//   it(`dispatches SET_PRODUCTS_LOADING, DELETE_PRODUCT, and SET_PRODUCTS_LOADING when request is successful`, (done) => {
-//     moxios.wait(() => {
-//       const request = moxios.requests.mostRecent();
-//       request.respondWith({
-//         status: 200,
-//         response: {data: mock.deleteProductMock},
-//       });
-//     });
-//     const expectedActions = [
-//       {
-//         type: SET_PRODUCT_LOADING,
-//       },
-//       {
-//           type: DELETE_PRODUCT,
-//           payload: undefined
-//       },
-//       {
-//         type: SET_PRODUCT_LOADING,
-//       },
-//     ];
-//     const store = mockStore({});
-//     return store.dispatch(deleteProduct(1)).then(() => {
-//       expect(store.getActions()).toEqual(expectedActions);
-//       done();
-//     });
-//   });
-
-//   it(`dispatches SET_PRODUCTS, GET_ERRORS, SET_ERRORS when request fails`, (done) => {
-//     moxios.wait(() => {
-//       const request = moxios.requests.mostRecent();
-//       request.respondWith({
-//         status: 400,
-//         response: {data: mock.getErrorsMock},
-//       });
-//     });
-//     const expectedActions = [
-//         {
-//             type: SET_PRODUCT_LOADING
-//         },
-//       {
-//         type: GET_ERRORS,
-//         payload: mock.getErrorsMock
-//       },
-//     ];
-//     const store = mockStore({});
-//     return store.dispatch(deleteProduct(1)).then(() => {
-//       expect(store.getActions()).toEqual(expectedActions);
-//       done();
-//     });
-//   });
-
 });

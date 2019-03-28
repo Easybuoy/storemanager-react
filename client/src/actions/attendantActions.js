@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-import { GET_ERRORS, SET_ATTENDANT_CREATED, RESET_ATTENDANT_CREATED, SET_ERRORS, SET_ATTENDANT_LOADING, SET_ATTENDANTS } from './types';
+import { GET_ERRORS, SET_ATTENDANT_CREATED, RESET_ATTENDANT_CREATED, SET_ERRORS, SET_ATTENDANT_LOADING, SET_ATTENDANTS, DELETE_ATTENDANT } from './types';
 
 const baseUrl = 'https://store--manager.herokuapp.com';
 // const baseUrl = 'http://localhost:3000';
@@ -74,3 +74,29 @@ export const setAttendantLoading = () => {
         type: SET_ATTENDANT_LOADING,
     }
 }
+
+export const deleteAttendant = (id) => dispatch => {
+    dispatch(setAttendantLoading())
+   return axios.delete(`${baseUrl}/api/v1/auth/attendant/${id}`)
+    .then(res => {
+        const { data } = res;
+        dispatch({
+            type: DELETE_ATTENDANT,
+            payload: data.message
+        });
+        dispatch(viewAttendants());
+        return res;
+    })
+    .catch(err => { 
+        let error = {};
+        if (err.message === 'Network Error') {
+            error.message = err.message;
+        }
+
+        dispatch({
+            type: GET_ERRORS,
+            payload: error.message || err.response.data.data || err.response.data.message
+        });
+        return err;
+    });
+};

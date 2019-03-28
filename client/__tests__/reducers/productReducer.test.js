@@ -22,7 +22,7 @@ describe('productReducer', () => {
         expect(state).toEqual({loading: false, isProductCreated: true, products: [], productDeleted: false});
     });
 
-    it('should delete attendant created', () => {
+    it('should delete product', () => {
         const action = {
             type: DELETE_PRODUCT,
             payload: 'Product deleted successfully'
