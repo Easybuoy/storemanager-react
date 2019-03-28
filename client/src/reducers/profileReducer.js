@@ -16,7 +16,8 @@ export default (state = INITIAL_STATE, action) => {
             case SET_PROFILE_LOADING:
             return {
                 ...state,
-                loading: true
+                loading: true,
+                profile: {}
             };
         default:
             return state;

@@ -41,6 +41,7 @@ ShallowWrapper {
         "useRealTimers": [Function],
       }
     }
+    deleteAttendant={[MockFunction]}
     viewAttendants={
       [MockFunction] {
         "calls": Array [

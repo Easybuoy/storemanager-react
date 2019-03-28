@@ -53,6 +53,9 @@ export const signOut = () => dispatch => {
     // Remove auth header from requests
     setAuthToken(false);
 
+    // Remove cart item
+    localStorage.removeItem('products');
+    
     // Set current user to {}
     dispatch(setCurrentUser({}));
     toast.success('Signed out sucessfully')

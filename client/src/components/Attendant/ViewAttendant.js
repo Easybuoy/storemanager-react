@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
+import { toast } from 'react-toastify';
 
-import { viewAttendants } from '../../actions/attendantActions';
+import { viewAttendants, deleteAttendant } from '../../actions/attendantActions';
 import Loading from '../Common/Loading';
 
 export class ViewAttendant extends Component {
@@ -10,10 +11,21 @@ export class ViewAttendant extends Component {
         this.props.viewAttendants();
     }
 
+    deleteAttendant(id) {
+        if (confirm('Are you sure you want to delete this Store Attendant?')){
+          this.props.deleteAttendant(id);
+        };
+        
+      }
+
     render() {
         const { errors } = this.props;
-        const { attendants } = this.props.attendants;
+        const { attendants, attendantDeleted } = this.props.attendants;
 
+
+        if (attendantDeleted) {
+            toast.success('Store Attendant Deleted Successfully');
+          }
 
         if (attendants) {
             return (
@@ -34,8 +46,8 @@ export class ViewAttendant extends Component {
                               <p>Email: {email} </p>
                               <p>Attendance: -</p>
                               <p>Product Sold: -</p>
-                              <button className="button_3" >Promote</button>
-                              <button className="button_2" >Delete</button>
+                              <button className="button_3">Promote</button>
+                              <button className="button_2" onClick={() => {this.deleteAttendant(attendant.id)}}>Delete</button>
                             </div>
                             </div>
                         )
@@ -57,6 +69,7 @@ export class ViewAttendant extends Component {
 
 ViewAttendant.propTypes = {
     viewAttendants: PropTypes.func.isRequired,
+    deleteAttendant: PropTypes.func.isRequired,
     attendants: PropTypes.object.isRequired
 }
 
@@ -65,4 +78,4 @@ const mapStateToProps = state => ({
     errors: state.errors
 });
 
-export default  connect(mapStateToProps, { viewAttendants })(ViewAttendant);
+export default  connect(mapStateToProps, { viewAttendants, deleteAttendant })(ViewAttendant);
