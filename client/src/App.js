@@ -10,6 +10,7 @@ import Dashboard from './components/Dashboard/Dashboard';
 import Navigation from './components/Common/Navigation';
 import Products from './components/Products/Products';
 import CreateProduct from './components/Products/CreateProduct';
+import EditProduct from './components/Products/EditProduct';
 import CreateAttendant from './components/Attendant/CreateAttendant';
 import ViewAttendant from './components/Attendant/ViewAttendant';
 import Cart from './components/Sales/Cart';
@@ -35,6 +36,7 @@ class App extends Component {
                     <PrivateRoute exact path='/dashboard' component={ Dashboard } />
                     <PrivateRoute exact path="/viewproducts" component={ Products } />
                     <PrivateRoute exact path="/createproduct" component={ CreateProduct } />
+                    <PrivateRoute exact path="/editproduct/:id" component={ EditProduct } />
                     <PrivateRoute exact path="/createattendant" component={ CreateAttendant } />
                     <PrivateRoute exact path="/viewattendants" component={ ViewAttendant } />
                     <PrivateRoute exact path="/cart" component={ Cart } />

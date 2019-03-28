@@ -1,12 +1,14 @@
 import productReducer from '../../src/reducers/productReducer';
-import { SET_PRODUCT_LOADING, SET_PRODUCTS, CREATE_PRODUCT, DELETE_PRODUCT } from '../../src/actions/types';
+import { SET_PRODUCT_LOADING, SET_PRODUCTS, CREATE_PRODUCT, DELETE_PRODUCT, EDIT_PRODUCT } from '../../src/actions/types';
 
 describe('productReducer', () => {
     it('should return default state', () => {
         const INITIAL_STATE = {
             loading: false,
             products: [],
+            product: {},
             isProductCreated: false,
+            isProductEdited: false,
             productDeleted: false
         };
         const state = productReducer(undefined, { type: '@@INIT' });
@@ -19,7 +21,7 @@ describe('productReducer', () => {
             payload: [{ id: 1, name: 'Phone', price: 1000, quantity: 90}]
         }
         const state = productReducer(undefined, action);
-        expect(state).toEqual({loading: false, isProductCreated: true, products: [], productDeleted: false});
+        expect(state).toEqual({loading: false, isProductCreated: true, products: [], productDeleted: false, isProductEdited: false, product: {}});
     });
 
     it('should delete product', () => {
@@ -28,7 +30,15 @@ describe('productReducer', () => {
             payload: 'Product deleted successfully'
         }
         const state = productReducer(undefined, action);
-        expect(state).toEqual({loading: false, isProductCreated: false, products: [], productDeleted: action.payload});
+        expect(state).toEqual({loading: false, isProductCreated: false, products: [], productDeleted: action.payload, isProductEdited: false, product: {}});
+    });
+
+    it('should edit product', () => {
+        const action = {
+            type: EDIT_PRODUCT,
+        }
+        const state = productReducer(undefined, action);
+        expect(state).toEqual({loading: false, isProductCreated: false, products: [], productDeleted: false, isProductEdited: true, product: {}});
     });
 
     it('should set product loading', () => {
@@ -36,7 +46,7 @@ describe('productReducer', () => {
             type: SET_PRODUCT_LOADING,
         }
         const state = productReducer(undefined, action);
-        expect(state).toEqual({loading: true, isProductCreated: false, products: [], productDeleted: false});
+        expect(state).toEqual({loading: true, isProductCreated: false, products: [], productDeleted: false, isProductEdited: false, product: {}});
     });
 
     it('should set products', () => {
@@ -45,6 +55,6 @@ describe('productReducer', () => {
             payload: [{ id: 1, name: 'Milk', price: 100, quantity: 90}]
         }
         const state = productReducer(undefined, action);
-        expect(state).toEqual({loading: false, isProductCreated: false, products: action.payload, productDeleted: false});
+        expect(state).toEqual({loading: false, isProductCreated: false, products: action.payload, productDeleted: false, isProductEdited: false, product: {}});
     });
 });

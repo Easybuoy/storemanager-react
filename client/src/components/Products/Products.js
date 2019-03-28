@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-
+import { Link } from 'react-router-dom';
 
 import Loading from '../Common/Loading';;
 
@@ -116,7 +116,7 @@ export class Products extends Component {
                     <p>{productDescription} </p>
                     <p>Quantity: {productQuantity}</p>
                     <p  id="productamount">Price: {`$${productPrice}`}</p>
-                    <button className="button_1"><a href="admin_edit_product.html?id=${product.id}">EDIT</a></button>
+                    <button className="button_1"><Link to={`editproduct/${product.id}`}>EDIT</Link></button>
                     <button className="button_2" onClick={() => {this.deleteProduct(productid)}}>DELETE</button>
                 </div>
               </div>

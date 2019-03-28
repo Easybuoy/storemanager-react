@@ -2,8 +2,8 @@ import axios from 'axios';
 
 import { SET_PROFILE_LOADING, GET_PROFILE, GET_ERRORS, SET_ERRORS, } from './types';
 
-const baseUrl = 'https://store--manager.herokuapp.com';
-// const baseUrl = 'http://localhost:3000';
+// const baseUrl = 'https://store--manager.herokuapp.com';
+const baseUrl = 'http://localhost:3000';
 
 export const setProfileLoading = () => {
     return {

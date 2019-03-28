@@ -59,8 +59,22 @@ ShallowWrapper {
             Array [
               "/dashboard",
             ],
+            Array [
+              "/dashboard",
+            ],
+            Array [
+              "/dashboard",
+            ],
           ],
           "results": Array [
+            Object {
+              "isThrow": false,
+              "value": undefined,
+            },
+            Object {
+              "isThrow": false,
+              "value": undefined,
+            },
             Object {
               "isThrow": false,
               "value": undefined,
@@ -132,18 +146,10 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": <Loading />,
+      "children": undefined,
     },
     "ref": null,
-    "rendered": Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "function",
-      "props": Object {},
-      "ref": null,
-      "rendered": null,
-      "type": [Function],
-    },
+    "rendered": null,
     "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
@@ -152,18 +158,10 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": <Loading />,
+        "children": undefined,
       },
       "ref": null,
-      "rendered": Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {},
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
+      "rendered": null,
       "type": "div",
     },
   ],
@@ -425,8 +423,15 @@ ShallowWrapper {
             Array [
               "/dashboard",
             ],
+            Array [
+              "/dashboard",
+            ],
           ],
           "results": Array [
+            Object {
+              "isThrow": false,
+              "value": undefined,
+            },
             Object {
               "isThrow": false,
               "value": undefined,
@@ -498,18 +503,10 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": <Loading />,
+      "children": undefined,
     },
     "ref": null,
-    "rendered": Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "function",
-      "props": Object {},
-      "ref": null,
-      "rendered": null,
-      "type": [Function],
-    },
+    "rendered": null,
     "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
@@ -518,18 +515,10 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": <Loading />,
+        "children": undefined,
       },
       "ref": null,
-      "rendered": Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {},
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
+      "rendered": null,
       "type": "div",
     },
   ],

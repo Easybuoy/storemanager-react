@@ -2,8 +2,8 @@ import axios from 'axios';
 
 import { GET_ERRORS, SET_ATTENDANT_CREATED, RESET_ATTENDANT_CREATED, SET_ERRORS, SET_ATTENDANT_LOADING, SET_ATTENDANTS, DELETE_ATTENDANT } from './types';
 
-const baseUrl = 'https://store--manager.herokuapp.com';
-// const baseUrl = 'http://localhost:3000';
+// const baseUrl = 'https://store--manager.herokuapp.com';
+const baseUrl = 'http://localhost:3000';
 
 export const createAttendant = (userData) => dispatch => {
     const formData = new FormData();

@@ -2,8 +2,8 @@ import configureStore from 'redux-mock-store';
 import moxios from 'moxios';
 import thunk from 'redux-thunk';
 
-import { setProductsLoading, setProducts, getProducts, createProduct, deleteProduct } from '../../src/actions/productActions';
-import { SET_PRODUCT_LOADING, SET_PRODUCTS, GET_ERRORS, SET_ERRORS, CREATE_PRODUCT, DELETE_PRODUCT } from '../../src/actions/types';
+import { setProductsLoading, setProducts, getProducts, createProduct, deleteProduct, getProductById, editProduct } from '../../src/actions/productActions';
+import { SET_PRODUCT_LOADING, SET_PRODUCTS, GET_ERRORS, SET_ERRORS, CREATE_PRODUCT, DELETE_PRODUCT, EDIT_PRODUCT } from '../../src/actions/types';
 import mock from '../__mocks__/mock';
 
 describe('productActions', () => {
@@ -189,4 +189,132 @@ describe('productActions', () => {
       done();
     });
   });
+
+  it(`dispatches SET_PRODUCTS_LOADING, SET_PRODUCTS, and SET_PRODUCTS when request is successful`, (done) => {
+    moxios.wait(() => {
+      const request = moxios.requests.mostRecent();
+      request.respondWith({
+        status: 200,
+        response: {data: mock.getProductByIdMock},
+      });
+    });
+    const expectedActions = [
+      {
+        type: SET_PRODUCT_LOADING,
+      },
+      {
+          type: SET_PRODUCT,
+          payload: mock.getProductByIdMock
+      },
+      // {
+      //   type: SET_PRODUCTS,
+      //   payload: []
+      // },
+    ];
+    const store = mockStore({});
+    return store.dispatch(getProductById(1)).then(() => {
+      expect(store.getActions()).toEqual(expectedActions);
+      done();
+    });
+  });
+
+  it(`dispatches SET_PRODUCTS_LOADING, GET_ERRORS when request fails`, (done) => {
+    moxios.wait(() => {
+      const request = moxios.requests.mostRecent();
+      request.respondWith({
+        status: 400,
+        response: {data: mock.getErrorsMock},
+      });
+    });
+    const expectedActions = [
+        {
+            type: SET_PRODUCT_LOADING
+        },
+      {
+        type: GET_ERRORS,
+        payload: mock.getErrorsMock
+      },
+    ];
+    const store = mockStore({});
+    return store.dispatch(getProductById(1)).then(() => {
+      expect(store.getActions()).toEqual(expectedActions);
+      done();
+    });
+  });
+
+  it(`dispatches SET_PRODUCTS_LOADING, SET_ERRORS, and EDIT_PRODUCT and SET_PRODUCTS when request is successful`, (done) => {
+    moxios.wait(() => {
+      const request = moxios.requests.mostRecent();
+      request.respondWith({
+        status: 200,
+        // response: {data: mock.},
+      });
+    });
+    const expectedActions = [
+      {
+        type: SET_PRODUCT_LOADING,
+      },
+      {
+        type: SET_ERRORS
+      },
+      {
+          type: EDIT_PRODUCT,
+      },
+      {
+        type: SET_PRODUCTS,
+        payload: []
+      },
+    ];
+    const productData = {
+      name: 'Jago',
+      description: 'Milk',
+      price: 200,
+      quantity: 15,
+      productimage: '/ap'
+  } 
+    const store = mockStore({});
+    return store.dispatch(editProduct(1, productData)).then(() => {
+      expect(store.getActions()).toEqual(expectedActions);
+      done();
+    });
+  });
+
+  it(`dispatches SET_PRODUCTS_LOADING, SET_PRODUCTS, GET_ERRORS and SET_ERRORS when request fails`, (done) => {
+    moxios.wait(() => {
+      const request = moxios.requests.mostRecent();
+      request.respondWith({
+        status: 400,
+        response: {data: mock.getErrorsMock},
+      });
+    });
+    const expectedActions = [
+        {
+            type: SET_PRODUCT_LOADING
+        },
+        {
+          type: SET_PRODUCTS,
+          payload: []
+        },
+      {
+        type: GET_ERRORS,
+        payload: {message: undefined}
+      },
+      {
+        type: SET_ERRORS,
+      },
+    ];
+    const productData = {
+      name: 'Jago',
+      description: 'Milk',
+      price: 200,
+      quantity: 15,
+      productimage: '/ap'
+  } 
+    const store = mockStore({});
+    return store.dispatch(editProduct(1, productData )).then(() => {
+      expect(store.getActions()).toEqual(expectedActions);
+      done();
+    });
+  });
+
 });

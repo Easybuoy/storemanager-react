@@ -2,6 +2,7 @@ export default {
     getErrorsMock: { email: 'Wrong email', password: 'Wrong password' },
     setCurrentUserMock: { },
     getProductsMock: [{ name: 'Samsung', quantity: 1234, price: 1000 }],
+    getProductByIdMock: { name: 'Samsung', quantity: 1234, price: 1000 },
     deleteProductMock: { message: 'Product deleted successfully' },
     deleteAttendantMock: { message: 'Attendant deleted successfully' },
     createAttendantMock: { message: 'Attendant created successfully' },
