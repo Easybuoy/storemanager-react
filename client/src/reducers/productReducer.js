@@ -1,9 +1,11 @@
-import { SET_PRODUCTS, SET_PRODUCT_LOADING, CREATE_PRODUCT, DELETE_PRODUCT } from '../actions/types';
+import { SET_PRODUCTS, SET_PRODUCT_LOADING, CREATE_PRODUCT, DELETE_PRODUCT, EDIT_PRODUCT, SET_PRODUCT } from '../actions/types';
 
 const INITIAL_STATE = {
     loading: false,
     products: [],
+    product: {},
     isProductCreated: false,
+    isProductEdited: false,
     productDeleted: false
 };
 
@@ -15,7 +17,17 @@ export default (state = INITIAL_STATE, action) => {
                 products: action.payload,
                 loading: false,
                 isProductCreated: false,
-                productDeleted: false
+                productDeleted: false,
+                isProductEdited: false,
+            };
+            case SET_PRODUCT:
+            return { 
+                ...state, 
+                product: action.payload,
+                loading: false,
+                isProductCreated: false,
+                productDeleted: false,
+                isProductEdited: false,
             };
         case SET_PRODUCT_LOADING:
             return {
@@ -27,6 +39,12 @@ export default (state = INITIAL_STATE, action) => {
                 ...state,
                 loading: false,
                 isProductCreated: true
+            };
+        case EDIT_PRODUCT:
+            return {
+                ...state,
+                loading: false,
+                isProductEdited: true
             };
         case DELETE_PRODUCT:
             return {

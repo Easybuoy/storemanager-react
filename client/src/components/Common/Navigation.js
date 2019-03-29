@@ -58,7 +58,7 @@ export class Navigation extends Component {
 
             <ul>
                 <li><Link to="profile" style={{ paddingTop : '10px' }}><div><img id="userimg" src={userProfilePicture} /> </div></Link></li>
-                <li id="shoppingcart"><Link to="/cart"><label  id="shoppingcartlabel">0</label ><img id="cartimage" src="http://store--manager.herokuapp.com/img/cart.png" /></Link></li>
+                <li id="shoppingcart"><Link to="/cart"><label ref="shoppingcartlabel"  id="shoppingcartlabel">0</label ><img id="cartimage" src="http://store--manager.herokuapp.com/img/cart.png" /></Link></li>
                     <li><a href="#"><div><input className="search" placeholder="Search Products" type="text" /> <i id="searchimg" className="fas fa-search fa-2x"></i> </div></a></li>
                     <li id="appnameli"><Link to="/dashboard"><h1 id="appname"><span className="highlight">Store</span> Manager</h1></Link></li>
             </ul>

@@ -45,14 +45,7 @@ export class Cart extends Component {
         toast.error(this.props.errors.message);
       }
 
-    const { loading, isSaleCreated } = this.props.sales;
-    if (loading) { 
-        return (
-          <div>
-          <Loading />
-          </div>
-        )
-      }
+    const { isSaleCreated } = this.props.sales;
 
       if (isSaleCreated) {
         toast.success('Sale Created Successfully');

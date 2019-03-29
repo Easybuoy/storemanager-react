@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-
+import { Link } from 'react-router-dom';
 
 import Loading from '../Common/Loading';;
 
@@ -11,7 +11,7 @@ import { toast } from 'react-toastify';
 export class Products extends Component {
 
     componentDidMount(){
-        this.showCartCount();
+        // this.showCartCount();
         this.props.getProducts();
     }
 
@@ -44,12 +44,13 @@ export class Products extends Component {
       this.showCartCount();
     }
 
-    showCartCount() {
+    showCartCount = () => {
       let length = 0;
       const totalcartitem = JSON.parse(localStorage.getItem('products'));
       if (totalcartitem) {
       length = totalcartitem.length;
       }
+      // this.refs.shoppingcartlabel.innerHTML = length
       document.getElementById('shoppingcartlabel').innerHTML = length;
     }
 
@@ -66,14 +67,6 @@ export class Products extends Component {
           </h1>
         </div>
       );
-    }
-
-    if (loading) { 
-      return (
-        <div>
-        <Loading />
-        </div>
-      )
     }
    
     if (productDeleted) {
@@ -116,7 +109,7 @@ export class Products extends Component {
                     <p>{productDescription} </p>
                     <p>Quantity: {productQuantity}</p>
                     <p  id="productamount">Price: {`$${productPrice}`}</p>
-                    <button className="button_1"><a href="admin_edit_product.html?id=${product.id}">EDIT</a></button>
+                    <button className="button_1"><Link to={`editproduct/${product.id}`}>EDIT</Link></button>
                     <button className="button_2" onClick={() => {this.deleteProduct(productid)}}>DELETE</button>
                 </div>
               </div>
@@ -162,7 +155,7 @@ export class Products extends Component {
                   <p>{productDescription} </p>
                   <p>Quantity: {productQuantity}</p>
                   <p  id="productamount">Price: {`$${productPrice}`}</p>
-                  <button className="button_1" onClick={() => {this.addToCart(productId, productImage, productPrice)}}>Add To Cart</button>
+                  <button className="button_1" id="addToCartButton" onClick={() => {this.addToCart(productId, productImage, productPrice)}}>Add To Cart</button>
               </div>
             </div>
               );
@@ -176,7 +169,7 @@ export class Products extends Component {
 
     return (
       <div>
-        
+      <Loading />
       </div>
     )
   }
