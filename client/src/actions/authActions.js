@@ -5,8 +5,8 @@ import { toast } from 'react-toastify';
 import setAuthToken from '../utils/setAuthToken';
 import { GET_ERRORS, SIGN_OUT, SET_CURRENT_USER, SET_ERRORS } from './types';
 
-// const baseUrl = 'https://store--manager.herokuapp.com';
-const baseUrl = 'http://localhost:3000';
+const baseUrl = 'https://store--manager.herokuapp.com';
+// const baseUrl = 'http://localhost:3000';
 
 export const signIn = (userData) => dispatch => {
    return axios.post(`${baseUrl}/api/v1/auth/login`, userData)
@@ -26,21 +26,28 @@ export const signIn = (userData) => dispatch => {
         return res;
     })
     .catch(err => { 
+        let error = {};
         if (err.message === 'Network Error') {
-            toast.error(err.message);
+            error.message = err.message;
         }
+        // if (err.message === 'Network Error') {
+        //     toast.error(err.message);
+        // }
 
-        if (err.response.data.data.email) {
-            toast.error(err.response.data.data.email);
-        }
+        // if (err.response.data.data.email) {
+        //     toast.error(err.response.data.data.email);
+        // }
 
-        if (err.response.data.data.password) {
-            toast.error(err.response.data.data.password);
-        }
+        // if (err.response.data.data.password) {
+        //     toast.error(err.response.data.data.password);
+        // }
         dispatch({
             type: GET_ERRORS,
-            payload: err.response.data.data
+            payload: error.message || err.response.data.data 
         });
+        dispatch({
+            type: SET_ERRORS,
+        })
         return err;
     })
     

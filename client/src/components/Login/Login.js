@@ -35,6 +35,21 @@ export class Login extends Component {
     render() {
         const { errors } = this.props;
 
+        if (Object.keys(errors).length > 0) {
+
+        if (errors.message) {
+            toast.error(errors.message);
+        }
+
+        if (errors.email) {
+            toast.error(errors.email);
+        }
+
+        if (errors.password) {
+            toast.error(errors.password);
+        }
+    }
+
         if (this.props.auth.isSignedIn ) {
             this.props.history.push('/dashboard')
         }

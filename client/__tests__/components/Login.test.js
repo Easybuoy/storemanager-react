@@ -9,6 +9,7 @@ describe('<Login />', () => {
         signIn: jest.fn(),
         auth: jest.mock(),
         errors: jest.mock(),
+        history: {push: jest.fn()}
       };
 
     it('renders the Login component correctly', () => {
@@ -52,4 +53,21 @@ describe('<Login />', () => {
                expect(wrapper.instance().onSubmit.calledWith(event));
             });
 
+            it('should show error message(s) if login error occurs', () => {
+              props.errors = { message: 'Network Error', email: 'Email field is required', password: 'Password field is required'}
+              const wrapper = shallow(<Login {...props} />)
+  
+              expect(props.signIn).toBeCalled();
+               expect(props.signIn).toHaveReturned();
+
+              });
+
+              it('should redirrect if user is signed in', () => {
+                props.auth.isSignedIn = true;
+                const wrapper = shallow(<Login {...props} />)
+    
+                expect(props.signIn).toBeCalled();
+                 expect(props.signIn).toHaveReturned();
+  
+                });
 });

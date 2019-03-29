@@ -78,6 +78,11 @@ ShallowWrapper {
         "useRealTimers": [Function],
       }
     }
+    history={
+      Object {
+        "push": [MockFunction],
+      }
+    }
     signIn={[MockFunction]}
   />,
   Symbol(enzyme.__renderer__): Object {

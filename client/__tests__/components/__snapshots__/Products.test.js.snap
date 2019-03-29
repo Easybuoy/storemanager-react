@@ -318,13 +318,8 @@ ShallowWrapper {
         "calls": Array [
           Array [],
           Array [],
-          Array [],
         ],
         "results": Array [
-          Object {
-            "isThrow": false,
-            "value": undefined,
-          },
           Object {
             "isThrow": false,
             "value": undefined,

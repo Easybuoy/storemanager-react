@@ -2,7 +2,7 @@ import configureStore from 'redux-mock-store';
 import moxios from 'moxios';
 import thunk from 'redux-thunk';
 
-import { setProductsLoading, setProducts, getProducts, createProduct, deleteProduct, getProductById, editProduct } from '../../src/actions/productActions';
+import { setProductsLoading, setProducts, getProducts, createProduct, deleteProduct, getProductById, editProduct, setProduct } from '../../src/actions/productActions';
 import { SET_PRODUCT_LOADING, SET_PRODUCTS, GET_ERRORS, SET_ERRORS, CREATE_PRODUCT, DELETE_PRODUCT, EDIT_PRODUCT, SET_PRODUCT } from '../../src/actions/types';
 import mock from '../__mocks__/mock';
 
@@ -20,12 +20,19 @@ describe('productActions', () => {
         expect(response.type).toEqual(SET_PRODUCT_LOADING);
     });
 
-    it('should set products loading', () => {
+    it('should set products', () => {
         const data = [{ name: 'Samsung', quantity: 1234, price: 1000 }];
         const response = setProducts(data);
         expect(response.type).toEqual(SET_PRODUCTS);
         expect(response.payload).toEqual(data);
     });
+
+    it('should set product', () => {
+      const data = { name: 'Samsung', quantity: 1234, price: 1000 };
+      const response = setProduct(data);
+      expect(response.type).toEqual(SET_PRODUCT);
+      expect(response.payload).toEqual(data);
+  });
 
     it(`dispatches SET_PRODUCTS_LOADING and SET_PRODUCTS when request is successful`, (done) => {
     moxios.wait(() => {

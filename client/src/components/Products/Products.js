@@ -11,7 +11,7 @@ import { toast } from 'react-toastify';
 export class Products extends Component {
 
     componentDidMount(){
-        this.showCartCount();
+        // this.showCartCount();
         this.props.getProducts();
     }
 
@@ -44,15 +44,14 @@ export class Products extends Component {
       this.showCartCount();
     }
 
-    showCartCount() {
+    showCartCount = () => {
       let length = 0;
       const totalcartitem = JSON.parse(localStorage.getItem('products'));
       if (totalcartitem) {
       length = totalcartitem.length;
       }
-      console.log(this.refs.shoppingcartlabel)
       // this.refs.shoppingcartlabel.innerHTML = length
-      // document.getElementById('shoppingcartlabel').innerHTML = length;
+      document.getElementById('shoppingcartlabel').innerHTML = length;
     }
 
   render() {
@@ -156,7 +155,7 @@ export class Products extends Component {
                   <p>{productDescription} </p>
                   <p>Quantity: {productQuantity}</p>
                   <p  id="productamount">Price: {`$${productPrice}`}</p>
-                  <button className="button_1" onClick={() => {this.addToCart(productId, productImage, productPrice)}}>Add To Cart</button>
+                  <button className="button_1" id="addToCartButton" onClick={() => {this.addToCart(productId, productImage, productPrice)}}>Add To Cart</button>
               </div>
             </div>
               );
