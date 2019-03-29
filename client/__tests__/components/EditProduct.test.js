@@ -75,7 +75,7 @@ describe('<EditProduct />', () => {
                      });
 
                      it('should render markup if product exist', () => {
-                        props.product.products = {name: 'Milo'};
+                        props.product.product = {name: 'Milo'};
                         const wrapper = shallow(<EditProduct {...props} />)
                         
                         expect(props.getProductById).toBeCalled();

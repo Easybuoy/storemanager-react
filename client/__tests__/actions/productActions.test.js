@@ -3,7 +3,7 @@ import moxios from 'moxios';
 import thunk from 'redux-thunk';
 
 import { setProductsLoading, setProducts, getProducts, createProduct, deleteProduct, getProductById, editProduct } from '../../src/actions/productActions';
-import { SET_PRODUCT_LOADING, SET_PRODUCTS, GET_ERRORS, SET_ERRORS, CREATE_PRODUCT, DELETE_PRODUCT, EDIT_PRODUCT } from '../../src/actions/types';
+import { SET_PRODUCT_LOADING, SET_PRODUCTS, GET_ERRORS, SET_ERRORS, CREATE_PRODUCT, DELETE_PRODUCT, EDIT_PRODUCT, SET_PRODUCT } from '../../src/actions/types';
 import mock from '../__mocks__/mock';
 
 describe('productActions', () => {

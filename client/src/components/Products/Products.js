@@ -50,7 +50,9 @@ export class Products extends Component {
       if (totalcartitem) {
       length = totalcartitem.length;
       }
-      document.getElementById('shoppingcartlabel').innerHTML = length;
+      console.log(this.refs.shoppingcartlabel)
+      // this.refs.shoppingcartlabel.innerHTML = length
+      // document.getElementById('shoppingcartlabel').innerHTML = length;
     }
 
   render() {
@@ -66,14 +68,6 @@ export class Products extends Component {
           </h1>
         </div>
       );
-    }
-
-    if (loading) { 
-      return (
-        <div>
-        <Loading />
-        </div>
-      )
     }
    
     if (productDeleted) {
@@ -176,7 +170,7 @@ export class Products extends Component {
 
     return (
       <div>
-        
+      <Loading />
       </div>
     )
   }

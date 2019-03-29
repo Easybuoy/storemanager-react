@@ -1,5 +1,5 @@
 import productReducer from '../../src/reducers/productReducer';
-import { SET_PRODUCT_LOADING, SET_PRODUCTS, CREATE_PRODUCT, DELETE_PRODUCT, EDIT_PRODUCT } from '../../src/actions/types';
+import { SET_PRODUCT_LOADING, SET_PRODUCTS, CREATE_PRODUCT, DELETE_PRODUCT, EDIT_PRODUCT, SET_PRODUCT } from '../../src/actions/types';
 
 describe('productReducer', () => {
     it('should return default state', () => {
@@ -56,5 +56,14 @@ describe('productReducer', () => {
         }
         const state = productReducer(undefined, action);
         expect(state).toEqual({loading: false, isProductCreated: false, products: action.payload, productDeleted: false, isProductEdited: false, product: {}});
+    });
+
+    it('should set product', () => {
+        const action = {
+            type: SET_PRODUCT,
+            payload: { id: 1, name: 'Milk', price: 100, quantity: 90}
+        }
+        const state = productReducer(undefined, action);
+        expect(state).toEqual({loading: false, isProductCreated: false, products: [], productDeleted: false, isProductEdited: false, product: action.payload});
     });
 });

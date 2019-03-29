@@ -3,42 +3,46 @@
 exports[`<Products /> renders the Products component correctly 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Connect(Products)
+  Symbol(enzyme.__unrendered__): <Products
     auth={
       Object {
-        "addMatchers": [Function],
-        "advanceTimersByTime": [Function],
-        "autoMockOff": [Function],
-        "autoMockOn": [Function],
-        "clearAllMocks": [Function],
-        "clearAllTimers": [Function],
-        "deepUnmock": [Function],
-        "disableAutomock": [Function],
-        "doMock": [Function],
-        "dontMock": [Function],
-        "enableAutomock": [Function],
-        "fn": [Function],
-        "genMockFromModule": [Function],
-        "isMockFunction": [Function],
-        "mock": [Function],
-        "requireActual": [Function],
-        "requireMock": [Function],
-        "resetAllMocks": [Function],
-        "resetModuleRegistry": [Function],
-        "resetModules": [Function],
-        "restoreAllMocks": [Function],
-        "retryTimes": [Function],
-        "runAllImmediates": [Function],
-        "runAllTicks": [Function],
-        "runAllTimers": [Function],
-        "runOnlyPendingTimers": [Function],
-        "runTimersToTime": [Function],
-        "setMock": [Function],
-        "setTimeout": [Function],
-        "spyOn": [Function],
-        "unmock": [Function],
-        "useFakeTimers": [Function],
-        "useRealTimers": [Function],
+        "user": Object {
+          "type": Object {
+            "addMatchers": [Function],
+            "advanceTimersByTime": [Function],
+            "autoMockOff": [Function],
+            "autoMockOn": [Function],
+            "clearAllMocks": [Function],
+            "clearAllTimers": [Function],
+            "deepUnmock": [Function],
+            "disableAutomock": [Function],
+            "doMock": [Function],
+            "dontMock": [Function],
+            "enableAutomock": [Function],
+            "fn": [Function],
+            "genMockFromModule": [Function],
+            "isMockFunction": [Function],
+            "mock": [Function],
+            "requireActual": [Function],
+            "requireMock": [Function],
+            "resetAllMocks": [Function],
+            "resetModuleRegistry": [Function],
+            "resetModules": [Function],
+            "restoreAllMocks": [Function],
+            "retryTimes": [Function],
+            "runAllImmediates": [Function],
+            "runAllTicks": [Function],
+            "runAllTimers": [Function],
+            "runOnlyPendingTimers": [Function],
+            "runTimersToTime": [Function],
+            "setMock": [Function],
+            "setTimeout": [Function],
+            "spyOn": [Function],
+            "unmock": [Function],
+            "useFakeTimers": [Function],
+            "useRealTimers": [Function],
+          },
+        },
       }
     }
     deleteProduct={[MockFunction]}
@@ -79,7 +83,19 @@ ShallowWrapper {
         "useRealTimers": [Function],
       }
     }
-    getProducts={[MockFunction]}
+    getProducts={
+      [MockFunction] {
+        "calls": Array [
+          Array [],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      }
+    }
     products={
       Object {
         "addMatchers": [Function],
@@ -130,59 +146,51 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "function",
+    "nodeType": "host",
     "props": Object {
-      "children": [Function],
+      "children": <h1
+        className="text-center"
+      />,
     },
     "ref": null,
-    "rendered": [Function],
-    "type": Object {
-      "$$typeof": Symbol(react.context),
-      "_calculateChangedBits": null,
-      "_context": Object {
-        "$$typeof": Symbol(react.context),
-        "Consumer": [Circular],
-        "Provider": Object {
-          "$$typeof": Symbol(react.provider),
-          "_context": [Circular],
-        },
-        "_calculateChangedBits": null,
-        "_currentRenderer": null,
-        "_currentRenderer2": null,
-        "_currentValue": null,
-        "_currentValue2": null,
-        "_threadCount": 0,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": undefined,
+        "className": "text-center",
       },
+      "ref": null,
+      "rendered": null,
+      "type": "h1",
     },
+    "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "function",
+      "nodeType": "host",
       "props": Object {
-        "children": [Function],
+        "children": <h1
+          className="text-center"
+        />,
       },
       "ref": null,
-      "rendered": [Function],
-      "type": Object {
-        "$$typeof": Symbol(react.context),
-        "_calculateChangedBits": null,
-        "_context": Object {
-          "$$typeof": Symbol(react.context),
-          "Consumer": [Circular],
-          "Provider": Object {
-            "$$typeof": Symbol(react.provider),
-            "_context": [Circular],
-          },
-          "_calculateChangedBits": null,
-          "_currentRenderer": null,
-          "_currentRenderer2": null,
-          "_currentValue": null,
-          "_currentValue2": null,
-          "_threadCount": 0,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": undefined,
+          "className": "text-center",
         },
+        "ref": null,
+        "rendered": null,
+        "type": "h1",
       },
+      "type": "div",
     },
   ],
   Symbol(enzyme.__options__): Object {
@@ -213,48 +221,52 @@ ShallowWrapper {
 exports[`<Products /> should render productRecord if sales array is not empty 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Connect(Products)
+  Symbol(enzyme.__unrendered__): <Products
     auth={
       Object {
-        "addMatchers": [Function],
-        "advanceTimersByTime": [Function],
-        "autoMockOff": [Function],
-        "autoMockOn": [Function],
-        "clearAllMocks": [Function],
-        "clearAllTimers": [Function],
-        "deepUnmock": [Function],
-        "disableAutomock": [Function],
-        "doMock": [Function],
-        "dontMock": [Function],
-        "enableAutomock": [Function],
-        "fn": [Function],
-        "genMockFromModule": [Function],
-        "isMockFunction": [Function],
-        "mock": [Function],
-        "products": Array [
-          Object {
-            "id": 1,
-            "name": "iphone",
+        "user": Object {
+          "type": Object {
+            "addMatchers": [Function],
+            "advanceTimersByTime": [Function],
+            "autoMockOff": [Function],
+            "autoMockOn": [Function],
+            "clearAllMocks": [Function],
+            "clearAllTimers": [Function],
+            "deepUnmock": [Function],
+            "disableAutomock": [Function],
+            "doMock": [Function],
+            "dontMock": [Function],
+            "enableAutomock": [Function],
+            "fn": [Function],
+            "genMockFromModule": [Function],
+            "isMockFunction": [Function],
+            "mock": [Function],
+            "products": Array [
+              Object {
+                "id": 1,
+                "name": "iphone",
+              },
+            ],
+            "requireActual": [Function],
+            "requireMock": [Function],
+            "resetAllMocks": [Function],
+            "resetModuleRegistry": [Function],
+            "resetModules": [Function],
+            "restoreAllMocks": [Function],
+            "retryTimes": [Function],
+            "runAllImmediates": [Function],
+            "runAllTicks": [Function],
+            "runAllTimers": [Function],
+            "runOnlyPendingTimers": [Function],
+            "runTimersToTime": [Function],
+            "setMock": [Function],
+            "setTimeout": [Function],
+            "spyOn": [Function],
+            "unmock": [Function],
+            "useFakeTimers": [Function],
+            "useRealTimers": [Function],
           },
-        ],
-        "requireActual": [Function],
-        "requireMock": [Function],
-        "resetAllMocks": [Function],
-        "resetModuleRegistry": [Function],
-        "resetModules": [Function],
-        "restoreAllMocks": [Function],
-        "retryTimes": [Function],
-        "runAllImmediates": [Function],
-        "runAllTicks": [Function],
-        "runAllTimers": [Function],
-        "runOnlyPendingTimers": [Function],
-        "runTimersToTime": [Function],
-        "setMock": [Function],
-        "setTimeout": [Function],
-        "spyOn": [Function],
-        "unmock": [Function],
-        "useFakeTimers": [Function],
-        "useRealTimers": [Function],
+        },
       }
     }
     deleteProduct={[MockFunction]}
@@ -301,7 +313,29 @@ ShallowWrapper {
         "useRealTimers": [Function],
       }
     }
-    getProducts={[MockFunction]}
+    getProducts={
+      [MockFunction] {
+        "calls": Array [
+          Array [],
+          Array [],
+          Array [],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      }
+    }
     products={
       Object {
         "addMatchers": [Function],
@@ -358,59 +392,51 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "function",
+    "nodeType": "host",
     "props": Object {
-      "children": [Function],
+      "children": <h1
+        className="text-center"
+      />,
     },
     "ref": null,
-    "rendered": [Function],
-    "type": Object {
-      "$$typeof": Symbol(react.context),
-      "_calculateChangedBits": null,
-      "_context": Object {
-        "$$typeof": Symbol(react.context),
-        "Consumer": [Circular],
-        "Provider": Object {
-          "$$typeof": Symbol(react.provider),
-          "_context": [Circular],
-        },
-        "_calculateChangedBits": null,
-        "_currentRenderer": null,
-        "_currentRenderer2": null,
-        "_currentValue": null,
-        "_currentValue2": null,
-        "_threadCount": 0,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": undefined,
+        "className": "text-center",
       },
+      "ref": null,
+      "rendered": null,
+      "type": "h1",
     },
+    "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "function",
+      "nodeType": "host",
       "props": Object {
-        "children": [Function],
+        "children": <h1
+          className="text-center"
+        />,
       },
       "ref": null,
-      "rendered": [Function],
-      "type": Object {
-        "$$typeof": Symbol(react.context),
-        "_calculateChangedBits": null,
-        "_context": Object {
-          "$$typeof": Symbol(react.context),
-          "Consumer": [Circular],
-          "Provider": Object {
-            "$$typeof": Symbol(react.provider),
-            "_context": [Circular],
-          },
-          "_calculateChangedBits": null,
-          "_currentRenderer": null,
-          "_currentRenderer2": null,
-          "_currentValue": null,
-          "_currentValue2": null,
-          "_threadCount": 0,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": undefined,
+          "className": "text-center",
         },
+        "ref": null,
+        "rendered": null,
+        "type": "h1",
       },
+      "type": "div",
     },
   ],
   Symbol(enzyme.__options__): Object {
