@@ -11,7 +11,7 @@ A web application that helps store owners manage sales and product inventory rec
 
 ## Testing & Login Credentials
 <pre><code>
-App Url: https://storemanagerreact.herokuapp.com
+App Url: <a href="https://storemanagerreact.herokuapp.com">https://storemanagerreact.herokuapp.com</a>
 </code> </pre>
 <br>
 
