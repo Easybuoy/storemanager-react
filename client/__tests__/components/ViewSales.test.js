@@ -1,5 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
+import sinon from 'sinon';
 
 import { ViewSales } from '../../src/components/Sales/ViewSales';
 
@@ -8,6 +9,7 @@ describe('<ViewSales />', () => {
         viewSales: jest.fn(),
         sales: {sales: []},
         errors: jest.mock(),
+        history: {push: jest.fn()}
       };
 
     it('renders the ViewSales component correctly', () => {
@@ -37,4 +39,13 @@ describe('<ViewSales />', () => {
                 expect(props.viewSales).toBeCalled();
                  expect(props.viewSales).toHaveReturned();
                 });
+
+                it('should call the mock convertAttendantIdToName function', () => {
+                    const wrapper = shallow(<ViewSales {...props} />)
+
+                     sinon.spy(wrapper.instance(), 'convertAttendantIdToName');
+                     wrapper.instance().convertAttendantIdToName();
+                     expect(wrapper.instance().convertAttendantIdToName.calledOnce)
+                       .toEqual(true);
+                    });
 });

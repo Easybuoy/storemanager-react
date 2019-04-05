@@ -5,16 +5,41 @@ import { toast } from 'react-toastify';
 
 import { viewSales } from '../../actions/saleActions';
 import Loading from '../Common/Loading';
-
+import axios from 'axios'
  export class ViewSales extends Component {
     componentDidMount(){
          this.props.viewSales();
+     }
+
+     convertAttendantIdToName = () => {
+      setTimeout(() => {
+        const sales = JSON.parse(localStorage.getItem('sales'));
+        
+        sales.map((sale, i) => {
+          const storeattendantuserid = sale.store_attendant_user_id;
+          const storeattendantname = `storeattendantname-${storeattendantuserid}-${i}`;
+          if (storeattendantuserid=== undefined) {
+           return document.getElementById(storeattendantname).innerHTML = 'You';
+          } 
+
+          axios.get(`https://store--manager.herokuapp.com/api/v1/auth/${storeattendantuserid}`)
+          .then(res => {
+            document.getElementById(storeattendantname).innerHTML = res.data.data.name;
+            })
+            .catch(() => {
+              document.getElementById(storeattendantname).innerHTML = '-';
+            })  
+        });
+      }, 5)
+
      }
 
     render() {
         if (Object.keys(this.props.errors).length > 0) {
 
             toast.error(this.props.errors.message);
+            this.props.history.push('/dashboard')
+
           }
 
           const { sales, loading } = this.props.sales;
@@ -37,10 +62,12 @@ import Loading from '../Common/Loading';
                 </div>  
             )
         }
+        // save sales to localstorage so it can be used to get who made the sale
+        localStorage.setItem('sales', JSON.stringify(this.props.sales.sales))
+
     return (
-        
       <div id="main">
-      <section className="topmargin">
+      <section className="topmargin" onLoadedData={this.convertAttendantIdToName()}>
                 <div className="container text-center">
                         <table className="table">
                                 <caption>Sales</caption>
@@ -50,17 +77,20 @@ import Loading from '../Common/Loading';
                                     <th scope="col">Product</th>
                                     <th scope="col">Amount</th>
                                     <th scope="col">Quantity</th>
+                                    <th scope="col">Sold By</th>
                                   </tr>
                                 </thead>
                                 <tbody>
                                     {
                                         sales.map((sale, key) => {
+                                          const storeattendantname = `storeattendantname-${sale.store_attendant_user_id}-${key}`;
                                             return (
                                 <tr key={key}>
                                     <td data-label="Date">{sale.created_at}</td>
                                     <td data-label="Product">{sale.name}</td>
                                     <td data-label="Amount">${sale.price}</td>
-                                    <td data-label="Quantity">{sale.quantity}</td>
+                                    <td data-label="Quantity" ref="me">{sale.quantity}</td>
+                                    <td data-label="Sold By" id={storeattendantname} ref={storeattendantname}></td>
                                 </tr>
                                             )
                                         })

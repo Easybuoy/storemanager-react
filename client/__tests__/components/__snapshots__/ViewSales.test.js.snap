@@ -41,6 +41,23 @@ ShallowWrapper {
         "useRealTimers": [Function],
       }
     }
+    history={
+      Object {
+        "push": [MockFunction] {
+          "calls": Array [
+            Array [
+              "/dashboard",
+            ],
+          ],
+          "results": Array [
+            Object {
+              "isThrow": false,
+              "value": undefined,
+            },
+          ],
+        },
+      }
+    }
     sales={
       Object {
         "sales": Array [],
